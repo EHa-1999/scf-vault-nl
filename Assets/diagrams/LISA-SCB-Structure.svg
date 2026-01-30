@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-family="Segoe UI, Arial" font-size="18" font-weight="bold" fill="#1a1a2e">System Component Breakdown (SCB)</text>
+  <text x="450" y="50" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#666">Gelaagde analyse van systeemcomponenten</text>
+  
+  <!-- System Layer -->
+  <rect x="50" y="70" width="800" height="80" rx="8" fill="#1a1a2e"/>
+  <text x="450" y="100" text-anchor="middle" font-family="Segoe UI, Arial" font-size="16" font-weight="bold" fill="white">SYSTEEM: XENA</text>
+  <text x="450" y="120" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#aaa">Document Management System | BIV: M-H-H (BBN2) | Owner: System Owner</text>
+  <text x="70" y="140" font-family="Segoe UI, Arial" font-size="9" fill="#666">Systems/XENA.md</text>
+  
+  <!-- Component Layers -->
+  
+  <!-- Presentation Layer -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="170" width="160" height="130" rx="6" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+    <rect x="50" y="170" width="160" height="25" rx="6" fill="#1565c0"/>
+    <text x="130" y="187" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" font-weight="bold" fill="white">PRESENTATIE</text>
+    
+    <rect x="60" y="205" width="140" height="35" rx="4" fill="white" stroke="#90caf9"/>
+    <text x="130" y="220" text-anchor="middle" font-family="Segoe UI, Arial" font-size="9" font-weight="bold" fill="#1a1a2e">NGINX</text>
+    <text x="130" y="233" text-anchor="middle" font-family="Segoe UI, Arial" font-size="8" fill="#666">Reverse Proxy</text>
+    
+    <rect x="60" y="250" width="140" height="35" rx="4" fill="white" stroke="#90caf9"/>
+    <text x="130" y="265" text-anchor="middle" font-family="Segoe UI, Arial" font-size="9" font-weight="bold" fill="#1a1a2e">WebDAV</text>
+    <text x="130" y="278" text-anchor="middle" font-family="Segoe UI, Arial" font-size="8" fill="#666">Protocol Handler</text>
+  </g>
+  
+  <!-- Application Layer -->
+  <g filter="url(#shadow)">
+    <rect x="230" y="170" width="160" height="130" rx="6" fill="#e8f4ea" stroke="#2d6a4f" stroke-width="2"/>
+    <rect x="230" y="170" width="160" height="25" rx="6" fill="#2d6a4f"/>
+    <text x="310" y="187" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" font-weight="bold" fill="white">APPLICATIE</text>
+    
+    <rect x="240" y="205" width="140" height="35" rx="4" fill="white" stroke="#a5d6a7"/>
+    <text x="310" y="220" text-anchor="middle" font-family="Segoe UI, Arial" font-size="9" font-weight="bold" fill="#1a1a2e">Apache NiFi</text>
+    <text x="310" y="233" text-anchor="middle" font-family="Segoe UI, Arial" font-size="8" fill="#666">Orchestration</text>
+    
+    <rect x="240" y="250" width="140" height="35" rx="4" fill="white" stroke="#a5d6a7"/>
+    <text x="310" y="265" text-anchor="middle" font-family="Segoe UI, Arial" font-size="9" font-weight="bold" fill="#1a1a2e">Elasticsearch</text>
+    <text x="310" y="278" text-anchor="middle" font-family="Segoe UI, Arial" font-size="8" fill="#666">Search Engine</text>
+  </g>
+  
+  <!-- Data Layer -->
+  <g filter="url(#shadow)">
+    <rect x="410" y="170" width="160" height="130" rx="6" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+    <rect x="410" y="170" width="160" height="25" rx="6" fill="#e65100"/>
+    <text x="490" y="187" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" font-weight="bold" fill="white">DATA</text>
+    
+    <rect x="420" y="205" width="140" height="35" rx="4" fill="white" stroke="#ffcc80"/>
+    <text x="490" y="220" text-anchor="middle" font-family="Segoe UI, Arial" font-size="9" font-weight="bold" fill="#1a1a2e">PostgreSQL</text>
+    <text x="490" y="233" text-anchor="middle" font-family="Segoe UI, Arial" font-size="8" fill="#666">Metadata DB</text>
+    
+    <rect x="420" y="250" width="140" height="35" rx="4" fill="white" stroke="#ffcc80"/>
+    <text x="490" y="265" text-anchor="middle" font-family="Segoe UI, Arial" font-size="9" font-weight="bold" fill="#1a1a2e">MinIO</text>
+    <text x="490" y="278" text-anchor="middle" font-family="Segoe UI, Arial" font-size="8" fill="#666">Object Storage</text>
+  </g>
+  
+  <!-- Security Layer -->
+  <g filter="url(#shadow)">
+    <rect x="590" y="170" width="160" height="130" rx="6" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+    <rect x="590" y="170" width="160" height="25" rx="6" fill="#7b1fa2"/>
+    <text x="670" y="187" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" font-weight="bold" fill="white">SECURITY</text>
+    
+    <rect x="600" y="205" width="140" height="35" rx="4" fill="white" stroke="#ce93d8"/>
+    <text x="670" y="220" text-anchor="middle" font-family="Segoe UI, Arial" font-size="9" font-weight="bold" fill="#1a1a2e">KeyCloak</text>
+    <text x="670" y="233" text-anchor="middle" font-family="Segoe UI, Arial" font-size="8" fill="#666">IAM / SSO</text>
+    
+    <rect x="600" y="250" width="140" height="35" rx="4" fill="white" stroke="#ce93d8"/>
+    <text x="670" y="265" text-anchor="middle" font-family="Segoe UI, Arial" font-size="9" font-weight="bold" fill="#1a1a2e">OpenBAO</text>
+    <text x="670" y="278" text-anchor="middle" font-family="Segoe UI, Arial" font-size="8" fill="#666">Secrets</text>
+  </g>
+  
+  <!-- External -->
+  <g filter="url(#shadow)">
+    <rect x="770" y="170" width="80" height="130" rx="6" fill="#fce4ec" stroke="#c2185b" stroke-width="2"/>
+    <rect x="770" y="170" width="80" height="25" rx="6" fill="#c2185b"/>
+    <text x="810" y="187" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" font-weight="bold" fill="white">EXTERN</text>
+    
+    <rect x="778" y="205" width="64" height="35" rx="4" fill="white" stroke="#f48fb1"/>
+    <text x="810" y="220" text-anchor="middle" font-family="Segoe UI, Arial" font-size="8" font-weight="bold" fill="#1a1a2e">Saviynt</text>
+    <text x="810" y="232" text-anchor="middle" font-family="Segoe UI, Arial" font-size="7" fill="#666">IGA (SaaS)</text>
+    
+    <rect x="778" y="250" width="64" height="35" rx="4" fill="white" stroke="#f48fb1"/>
+    <text x="810" y="265" text-anchor="middle" font-family="Segoe UI, Arial" font-size="8" font-weight="bold" fill="#1a1a2e">EntraID</text>
+    <text x="810" y="277" text-anchor="middle" font-family="Segoe UI, Arial" font-size="7" fill="#666">Federation</text>
+  </g>
+  
+  <!-- SCB Analysis Output Section -->
+  <rect x="50" y="320" width="800" height="200" rx="8" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="70" y="345" font-family="Segoe UI, Arial" font-size="12" font-weight="bold" fill="#1a1a2e">SCB Analyse Output</text>
+  
+  <!-- Component Count -->
+  <rect x="70" y="360" width="150" height="70" rx="6" fill="white" stroke="#e0e0e0"/>
+  <text x="145" y="385" text-anchor="middle" font-family="Segoe UI, Arial" font-size="24" font-weight="bold" fill="#1565c0">8</text>
+  <text x="145" y="405" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#666">Componenten</text>
+  <text x="145" y="420" text-anchor="middle" font-family="Segoe UI, Arial" font-size="8" fill="#999">6 on-prem, 2 SaaS</text>
+  
+  <!-- CIS Benchmarks -->
+  <rect x="240" y="360" width="150" height="70" rx="6" fill="white" stroke="#e0e0e0"/>
+  <text x="315" y="385" text-anchor="middle" font-family="Segoe UI, Arial" font-size="24" font-weight="bold" fill="#2d6a4f">3</text>
+  <text x="315" y="405" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#666">CIS Benchmarks</text>
+  <text x="315" y="420" text-anchor="middle" font-family="Segoe UI, Arial" font-size="8" fill="#999">PG, NGINX, ES</text>
+  
+  <!-- Extended Benchmarks -->
+  <rect x="410" y="360" width="150" height="70" rx="6" fill="white" stroke="#e0e0e0"/>
+  <text x="485" y="385" text-anchor="middle" font-family="Segoe UI, Arial" font-size="24" font-weight="bold" fill="#e65100">4</text>
+  <text x="485" y="405" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#666">Extended Benchmarks</text>
+  <text x="485" y="420" text-anchor="middle" font-family="Segoe UI, Arial" font-size="8" fill="#999">NiFi, MinIO, KC, BAO</text>
+  
+  <!-- Implementations needed -->
+  <rect x="580" y="360" width="150" height="70" rx="6" fill="white" stroke="#e0e0e0"/>
+  <text x="655" y="385" text-anchor="middle" font-family="Segoe UI, Arial" font-size="24" font-weight="bold" fill="#7b1fa2">45</text>
+  <text x="655" y="405" text-anchor="middle" font-family="Segoe UI, Arial" font-size="10" fill="#666">Implementations</text>
+  <text x="655" y="420" text-anchor="middle" font-family="Segoe UI, Arial" font-size="8" fill="#999">IG1: 18, IG2: 15, IG3: 12</text>
+  
+  <!-- Control Matrix Preview -->
+  <rect x="70" y="445" width="660" height="60" rx="4" fill="white" stroke="#e0e0e0"/>
+  <text x="80" y="462" font-family="Segoe UI, Arial" font-size="9" font-weight="bold" fill="#333">Control Matrix Preview:</text>
+  
+  <!-- Matrix headers -->
+  <text x="180" y="480" font-family="Segoe UI, Arial" font-size="8" fill="#666">NGINX</text>
+  <text x="240" y="480" font-family="Segoe UI, Arial" font-size="8" fill="#666">NiFi</text>
+  <text x="300" y="480" font-family="Segoe UI, Arial" font-size="8" fill="#666">PG</text>
+  <text x="360" y="480" font-family="Segoe UI, Arial" font-size="8" fill="#666">MinIO</text>
+  <text x="420" y="480" font-family="Segoe UI, Arial" font-size="8" fill="#666">ES</text>
+  <text x="480" y="480" font-family="Segoe UI, Arial" font-size="8" fill="#666">KC</text>
+  <text x="540" y="480" font-family="Segoe UI, Arial" font-size="8" fill="#666">Sav</text>
+  <text x="600" y="480" font-family="Segoe UI, Arial" font-size="8" fill="#666">BAO</text>
+  
+  <!-- Matrix rows -->
+  <text x="100" y="495" font-family="Segoe UI, Arial" font-size="8" fill="#666">CIS-3 (Data)</text>
+  <text x="190" y="495" font-family="Segoe UI, Arial" font-size="10" fill="#999">-</text>
+  <text x="250" y="495" font-family="Segoe UI, Arial" font-size="10" fill="#2d6a4f">✓</text>
+  <text x="310" y="495" font-family="Segoe UI, Arial" font-size="10" fill="#2d6a4f">✓</text>
+  <text x="370" y="495" font-family="Segoe UI, Arial" font-size="10" fill="#2d6a4f">✓</text>
+  <text x="430" y="495" font-family="Segoe UI, Arial" font-size="10" fill="#2d6a4f">✓</text>
+  <text x="490" y="495" font-family="Segoe UI, Arial" font-size="10" fill="#999">-</text>
+  <text x="550" y="495" font-family="Segoe UI, Arial" font-size="10" fill="#999">-</text>
+  <text x="610" y="495" font-family="Segoe UI, Arial" font-size="10" fill="#2d6a4f">✓</text>
+  
+  <text x="650" y="495" font-family="Segoe UI, Arial" font-size="8" fill="#999">...</text>
+  
+  <!-- Document reference -->
+  <rect x="750" y="450" width="90" height="55" rx="4" fill="#e8f4ea" stroke="#2d6a4f"/>
+  <text x="795" y="472" text-anchor="middle" font-family="Segoe UI, Arial" font-size="9" font-weight="bold" fill="#2d6a4f">📄 SCB-XENA</text>
+  <text x="795" y="490" text-anchor="middle" font-family="Segoe UI, Arial" font-size="7" fill="#666">Documentatie/</text>
+  <text x="795" y="500" text-anchor="middle" font-family="Segoe UI, Arial" font-size="7" fill="#666">SCB/</text>
+</svg>

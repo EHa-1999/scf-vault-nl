@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 200">
+  <defs>
+    <linearGradient id="notStartedGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8F9FA"/>
+      <stop offset="100%" style="stop-color:#E9ECEF"/>
+    </linearGradient>
+    <linearGradient id="plannedGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8D5E8"/>
+      <stop offset="100%" style="stop-color:#D4B8D4"/>
+    </linearGradient>
+    <linearGradient id="progressGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D1ECF1"/>
+      <stop offset="100%" style="stop-color:#A8DADC"/>
+    </linearGradient>
+    <linearGradient id="partialGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF3CD"/>
+      <stop offset="100%" style="stop-color:#FFE69C"/>
+    </linearGradient>
+    <linearGradient id="implementedGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4EDDA"/>
+      <stop offset="100%" style="stop-color:#A8D5BA"/>
+    </linearGradient>
+    <linearGradient id="verifiedGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C3E6CB"/>
+      <stop offset="100%" style="stop-color:#82E0AA"/>
+    </linearGradient>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="375" y="25" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600" fill="#2C3E50" text-anchor="middle">Implementation Status Lifecycle</text>
+  
+  <!-- Status boxes -->
+  <!-- Not Started -->
+  <g filter="url(#shadow)">
+    <rect x="20" y="55" width="95" height="50" rx="6" fill="url(#notStartedGrad)" stroke="#ADB5BD" stroke-width="1.5"/>
+    <text x="67" y="78" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#495057" text-anchor="middle" font-weight="600">Not Started</text>
+    <text x="67" y="93" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#6C757D" text-anchor="middle">Initieel</text>
+  </g>
+  
+  <!-- Arrow -->
+  <line x1="115" y1="80" x2="135" y2="80" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Planned -->
+  <g filter="url(#shadow)">
+    <rect x="140" y="55" width="95" height="50" rx="6" fill="url(#plannedGrad)" stroke="#9B7B9B" stroke-width="1.5"/>
+    <text x="187" y="78" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#4A3A4A" text-anchor="middle" font-weight="600">Planned</text>
+    <text x="187" y="93" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#6B4C6B" text-anchor="middle">Gepland</text>
+  </g>
+  
+  <!-- Arrow -->
+  <line x1="235" y1="80" x2="255" y2="80" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- In Progress -->
+  <g filter="url(#shadow)">
+    <rect x="260" y="55" width="95" height="50" rx="6" fill="url(#progressGrad)" stroke="#5B9AA0" stroke-width="1.5"/>
+    <text x="307" y="78" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#1D4E53" text-anchor="middle" font-weight="600">In Progress</text>
+    <text x="307" y="93" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#2E6B70" text-anchor="middle">In uitvoering</text>
+  </g>
+  
+  <!-- Arrow -->
+  <line x1="355" y1="80" x2="375" y2="80" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Partial -->
+  <g filter="url(#shadow)">
+    <rect x="380" y="55" width="95" height="50" rx="6" fill="url(#partialGrad)" stroke="#D4A574" stroke-width="1.5"/>
+    <text x="427" y="78" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#5D4E37" text-anchor="middle" font-weight="600">Partial</text>
+    <text x="427" y="93" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#8B6914" text-anchor="middle">Gedeeltelijk</text>
+  </g>
+  
+  <!-- Arrow -->
+  <line x1="475" y1="80" x2="495" y2="80" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Implemented -->
+  <g filter="url(#shadow)">
+    <rect x="500" y="55" width="95" height="50" rx="6" fill="url(#implementedGrad)" stroke="#5A9A6A" stroke-width="1.5"/>
+    <text x="547" y="78" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#1D4E2D" text-anchor="middle" font-weight="600">Implemented</text>
+    <text x="547" y="93" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#2E6B3E" text-anchor="middle">Geïmplementeerd</text>
+  </g>
+  
+  <!-- Arrow -->
+  <line x1="595" y1="80" x2="615" y2="80" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Verified -->
+  <g filter="url(#shadow)">
+    <rect x="620" y="55" width="95" height="50" rx="6" fill="url(#verifiedGrad)" stroke="#27AE60" stroke-width="2"/>
+    <text x="667" y="78" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#145A32" text-anchor="middle" font-weight="700">Verified</text>
+    <text x="667" y="93" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#1E8449" text-anchor="middle">Geverifieerd ✓</text>
+  </g>
+  
+  <!-- Feedback loop from Implemented to Partial -->
+  <path d="M 547 105 Q 547 140 427 140 Q 427 120 427 105" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+  <text x="487" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#888" text-anchor="middle" font-style="italic">gaps bij review</text>
+  
+  <!-- Legend -->
+  <rect x="150" y="165" width="450" height="25" rx="4" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  <text x="375" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#6c757d" text-anchor="middle">Elke Implementation doorloopt deze lifecycle van initiatie tot onafhankelijke verificatie</text>
+</svg>

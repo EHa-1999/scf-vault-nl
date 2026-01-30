@@ -1,0 +1,238 @@
+{
+  "main": {
+    "id": "13dd8765132b6206",
+    "type": "split",
+    "children": [
+      {
+        "id": "f430c80fd029355a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5b932a54b9670743",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Controls/CIS/CIS-1.4 - Use Dynamic Host Configuration Protocol (DHCP) Log.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CIS-1.4 - Use Dynamic Host Configuration Protocol (DHCP) Log"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "38918c35ef723997",
+    "type": "split",
+    "children": [
+      {
+        "id": "0d64fd7019837380",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "886704834adceebc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f406a28ba865b256",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "7267279fa3aa8d3e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 481.5
+  },
+  "right": {
+    "id": "4a984994a6a83ad3",
+    "type": "split",
+    "children": [
+      {
+        "id": "ee061f1dd73335aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0368759e9e11eb44",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Controls/CIS/CIS-3.4.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for CIS-3.4"
+            }
+          },
+          {
+            "id": "89cb8cb464fc579a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Controls/CIS/CIS-3.4.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from CIS-3.4"
+            }
+          },
+          {
+            "id": "5c0fed2c0317eb84",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "53973c982a470ccb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "9806e9557ccd628c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Controls/CIS/CIS-3.4.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of CIS-3.4"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "5b932a54b9670743",
+  "lastOpenFiles": [
+    "Controls/CIS/CIS-1.2 - Address Unauthorized Assets.md",
+    "Controls/CIS/CIS-1.1 - Establish and Maintain Detailed Enterprise Asset I.md",
+    "Audits/2026/IA-2026-001-XENA/Bevindingen/FIND-2026-001.md",
+    "Dashboards/Main Dashboard.md",
+    "README.md",
+    "Vault-Navigation.canvas",
+    "Frameworks/_index.md",
+    "Risks/_index.md",
+    "Implementations/_index.md",
+    "Documentatie/_index.md",
+    "Components/_index.md",
+    "Dashboards/_index.md",
+    "Assets/diagrams/Vault-Navigation.svg",
+    "Audits/_index.md",
+    "Templates/_index.md",
+    "Controls/CIS/_index.md",
+    "Controls/EXT-P/_index.md",
+    "Controls/_index.md",
+    "Planning/_index.md",
+    "Systems/_index.md",
+    "Assets/diagrams/LISA-Six-Layers.svg",
+    "Documentatie/SCB/SCB-XENA.md",
+    "Dashboards/Baseline Dashboard.md",
+    "Assets/diagrams/XENA-Architecture.svg",
+    "Frameworks/LISA/5-LISA-Implementatie.md",
+    "Frameworks/LISA/7-LISA-Audits.md",
+    "Documentatie/Benchmarks/EXT-MinIO.md",
+    "Audits/README.md",
+    "Components/MinIO.md",
+    "Implementations/IMPL-XENA-PostgreSQL-3.11.md",
+    "Documentatie/SCB",
+    "Documentatie/Benchmarks",
+    "Audits/2026/IA-2026-001-XENA/Evidence",
+    "Assets/diagrams/LISA-SCB-Structure.svg",
+    "Assets/diagrams/LISA-Onboarding-Process.svg",
+    "Assets/diagrams/LISA-Benchmark-Mapping-Flow.svg",
+    "Assets/diagrams/LISA-Control-Component-Relation.svg",
+    "Evidence",
+    "Scripts/export_to_jira.py",
+    "Scripts",
+    "Planning",
+    "Audits/2026/IA-2026-001-XENA/Self-Assessments",
+    "Audits/2026/IA-2026-001-XENA/Bevindingen",
+    "Audits/2026/IA-2026-001-XENA",
+    "Assets/diagrams/LISA-Audit-Entities.svg",
+    "Assets/diagrams/LISA-Audit-Cycle.svg",
+    "Assets/diagrams/LISA-Architecture.svg"
+  ]
+}

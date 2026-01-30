@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="ctrlGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D1ECF1"/>
+      <stop offset="100%" style="stop-color:#A8DADC"/>
+    </linearGradient>
+    <linearGradient id="implGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8D5E8"/>
+      <stop offset="100%" style="stop-color:#D4B8D4"/>
+    </linearGradient>
+    <linearGradient id="saGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF3CD"/>
+      <stop offset="100%" style="stop-color:#FFE69C"/>
+    </linearGradient>
+    <linearGradient id="iaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4EDDA"/>
+      <stop offset="100%" style="stop-color:#A8D5BA"/>
+    </linearGradient>
+    <linearGradient id="findGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FADBD8"/>
+      <stop offset="100%" style="stop-color:#F5B7B1"/>
+    </linearGradient>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" fill="#2C3E50" text-anchor="middle">Audit Entiteit Relaties</text>
+  
+  <!-- Control -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="55" width="140" height="60" rx="6" fill="url(#ctrlGrad)" stroke="#5B9AA0" stroke-width="2"/>
+    <text x="120" y="82" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#1D4E53" text-anchor="middle" font-weight="700">Control</text>
+    <text x="120" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#2E6B70" text-anchor="middle">CIS-8.2</text>
+  </g>
+  
+  <!-- Arrow Control to Implementation -->
+  <line x1="190" y1="85" x2="240" y2="85" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="215" y="78" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#666" text-anchor="middle">1:N</text>
+  
+  <!-- Implementation -->
+  <g filter="url(#shadow)">
+    <rect x="250" y="55" width="180" height="60" rx="6" fill="url(#implGrad)" stroke="#9B7B9B" stroke-width="2"/>
+    <text x="340" y="82" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#4A3A4A" text-anchor="middle" font-weight="700">Implementation</text>
+    <text x="340" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#6B4C6B" text-anchor="middle">IMPL-XENA-PostgreSQL-8.2</text>
+  </g>
+  
+  <!-- Arrow Implementation to Self-Assessment -->
+  <line x1="340" y1="115" x2="340" y2="155" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="355" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#666">N:1</text>
+  
+  <!-- Self-Assessment -->
+  <g filter="url(#shadow)">
+    <rect x="250" y="165" width="180" height="70" rx="6" fill="url(#saGrad)" stroke="#D4A574" stroke-width="2"/>
+    <text x="340" y="195" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#5D4E37" text-anchor="middle" font-weight="700">Self-Assessment</text>
+    <text x="340" y="215" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8B6914" text-anchor="middle">SA-2026-Q1-XENA</text>
+  </g>
+  
+  <!-- Arrow Self-Assessment to Internal Audit -->
+  <line x1="430" y1="200" x2="490" y2="200" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="460" y="193" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#666" text-anchor="middle">N:1</text>
+  
+  <!-- Internal Audit -->
+  <g filter="url(#shadow)">
+    <rect x="500" y="165" width="180" height="70" rx="6" fill="url(#iaGrad)" stroke="#27AE60" stroke-width="2"/>
+    <text x="590" y="195" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#1D4E2D" text-anchor="middle" font-weight="700">Interne Audit</text>
+    <text x="590" y="215" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#2E6B3E" text-anchor="middle">IA-2026-001-XENA</text>
+  </g>
+  
+  <!-- Arrow Internal Audit to Finding -->
+  <line x1="590" y1="235" x2="590" y2="275" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="605" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#666">1:N</text>
+  
+  <!-- Finding -->
+  <g filter="url(#shadow)">
+    <rect x="500" y="285" width="180" height="70" rx="6" fill="url(#findGrad)" stroke="#E74C3C" stroke-width="2"/>
+    <text x="590" y="315" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#7B241C" text-anchor="middle" font-weight="700">Bevinding</text>
+    <text x="590" y="335" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#943126" text-anchor="middle">FIND-2026-001</text>
+  </g>
+  
+  <!-- Arrow Finding back to Implementation -->
+  <path d="M 500 320 L 340 320 L 340 235" fill="none" stroke="#E74C3C" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text x="420" y="313" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#E74C3C" text-anchor="middle">linked to</text>
+  
+  <!-- System box -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="145" width="140" height="50" rx="6" fill="#f0f0f0" stroke="#999" stroke-width="1.5"/>
+    <text x="120" y="175" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#555" text-anchor="middle" font-weight="600">System: XENA</text>
+  </g>
+  
+  <!-- Dotted lines to show scope -->
+  <line x1="190" y1="170" x2="250" y2="170" stroke="#999" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="190" y1="170" x2="250" y2="85" stroke="#999" stroke-width="1" stroke-dasharray="4,2"/>
+  
+  <!-- Legend -->
+  <rect x="50" y="260" width="180" height="95" rx="6" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  <text x="140" y="280" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#495057" text-anchor="middle" font-weight="600">Legenda</text>
+  
+  <line x1="65" y1="295" x2="95" y2="295" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="105" y="299" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#495057">Directe relatie</text>
+  
+  <line x1="65" y1="315" x2="95" y2="315" stroke="#E74C3C" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="105" y="319" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#495057">Terugkoppeling</text>
+  
+  <text x="65" y="340" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#495057">1:N = één-op-veel</text>
+</svg>

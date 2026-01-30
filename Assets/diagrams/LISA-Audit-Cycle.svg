@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="selfAssessGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D1ECF1"/>
+      <stop offset="100%" style="stop-color:#A8DADC"/>
+    </linearGradient>
+    <linearGradient id="internalAuditGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF3CD"/>
+      <stop offset="100%" style="stop-color:#FFE69C"/>
+    </linearGradient>
+    <linearGradient id="findingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FADBD8"/>
+      <stop offset="100%" style="stop-color:#F5B7B1"/>
+    </linearGradient>
+    <linearGradient id="actionGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4EDDA"/>
+      <stop offset="100%" style="stop-color:#A8D5BA"/>
+    </linearGradient>
+    <linearGradient id="implGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8D5E8"/>
+      <stop offset="100%" style="stop-color:#D4B8D4"/>
+    </linearGradient>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+    <marker id="arrowBack" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27AE60"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" fill="#2C3E50" text-anchor="middle">LISA Audit Cyclus</text>
+  
+  <!-- Implementation (starting point) -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="60" width="180" height="70" rx="8" fill="url(#implGrad)" stroke="#9B7B9B" stroke-width="2"/>
+    <text x="140" y="90" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#4A3A4A" text-anchor="middle" font-weight="700">Implementations</text>
+    <text x="140" y="110" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#6B4C6B" text-anchor="middle">DoD + Evidence</text>
+  </g>
+  
+  <!-- Arrow to Self-Assessment -->
+  <line x1="230" y1="95" x2="280" y2="95" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="255" y="88" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#666" text-anchor="middle">input</text>
+  
+  <!-- Self-Assessment -->
+  <g filter="url(#shadow)">
+    <rect x="290" y="55" width="200" height="80" rx="8" fill="url(#selfAssessGrad)" stroke="#5B9AA0" stroke-width="2"/>
+    <rect x="290" y="55" width="200" height="24" rx="8" fill="#5B9AA0"/>
+    <rect x="290" y="73" width="200" height="6" fill="url(#selfAssessGrad)"/>
+    <text x="390" y="72" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="600">1. Self-Assessment</text>
+    <text x="390" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#1D4E53" text-anchor="middle">System Owner / Security Officer</text>
+    <text x="390" y="118" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#2E6B70" text-anchor="middle" font-style="italic">Beoordeling + Evidence verzameling</text>
+  </g>
+  
+  <!-- Arrow to Internal Audit -->
+  <line x1="490" y1="95" x2="540" y2="95" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="515" y="88" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#666" text-anchor="middle">review</text>
+  
+  <!-- Internal Audit -->
+  <g filter="url(#shadow)">
+    <rect x="550" y="55" width="200" height="80" rx="8" fill="url(#internalAuditGrad)" stroke="#D4A574" stroke-width="2"/>
+    <rect x="550" y="55" width="200" height="24" rx="8" fill="#D4A574"/>
+    <rect x="550" y="73" width="200" height="6" fill="url(#internalAuditGrad)"/>
+    <text x="650" y="72" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="600">2. Interne Audit</text>
+    <text x="650" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#5D4E37" text-anchor="middle">Interne Auditor</text>
+    <text x="650" y="118" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8B6914" text-anchor="middle" font-style="italic">Verificatie + Onafhankelijk oordeel</text>
+  </g>
+  
+  <!-- Arrow down to Findings -->
+  <line x1="650" y1="135" x2="650" y2="175" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Findings -->
+  <g filter="url(#shadow)">
+    <rect x="550" y="185" width="200" height="80" rx="8" fill="url(#findingGrad)" stroke="#E74C3C" stroke-width="2"/>
+    <rect x="550" y="185" width="200" height="24" rx="8" fill="#E74C3C"/>
+    <rect x="550" y="203" width="200" height="6" fill="url(#findingGrad)"/>
+    <text x="650" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="600">3. Bevindingen</text>
+    <text x="650" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#7B241C" text-anchor="middle">Gaps, Non-conformities</text>
+    <text x="650" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#943126" text-anchor="middle" font-style="italic">Classificatie + Root cause</text>
+  </g>
+  
+  <!-- Arrow to Actions -->
+  <line x1="550" y1="225" x2="500" y2="225" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="525" y="218" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#666" text-anchor="middle">actie</text>
+  
+  <!-- Actions -->
+  <g filter="url(#shadow)">
+    <rect x="290" y="185" width="200" height="80" rx="8" fill="url(#actionGrad)" stroke="#27AE60" stroke-width="2"/>
+    <rect x="290" y="185" width="200" height="24" rx="8" fill="#27AE60"/>
+    <rect x="290" y="203" width="200" height="6" fill="url(#actionGrad)"/>
+    <text x="390" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="600">4. Verbeteracties</text>
+    <text x="390" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#1D4E2D" text-anchor="middle">Taken in Jira/Redmine</text>
+    <text x="390" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#2E6B3E" text-anchor="middle" font-style="italic">Implementatie + Verificatie</text>
+  </g>
+  
+  <!-- Arrow back to Implementation (feedback loop) -->
+  <path d="M 290 225 L 140 225 L 140 130" fill="none" stroke="#27AE60" stroke-width="1.5" marker-end="url(#arrowBack)"/>
+  <text x="200" y="218" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#27AE60" text-anchor="middle">update</text>
+  
+  <!-- Assessment Types Box -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="300" width="700" height="130" rx="8" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1.5"/>
+    <text x="400" y="325" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#2C3E50" text-anchor="middle" font-weight="700">Self-Assessment Types</text>
+    
+    <!-- System Assessment -->
+    <rect x="70" y="340" width="200" height="70" rx="6" fill="url(#selfAssessGrad)" stroke="#5B9AA0" stroke-width="1"/>
+    <text x="170" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#1D4E53" text-anchor="middle" font-weight="600">Systeem Assessment</text>
+    <text x="170" y="380" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#2E6B70" text-anchor="middle">Per systeem (XENA, ZGW, etc.)</text>
+    <text x="170" y="398" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#2E6B70" text-anchor="middle">→ Alle IMPL-{System}-* controls</text>
+    
+    <!-- Domain Assessment -->
+    <rect x="300" y="340" width="200" height="70" rx="6" fill="url(#internalAuditGrad)" stroke="#D4A574" stroke-width="1"/>
+    <text x="400" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#5D4E37" text-anchor="middle" font-weight="600">Domein Assessment</text>
+    <text x="400" y="380" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8B6914" text-anchor="middle">Organisatie-breed</text>
+    <text x="400" y="398" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8B6914" text-anchor="middle">→ CIS 14, 15, 17, 18 + EXT-P org</text>
+    
+    <!-- Infra Assessment -->
+    <rect x="530" y="340" width="200" height="70" rx="6" fill="url(#implGrad)" stroke="#9B7B9B" stroke-width="1"/>
+    <text x="630" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4A3A4A" text-anchor="middle" font-weight="600">Infrastructuur Assessment</text>
+    <text x="630" y="380" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#6B4C6B" text-anchor="middle">Centraal beheerd</text>
+    <text x="630" y="398" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#6B4C6B" text-anchor="middle">→ CIS 7, 12, 13 (netwerk, patching)</text>
+  </g>
+</svg>

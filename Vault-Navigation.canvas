@@ -1,0 +1,364 @@
+{
+  "nodes": [
+    {
+      "id": "home",
+      "type": "file",
+      "file": "README.md",
+      "x": 400,
+      "y": -50,
+      "width": 200,
+      "height": 100,
+      "color": "1"
+    },
+    {
+      "id": "label-content",
+      "type": "text",
+      "text": "# 📦 Content\n\nGovernance → Controls → Systems",
+      "x": -100,
+      "y": 100,
+      "width": 250,
+      "height": 80,
+      "color": "4"
+    },
+    {
+      "id": "frameworks",
+      "type": "text",
+      "text": "## 🏛️ Frameworks\n\n[[Frameworks/_index|Open →]]",
+      "x": -100,
+      "y": 200,
+      "width": 250,
+      "height": 80,
+      "color": "4"
+    },
+    {
+      "id": "controls",
+      "type": "text",
+      "text": "## 📋 Controls\n\n[[Controls/_index|180 controls →]]",
+      "x": -100,
+      "y": 300,
+      "width": 250,
+      "height": 80,
+      "color": "4"
+    },
+    {
+      "id": "cis",
+      "type": "text",
+      "text": "### 🛡️ CIS Controls\n[[Controls/CIS/_index|153 controls →]]",
+      "x": -400,
+      "y": 250,
+      "width": 200,
+      "height": 70,
+      "color": "4"
+    },
+    {
+      "id": "extp",
+      "type": "text",
+      "text": "### 🔐 Privacy\n[[Controls/EXT-P/_index|27 controls →]]",
+      "x": -400,
+      "y": 340,
+      "width": 200,
+      "height": 70,
+      "color": "4"
+    },
+    {
+      "id": "systems",
+      "type": "text",
+      "text": "## 🖥️ Systems\n\n[[Systems/_index|XENA, ZGW →]]",
+      "x": -100,
+      "y": 400,
+      "width": 250,
+      "height": 80,
+      "color": "5"
+    },
+    {
+      "id": "components",
+      "type": "text",
+      "text": "## 🔧 Components\n\n[[Components/_index|Technologie →]]",
+      "x": -100,
+      "y": 500,
+      "width": 250,
+      "height": 80,
+      "color": "5"
+    },
+    {
+      "id": "lisa",
+      "type": "text",
+      "text": "### 📘 LISA Framework\n[[Frameworks/LISA/1-LISA-Introductie|Start hier →]]",
+      "x": -400,
+      "y": 150,
+      "width": 200,
+      "height": 70,
+      "color": "4"
+    },
+    {
+      "id": "label-docs",
+      "type": "text",
+      "text": "# 📚 Docs & Planning\n\nHandleidingen & Roadmaps",
+      "x": 300,
+      "y": 100,
+      "width": 250,
+      "height": 80,
+      "color": "1"
+    },
+    {
+      "id": "docs",
+      "type": "text",
+      "text": "## 📚 Documentatie\n\n[[Documentatie/_index|Handleidingen →]]",
+      "x": 300,
+      "y": 200,
+      "width": 250,
+      "height": 80,
+      "color": "1"
+    },
+    {
+      "id": "templates",
+      "type": "text",
+      "text": "## 📝 Templates\n\n[[Templates/_index|6 templates →]]",
+      "x": 300,
+      "y": 300,
+      "width": 250,
+      "height": 80,
+      "color": "1"
+    },
+    {
+      "id": "planning",
+      "type": "text",
+      "text": "## 📅 Planning\n\n[[Planning/_index|Roadmaps →]]",
+      "x": 300,
+      "y": 400,
+      "width": 250,
+      "height": 80,
+      "color": "1"
+    },
+    {
+      "id": "onboarding",
+      "type": "text",
+      "text": "### 🚀 Onboarding\n[[Documentatie/System Onboarding Guide|Guide →]]",
+      "x": 300,
+      "y": 500,
+      "width": 250,
+      "height": 70,
+      "color": "1"
+    },
+    {
+      "id": "label-ops",
+      "type": "text",
+      "text": "# ⚙️ Operations\n\nMonitoring & Assurance",
+      "x": 700,
+      "y": 100,
+      "width": 250,
+      "height": 80,
+      "color": "6"
+    },
+    {
+      "id": "dashboards",
+      "type": "text",
+      "text": "## 📊 Dashboards\n\n[[Dashboards/_index|7 dashboards →]]",
+      "x": 700,
+      "y": 200,
+      "width": 250,
+      "height": 80,
+      "color": "6"
+    },
+    {
+      "id": "main-dash",
+      "type": "text",
+      "text": "### 🏠 Main\n[[Dashboards/Main Dashboard|Open →]]",
+      "x": 1000,
+      "y": 180,
+      "width": 180,
+      "height": 60,
+      "color": "6"
+    },
+    {
+      "id": "baseline-dash",
+      "type": "text",
+      "text": "### 🔒 Baseline\n[[Dashboards/Baseline Dashboard|Comply/Explain →]]",
+      "x": 1000,
+      "y": 260,
+      "width": 180,
+      "height": 60,
+      "color": "6"
+    },
+    {
+      "id": "implementations",
+      "type": "text",
+      "text": "## ⚙️ Implementations\n\n[[Implementations/_index|Control → Tech →]]",
+      "x": 700,
+      "y": 300,
+      "width": 250,
+      "height": 80,
+      "color": "3"
+    },
+    {
+      "id": "audits",
+      "type": "text",
+      "text": "## 🔍 Audits\n\n[[Audits/_index|Assurance →]]",
+      "x": 700,
+      "y": 400,
+      "width": 250,
+      "height": 80,
+      "color": "2"
+    },
+    {
+      "id": "risks",
+      "type": "text",
+      "text": "## ⚠️ Risks\n\n[[Risks/_index|Risk Register →]]",
+      "x": 700,
+      "y": 500,
+      "width": 250,
+      "height": 80,
+      "color": "2"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "label-content",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "e2",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "label-docs",
+      "toSide": "top",
+      "color": "1"
+    },
+    {
+      "id": "e3",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "label-ops",
+      "toSide": "top",
+      "color": "6"
+    },
+    {
+      "id": "e4",
+      "fromNode": "frameworks",
+      "fromSide": "bottom",
+      "toNode": "controls",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "controls",
+      "fromSide": "bottom",
+      "toNode": "systems",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "systems",
+      "fromSide": "bottom",
+      "toNode": "components",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "frameworks",
+      "fromSide": "left",
+      "toNode": "lisa",
+      "toSide": "right"
+    },
+    {
+      "id": "e8",
+      "fromNode": "controls",
+      "fromSide": "left",
+      "toNode": "cis",
+      "toSide": "right"
+    },
+    {
+      "id": "e9",
+      "fromNode": "controls",
+      "fromSide": "left",
+      "toNode": "extp",
+      "toSide": "right"
+    },
+    {
+      "id": "e10",
+      "fromNode": "dashboards",
+      "fromSide": "bottom",
+      "toNode": "implementations",
+      "toSide": "top"
+    },
+    {
+      "id": "e11",
+      "fromNode": "implementations",
+      "fromSide": "bottom",
+      "toNode": "audits",
+      "toSide": "top"
+    },
+    {
+      "id": "e12",
+      "fromNode": "audits",
+      "fromSide": "bottom",
+      "toNode": "risks",
+      "toSide": "top"
+    },
+    {
+      "id": "e13",
+      "fromNode": "dashboards",
+      "fromSide": "right",
+      "toNode": "main-dash",
+      "toSide": "left"
+    },
+    {
+      "id": "e14",
+      "fromNode": "dashboards",
+      "fromSide": "right",
+      "toNode": "baseline-dash",
+      "toSide": "left"
+    },
+    {
+      "id": "e15",
+      "fromNode": "docs",
+      "fromSide": "bottom",
+      "toNode": "templates",
+      "toSide": "top"
+    },
+    {
+      "id": "e16",
+      "fromNode": "templates",
+      "fromSide": "bottom",
+      "toNode": "planning",
+      "toSide": "top"
+    },
+    {
+      "id": "e17",
+      "fromNode": "planning",
+      "fromSide": "bottom",
+      "toNode": "onboarding",
+      "toSide": "top"
+    },
+    {
+      "id": "e18",
+      "fromNode": "controls",
+      "fromSide": "right",
+      "toNode": "implementations",
+      "toSide": "left",
+      "color": "3",
+      "label": "implemented as"
+    },
+    {
+      "id": "e19",
+      "fromNode": "components",
+      "fromSide": "right",
+      "toNode": "implementations",
+      "toSide": "left",
+      "color": "3"
+    },
+    {
+      "id": "e20",
+      "fromNode": "risks",
+      "fromSide": "left",
+      "toNode": "controls",
+      "toSide": "right",
+      "color": "2",
+      "label": "mitigated by"
+    }
+  ]
+}
