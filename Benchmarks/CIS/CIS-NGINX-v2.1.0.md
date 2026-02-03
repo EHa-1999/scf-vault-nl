@@ -79,6 +79,14 @@ tags:
 | 6 | Logging | 8 | 8 | 0 |
 | **Totaal** | | **52** | **45** | **7** |
 
+> **Note:** Dit document bevat **key recommendations** met gedetailleerde audit en remediation stappen. Voor de complete lijst van alle 52 recommendations, zie de [[#Complete Recommendations Checklist|Complete Checklist]] sectie hieronder of download de officiële CIS Benchmark PDF.
+
+---
+
+## Key Recommendations
+
+De volgende secties bevatten geselecteerde key recommendations met volledige technische details. Dit is **niet uitputtend** - zie de Complete Checklist voor alle recommendations.
+
 ---
 
 ## 1. Basic Configuration
@@ -534,6 +542,106 @@ SORT control_id ASC
 | v2.1.0 | 2024-01-20 | TLS 1.3 support, nieuwe headers |
 | v2.0.1 | 2023-03-15 | Minor fixes |
 | v2.0.0 | 2022-08-01 | Major update voor NGINX 1.20+ |
+
+---
+
+## Complete Recommendations Checklist
+
+Deze checklist bevat **alle 52 recommendations** uit de CIS NGINX Benchmark v2.1.0. Gebruik dit voor het bijhouden van implementatie voortgang.
+
+### 1. Basic Configuration
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 1.1 | Ensure NGINX is installed from official repository | L1 | ☐ |
+| 1.2 | Ensure NGINX is running as non-root user | L1 | ☐ |
+| 1.3 | Ensure NGINX runs in a chroot environment | L2 | ☐ |
+| 1.4 | Ensure unnecessary modules are disabled | L1 | ☐ |
+| 1.5 | Ensure NGINX version is hidden | L1 | ☐ |
+| 1.6 | Ensure NGINX configuration is validated | L1 | ☐ |
+
+### 2. Permissions
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 2.1 | Ensure NGINX directories have proper permissions | L1 | ☐ |
+| 2.2 | Ensure NGINX config files have proper permissions | L1 | ☐ |
+| 2.3 | Ensure NGINX log files have proper permissions | L1 | ☐ |
+| 2.4 | Ensure NGINX PID file has proper permissions | L1 | ☐ |
+| 2.5 | Ensure NGINX SSL private keys have proper permissions | L1 | ☐ |
+| 2.6 | Ensure NGINX is owned by root | L1 | ☐ |
+| 2.7 | Ensure web content directory permissions are restricted | L1 | ☐ |
+| 2.8 | Ensure sensitive content is restricted | L1 | ☐ |
+
+### 3. Network Configuration
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 3.1 | Ensure listen directives specify IP addresses | L1 | ☐ |
+| 3.2 | Ensure default server is configured | L1 | ☐ |
+| 3.3 | Ensure keepalive_timeout is configured | L1 | ☐ |
+| 3.4 | Ensure send_timeout is configured | L1 | ☐ |
+| 3.5 | Ensure proxy timeouts are configured | L1 | ☐ |
+| 3.6 | Ensure client_body_timeout is configured | L1 | ☐ |
+| 3.7 | Ensure client_header_timeout is configured | L1 | ☐ |
+| 3.8 | Ensure proxy buffer size is configured | L1 | ☐ |
+| 3.9 | Ensure rate limiting is configured | L2 | ☐ |
+| 3.10 | Ensure connection limits are configured | L2 | ☐ |
+
+### 4. Request Filtering
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 4.1 | Ensure large client header buffers is configured | L1 | ☐ |
+| 4.2 | Ensure client_max_body_size is configured | L1 | ☐ |
+| 4.3 | Ensure allowed HTTP methods are restricted | L1 | ☐ |
+| 4.4 | Ensure file extension handling is configured | L1 | ☐ |
+| 4.5 | Ensure hidden files are denied | L1 | ☐ |
+| 4.6 | Ensure request body is limited | L1 | ☐ |
+| 4.7 | Ensure URL filtering is configured | L2 | ☐ |
+| 4.8 | Ensure content security policy is configured | L2 | ☐ |
+
+### 5. HTTPS/TLS
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 5.1 | Ensure SSL/TLS is enabled | L1 | ☐ |
+| 5.2 | Ensure only TLS 1.2 and TLS 1.3 are used | L1 | ☐ |
+| 5.3 | Ensure weak ciphers are disabled | L1 | ☐ |
+| 5.4 | Ensure cipher order is server-preferred | L1 | ☐ |
+| 5.5 | Ensure HSTS is enabled | L1 | ☐ |
+| 5.6 | Ensure OCSP stapling is enabled | L1 | ☐ |
+| 5.7 | Ensure session tickets are configured | L1 | ☐ |
+| 5.8 | Ensure session cache is configured | L1 | ☐ |
+| 5.9 | Ensure DHE parameters are configured | L1 | ☐ |
+| 5.10 | Ensure X-Frame-Options is configured | L1 | ☐ |
+| 5.11 | Ensure X-Content-Type-Options is configured | L1 | ☐ |
+| 5.12 | Ensure certificate transparency is configured | L2 | ☐ |
+
+### 6. Logging
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 6.1 | Ensure access logging is enabled | L1 | ☐ |
+| 6.2 | Ensure error logging is enabled | L1 | ☐ |
+| 6.3 | Ensure log format is configured | L1 | ☐ |
+| 6.4 | Ensure log rotation is configured | L1 | ☐ |
+| 6.5 | Ensure logs are stored securely | L1 | ☐ |
+| 6.6 | Ensure logs include client IP | L1 | ☐ |
+| 6.7 | Ensure logs are sent to centralized server | L1 | ☐ |
+| 6.8 | Ensure debug logging is disabled | L1 | ☐ |
+
+---
+
+## Official Source
+
+> **CIS Benchmark PDF Download**
+> 
+> De complete CIS NGINX Benchmark v2.1.0 met alle 52 recommendations, gedetailleerde rationale, en volledige audit/remediation procedures is gratis beschikbaar (voor niet-commercieel gebruik):
+> 
+> → **[CIS WorkBench](https://workbench.cisecurity.org/)** (gratis registratie vereist)
+> 
+> → **[CIS NGINX Benchmark Page](https://www.cisecurity.org/benchmark/nginx)**
 
 ---
 

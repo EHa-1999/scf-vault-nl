@@ -150,10 +150,17 @@ Het framework maakt onderscheid tussen **baseline** en **niet-baseline** control
 
 ## Versie
 
-**SCF-Vault v3.6 NL** - RHEL 9 Benchmark + K3S Component  
-Laatste update: 2026-01-30
+**SCF-Vault v3.7 NL** - Complete Benchmark Checklists  
+Laatste update: 2026-02-03
 
-### Nieuwe Features v3.6
+### Nieuwe Features v3.7
+
+* **Complete Checklists** - Alle CIS benchmarks bevatten nu volledige recommendation checklists
+* **Key Recommendations** - Gedetailleerde secties duidelijk gelabeld als "niet uitputtend"
+* **Official Source links** - Directe links naar CIS WorkBench per benchmark
+* **Hybrid approach** - Key recommendations + Complete checklist + Official PDF reference
+
+### Features v3.6
 
 * **CIS RHEL 9 Benchmark v2.0.0** - 255 recommendations voor Linux hardening
 * **K3S Component** - Met links naar Kubernetes én RHEL benchmarks

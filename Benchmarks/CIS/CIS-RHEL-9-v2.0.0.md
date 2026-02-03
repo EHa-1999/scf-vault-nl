@@ -99,6 +99,14 @@ tags:
 | 7 | System File Permissions | 23 | 20 | 3 |
 | **Total** | | **255** | **217** | **38** |
 
+> **Note:** This document contains **key recommendations** with detailed audit and remediation steps. For the complete list of all 255 recommendations, see the [[#Complete Recommendations Checklist|Complete Checklist]] section below or download the official CIS Benchmark PDF.
+
+---
+
+## Key Recommendations
+
+The following sections contain selected key recommendations with full technical details. This is **not exhaustive** - see the Complete Checklist for all recommendations.
+
 ---
 
 ## 1. Initial Setup
@@ -1023,6 +1031,395 @@ ansible-playbook -i inventory site.yml --tags "level1-server"
 |-------------|------|-------------|
 | v2.0.0 | 2024-06-24 | Major update, 255 recommendations |
 | v1.0.0 | 2022-11-28 | Initial release for RHEL 9 |
+
+---
+
+## Complete Recommendations Checklist
+
+This checklist contains **all 255 recommendations** from the CIS RHEL 9 Benchmark v2.0.0. Use this for tracking implementation progress. For detailed audit and remediation steps, refer to the Key Recommendations sections above or the official CIS Benchmark PDF.
+
+### 1. Initial Setup
+
+#### 1.1 Filesystem
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 1.1.1.1 | Ensure cramfs kernel module is not available | L1 | ☐ |
+| 1.1.1.2 | Ensure freevxfs kernel module is not available | L1 | ☐ |
+| 1.1.1.3 | Ensure hfs kernel module is not available | L1 | ☐ |
+| 1.1.1.4 | Ensure hfsplus kernel module is not available | L1 | ☐ |
+| 1.1.1.5 | Ensure jffs2 kernel module is not available | L1 | ☐ |
+| 1.1.1.6 | Ensure squashfs kernel module is not available | L2 | ☐ |
+| 1.1.1.7 | Ensure udf kernel module is not available | L2 | ☐ |
+| 1.1.1.8 | Ensure usb-storage kernel module is not available | L1 | ☐ |
+| 1.1.1.9 | Ensure unused filesystems kernel modules are not available | L1 | ☐ |
+
+#### 1.1.2 Filesystem Partitions
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 1.1.2.1.1 | Ensure /tmp is a separate partition | L1 | ☐ |
+| 1.1.2.1.2 | Ensure nodev option set on /tmp partition | L1 | ☐ |
+| 1.1.2.1.3 | Ensure nosuid option set on /tmp partition | L1 | ☐ |
+| 1.1.2.1.4 | Ensure noexec option set on /tmp partition | L1 | ☐ |
+| 1.1.2.2.1 | Ensure /dev/shm is a separate partition | L1 | ☐ |
+| 1.1.2.2.2 | Ensure nodev option set on /dev/shm partition | L1 | ☐ |
+| 1.1.2.2.3 | Ensure nosuid option set on /dev/shm partition | L1 | ☐ |
+| 1.1.2.2.4 | Ensure noexec option set on /dev/shm partition | L1 | ☐ |
+| 1.1.2.3.1 | Ensure /home is a separate partition | L2 | ☐ |
+| 1.1.2.3.2 | Ensure nodev option set on /home partition | L1 | ☐ |
+| 1.1.2.3.3 | Ensure nosuid option set on /home partition | L1 | ☐ |
+| 1.1.2.4.1 | Ensure /var is a separate partition | L2 | ☐ |
+| 1.1.2.4.2 | Ensure nodev option set on /var partition | L1 | ☐ |
+| 1.1.2.4.3 | Ensure nosuid option set on /var partition | L1 | ☐ |
+| 1.1.2.5.1 | Ensure /var/tmp is a separate partition | L2 | ☐ |
+| 1.1.2.5.2 | Ensure nodev option set on /var/tmp partition | L1 | ☐ |
+| 1.1.2.5.3 | Ensure nosuid option set on /var/tmp partition | L1 | ☐ |
+| 1.1.2.5.4 | Ensure noexec option set on /var/tmp partition | L1 | ☐ |
+| 1.1.2.6.1 | Ensure /var/log is a separate partition | L2 | ☐ |
+| 1.1.2.6.2 | Ensure nodev option set on /var/log partition | L1 | ☐ |
+| 1.1.2.6.3 | Ensure nosuid option set on /var/log partition | L1 | ☐ |
+| 1.1.2.6.4 | Ensure noexec option set on /var/log partition | L1 | ☐ |
+| 1.1.2.7.1 | Ensure /var/log/audit is a separate partition | L2 | ☐ |
+| 1.1.2.7.2 | Ensure nodev option set on /var/log/audit partition | L1 | ☐ |
+| 1.1.2.7.3 | Ensure nosuid option set on /var/log/audit partition | L1 | ☐ |
+| 1.1.2.7.4 | Ensure noexec option set on /var/log/audit partition | L1 | ☐ |
+
+#### 1.2 Software Updates
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 1.2.1.1 | Ensure GPG keys are configured | L1 | ☐ |
+| 1.2.1.2 | Ensure gpgcheck is globally activated | L1 | ☐ |
+| 1.2.1.3 | Ensure repo_gpgcheck is globally activated | L2 | ☐ |
+| 1.2.1.4 | Ensure package manager repositories are configured | L1 | ☐ |
+| 1.2.2.1 | Ensure updates, patches, and additional security software are installed | L1 | ☐ |
+
+#### 1.3 Mandatory Access Control
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 1.3.1.1 | Ensure SELinux is installed | L1 | ☐ |
+| 1.3.1.2 | Ensure SELinux is not disabled in bootloader configuration | L1 | ☐ |
+| 1.3.1.3 | Ensure SELinux policy is configured | L1 | ☐ |
+| 1.3.1.4 | Ensure the SELinux mode is not disabled | L1 | ☐ |
+| 1.3.1.5 | Ensure the SELinux mode is enforcing | L2 | ☐ |
+| 1.3.1.6 | Ensure no unconfined services exist | L2 | ☐ |
+| 1.3.1.7 | Ensure the MCS Translation Service (mcstrans) is not installed | L1 | ☐ |
+| 1.3.1.8 | Ensure SETroubleshoot is not installed | L1 | ☐ |
+
+#### 1.4 Boot Settings
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 1.4.1 | Ensure bootloader password is set | L1 | ☐ |
+| 1.4.2 | Ensure access to bootloader config is configured | L1 | ☐ |
+
+#### 1.5 Process Hardening
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 1.5.1 | Ensure address space layout randomization is enabled | L1 | ☐ |
+| 1.5.2 | Ensure ptrace_scope is restricted | L1 | ☐ |
+| 1.5.3 | Ensure core dump backtraces are disabled | L1 | ☐ |
+| 1.5.4 | Ensure core dump storage is disabled | L1 | ☐ |
+
+#### 1.6 Crypto Policy
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 1.6.1 | Ensure system wide crypto policy is not set to legacy | L1 | ☐ |
+| 1.6.2 | Ensure system wide crypto policy is not set in sshd configuration | L1 | ☐ |
+| 1.6.3 | Ensure system wide crypto policy disables sha1 hash and signature support | L1 | ☐ |
+| 1.6.4 | Ensure system wide crypto policy disables macs less than 128 bits | L1 | ☐ |
+| 1.6.5 | Ensure system wide crypto policy disables cbc for ssh | L1 | ☐ |
+| 1.6.6 | Ensure system wide crypto policy disables chacha20-poly1305 for ssh | L1 | ☐ |
+| 1.6.7 | Ensure system wide crypto policy disables EtM for ssh | L1 | ☐ |
+
+### 2. Services
+
+#### 2.1 Time Synchronization
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 2.1.1 | Ensure time synchronization is in use | L1 | ☐ |
+| 2.1.2 | Ensure chrony is configured | L1 | ☐ |
+| 2.1.3 | Ensure chrony is not run as root user | L1 | ☐ |
+
+#### 2.2 Special Purpose Services
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 2.2.1 | Ensure autofs services are not in use | L1 | ☐ |
+| 2.2.2 | Ensure avahi daemon services are not in use | L1 | ☐ |
+| 2.2.3 | Ensure dhcp server services are not in use | L1 | ☐ |
+| 2.2.4 | Ensure dns server services are not in use | L1 | ☐ |
+| 2.2.5 | Ensure dnsmasq services are not in use | L1 | ☐ |
+| 2.2.6 | Ensure samba file server services are not in use | L1 | ☐ |
+| 2.2.7 | Ensure ftp server services are not in use | L1 | ☐ |
+| 2.2.8 | Ensure message access server services are not in use | L1 | ☐ |
+| 2.2.9 | Ensure network file system services are not in use | L1 | ☐ |
+| 2.2.10 | Ensure nis server services are not in use | L1 | ☐ |
+| 2.2.11 | Ensure print server services are not in use | L1 | ☐ |
+| 2.2.12 | Ensure rpcbind services are not in use | L1 | ☐ |
+| 2.2.13 | Ensure rsync services are not in use | L1 | ☐ |
+| 2.2.14 | Ensure snmp services are not in use | L1 | ☐ |
+| 2.2.15 | Ensure telnet server services are not in use | L1 | ☐ |
+| 2.2.16 | Ensure tftp server services are not in use | L1 | ☐ |
+| 2.2.17 | Ensure web proxy server services are not in use | L1 | ☐ |
+| 2.2.18 | Ensure web server services are not in use | L1 | ☐ |
+| 2.2.19 | Ensure xinetd services are not in use | L1 | ☐ |
+| 2.2.20 | Ensure X window server services are not in use | L1 | ☐ |
+
+#### 2.3 Service Clients
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 2.3.1 | Ensure ftp client is not installed | L1 | ☐ |
+| 2.3.2 | Ensure ldap client is not installed | L1 | ☐ |
+| 2.3.3 | Ensure nis client is not installed | L1 | ☐ |
+| 2.3.4 | Ensure telnet client is not installed | L1 | ☐ |
+| 2.3.5 | Ensure tftp client is not installed | L1 | ☐ |
+
+### 3. Network Configuration
+
+#### 3.1 Network Devices
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 3.1.1 | Ensure IPv6 status is identified | L1 | ☐ |
+| 3.1.2 | Ensure wireless interfaces are disabled | L1 | ☐ |
+| 3.1.3 | Ensure bluetooth services are not in use | L1 | ☐ |
+
+#### 3.2 Network Kernel Modules
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 3.2.1 | Ensure dccp kernel module is not available | L2 | ☐ |
+| 3.2.2 | Ensure tipc kernel module is not available | L2 | ☐ |
+| 3.2.3 | Ensure rds kernel module is not available | L2 | ☐ |
+| 3.2.4 | Ensure sctp kernel module is not available | L2 | ☐ |
+
+#### 3.3 Network Parameters (Host Only)
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 3.3.1 | Ensure ip forwarding is disabled | L1 | ☐ |
+| 3.3.2 | Ensure packet redirect sending is disabled | L1 | ☐ |
+| 3.3.3 | Ensure bogus icmp responses are ignored | L1 | ☐ |
+| 3.3.4 | Ensure broadcast icmp requests are ignored | L1 | ☐ |
+| 3.3.5 | Ensure icmp redirects are not accepted | L1 | ☐ |
+| 3.3.6 | Ensure secure icmp redirects are not accepted | L1 | ☐ |
+| 3.3.7 | Ensure reverse path filtering is enabled | L1 | ☐ |
+| 3.3.8 | Ensure source routed packets are not accepted | L1 | ☐ |
+| 3.3.9 | Ensure suspicious packets are logged | L1 | ☐ |
+| 3.3.10 | Ensure tcp syn cookies is enabled | L1 | ☐ |
+| 3.3.11 | Ensure ipv6 router advertisements are not accepted | L1 | ☐ |
+
+#### 3.4 Firewall Configuration
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 3.4.1.1 | Ensure nftables is installed | L1 | ☐ |
+| 3.4.1.2 | Ensure a single firewall configuration utility is in use | L1 | ☐ |
+| 3.4.2.1 | Ensure firewalld default zone is set | L1 | ☐ |
+| 3.4.2.2 | Ensure at least one nftables table exists | L1 | ☐ |
+| 3.4.2.3 | Ensure nftables base chains exist | L1 | ☐ |
+| 3.4.2.4 | Ensure host based firewall loopback traffic is configured | L1 | ☐ |
+| 3.4.2.5 | Ensure firewalld drops unnecessary services and ports | L1 | ☐ |
+| 3.4.2.6 | Ensure nftables established connections are configured | L1 | ☐ |
+| 3.4.2.7 | Ensure nftables default deny firewall policy | L1 | ☐ |
+
+### 4. Access, Authentication and Authorization
+
+#### 4.1 Configure Job Schedulers
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 4.1.1.1 | Ensure cron daemon is enabled and active | L1 | ☐ |
+| 4.1.1.2 | Ensure crontab is restricted to authorized users | L1 | ☐ |
+| 4.1.1.3 | Ensure cron and at are restricted to authorized users | L1 | ☐ |
+| 4.1.2.1 | Ensure at is restricted to authorized users | L1 | ☐ |
+
+#### 4.2 SSH Configuration
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 4.2.1 | Ensure sshd is installed | L1 | ☐ |
+| 4.2.2 | Ensure sshd access is configured | L1 | ☐ |
+| 4.2.3 | Ensure sshd Banner is configured | L1 | ☐ |
+| 4.2.4 | Ensure sshd Ciphers are configured | L1 | ☐ |
+| 4.2.5 | Ensure sshd ClientAliveCountMax is configured | L1 | ☐ |
+| 4.2.6 | Ensure sshd ClientAliveInterval is configured | L1 | ☐ |
+| 4.2.7 | Ensure sshd DisableForwarding is enabled | L2 | ☐ |
+| 4.2.8 | Ensure sshd GSSAPIAuthentication is disabled | L1 | ☐ |
+| 4.2.9 | Ensure sshd HostbasedAuthentication is disabled | L1 | ☐ |
+| 4.2.10 | Ensure sshd IgnoreRhosts is enabled | L1 | ☐ |
+| 4.2.11 | Ensure sshd KexAlgorithms is configured | L1 | ☐ |
+| 4.2.12 | Ensure sshd LoginGraceTime is configured | L1 | ☐ |
+| 4.2.13 | Ensure sshd LogLevel is configured | L1 | ☐ |
+| 4.2.14 | Ensure sshd MACs are configured | L1 | ☐ |
+| 4.2.15 | Ensure sshd MaxAuthTries is configured | L1 | ☐ |
+| 4.2.16 | Ensure sshd MaxSessions is configured | L1 | ☐ |
+| 4.2.17 | Ensure sshd MaxStartups is configured | L1 | ☐ |
+| 4.2.18 | Ensure sshd PermitEmptyPasswords is disabled | L1 | ☐ |
+| 4.2.19 | Ensure sshd PermitRootLogin is disabled | L1 | ☐ |
+| 4.2.20 | Ensure sshd PermitUserEnvironment is disabled | L1 | ☐ |
+| 4.2.21 | Ensure sshd UsePAM is enabled | L1 | ☐ |
+
+#### 4.3 Privilege Escalation
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 4.3.1 | Ensure sudo is installed | L1 | ☐ |
+| 4.3.2 | Ensure sudo commands use pty | L1 | ☐ |
+| 4.3.3 | Ensure sudo log file exists | L1 | ☐ |
+| 4.3.4 | Ensure users must provide password for privilege escalation | L2 | ☐ |
+| 4.3.5 | Ensure re-authentication for privilege escalation is not disabled | L1 | ☐ |
+| 4.3.6 | Ensure sudo authentication timeout is configured correctly | L1 | ☐ |
+| 4.3.7 | Ensure access to su command is restricted | L1 | ☐ |
+
+#### 4.4 PAM Configuration
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 4.4.1 | Ensure latest version of pam is installed | L1 | ☐ |
+| 4.4.2.1 | Ensure pam_faillock module is enabled | L1 | ☐ |
+| 4.4.2.2 | Ensure pam_faillock deny is configured | L1 | ☐ |
+| 4.4.2.3 | Ensure pam_faillock unlock_time is configured | L1 | ☐ |
+| 4.4.2.4 | Ensure pam_faillock fail_interval is configured | L1 | ☐ |
+| 4.4.3.1.1 | Ensure password hash algorithm is configured | L1 | ☐ |
+| 4.4.3.1.2 | Ensure password length is configured | L1 | ☐ |
+| 4.4.3.1.3 | Ensure password complexity is configured | L1 | ☐ |
+| 4.4.3.2 | Ensure pam_pwhistory module is enabled | L1 | ☐ |
+| 4.4.3.3 | Ensure pam_unix does not include nullok | L1 | ☐ |
+| 4.4.3.4 | Ensure pam_unix does not include remember | L1 | ☐ |
+
+#### 4.5 User Accounts and Environment
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 4.5.1.1 | Ensure password expiration is configured | L1 | ☐ |
+| 4.5.1.2 | Ensure minimum days between password changes is configured | L1 | ☐ |
+| 4.5.1.3 | Ensure password expiration warning days is configured | L1 | ☐ |
+| 4.5.1.4 | Ensure strong password hashing algorithm is configured | L1 | ☐ |
+| 4.5.1.5 | Ensure inactive password lock is configured | L1 | ☐ |
+| 4.5.2.1 | Ensure default group for root account is GID 0 | L1 | ☐ |
+| 4.5.2.2 | Ensure root user umask is configured | L1 | ☐ |
+| 4.5.2.3 | Ensure system accounts are secured | L1 | ☐ |
+| 4.5.2.4 | Ensure root password is set | L1 | ☐ |
+| 4.5.3.1 | Ensure nologin is not listed in /etc/shells | L1 | ☐ |
+| 4.5.3.2 | Ensure default user shell timeout is configured | L1 | ☐ |
+| 4.5.3.3 | Ensure default user umask is configured | L1 | ☐ |
+
+### 5. Logging and Auditing
+
+#### 5.1 Configure Logging
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 5.1.1.1 | Ensure rsyslog is installed | L1 | ☐ |
+| 5.1.1.2 | Ensure rsyslog service is enabled and active | L1 | ☐ |
+| 5.1.1.3 | Ensure journald ForwardToSyslog is disabled | L1 | ☐ |
+| 5.1.1.4 | Ensure rsyslog default file permissions are configured | L1 | ☐ |
+| 5.1.1.5 | Ensure rsyslog logging is configured | L1 | ☐ |
+| 5.1.1.6 | Ensure rsyslog is configured to send logs to a remote server | L1 | ☐ |
+| 5.1.1.7 | Ensure rsyslog is not configured to receive logs from a remote client | L1 | ☐ |
+| 5.1.2.1 | Ensure journald service is enabled and active | L1 | ☐ |
+| 5.1.2.2 | Ensure journald Compress is configured | L1 | ☐ |
+| 5.1.2.3 | Ensure journald Storage is configured | L1 | ☐ |
+| 5.1.3 | Ensure all logfiles have appropriate access configured | L1 | ☐ |
+
+#### 5.2 Configure System Accounting (auditd)
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 5.2.1.1 | Ensure audit is installed | L2 | ☐ |
+| 5.2.1.2 | Ensure auditing for processes that start prior to auditd is enabled | L2 | ☐ |
+| 5.2.1.3 | Ensure audit_backlog_limit is sufficient | L2 | ☐ |
+| 5.2.1.4 | Ensure auditd service is enabled and active | L2 | ☐ |
+| 5.2.2.1 | Ensure audit log storage size is configured | L2 | ☐ |
+| 5.2.2.2 | Ensure audit logs are not automatically deleted | L2 | ☐ |
+| 5.2.2.3 | Ensure system is disabled when audit logs are full | L2 | ☐ |
+| 5.2.3.1 | Ensure changes to system administration scope (sudoers) is collected | L2 | ☐ |
+| 5.2.3.2 | Ensure actions as another user are always logged | L2 | ☐ |
+| 5.2.3.3 | Ensure events that modify date and time information are collected | L2 | ☐ |
+| 5.2.3.4 | Ensure events that modify the system's network environment are collected | L2 | ☐ |
+| 5.2.3.5 | Ensure events that modify the system's Mandatory Access Controls are collected | L2 | ☐ |
+| 5.2.3.6 | Ensure use of privileged commands are collected | L2 | ☐ |
+| 5.2.3.7 | Ensure unsuccessful file access attempts are collected | L2 | ☐ |
+| 5.2.3.8 | Ensure events that modify user/group information are collected | L2 | ☐ |
+| 5.2.3.9 | Ensure discretionary access control permission modification events are collected | L2 | ☐ |
+| 5.2.3.10 | Ensure successful file system mounts are collected | L2 | ☐ |
+| 5.2.3.11 | Ensure session initiation information is collected | L2 | ☐ |
+| 5.2.3.12 | Ensure login and logout events are collected | L2 | ☐ |
+| 5.2.3.13 | Ensure file deletion events by users are collected | L2 | ☐ |
+| 5.2.3.14 | Ensure events that modify the system's Mandatory Access Controls are collected | L2 | ☐ |
+| 5.2.3.15 | Ensure successful and unsuccessful attempts to use the chcon command are recorded | L2 | ☐ |
+| 5.2.3.16 | Ensure successful and unsuccessful attempts to use the setfacl command are recorded | L2 | ☐ |
+| 5.2.3.17 | Ensure successful and unsuccessful attempts to use the chacl command are recorded | L2 | ☐ |
+| 5.2.3.18 | Ensure successful and unsuccessful attempts to use the usermod command are recorded | L2 | ☐ |
+| 5.2.3.19 | Ensure kernel module loading unloading and modification is collected | L2 | ☐ |
+| 5.2.3.20 | Ensure the audit configuration is immutable | L2 | ☐ |
+| 5.2.3.21 | Ensure the running and on disk configuration is the same | L2 | ☐ |
+| 5.2.4.1 | Ensure audit log files mode is configured | L2 | ☐ |
+| 5.2.4.2 | Ensure audit log files owner is configured | L2 | ☐ |
+| 5.2.4.3 | Ensure audit log files group owner is configured | L2 | ☐ |
+| 5.2.4.4 | Ensure audit log directory mode is configured | L2 | ☐ |
+| 5.2.4.5 | Ensure audit configuration files mode is configured | L2 | ☐ |
+| 5.2.4.6 | Ensure audit configuration files owner is configured | L2 | ☐ |
+| 5.2.4.7 | Ensure audit configuration files group owner is configured | L2 | ☐ |
+| 5.2.4.8 | Ensure audit tools mode is configured | L2 | ☐ |
+| 5.2.4.9 | Ensure audit tools owner is configured | L2 | ☐ |
+| 5.2.4.10 | Ensure audit tools group owner is configured | L2 | ☐ |
+
+### 6. System Maintenance
+
+#### 6.1 File Permissions
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 6.1.1 | Ensure permissions on /etc/passwd are configured | L1 | ☐ |
+| 6.1.2 | Ensure permissions on /etc/passwd- are configured | L1 | ☐ |
+| 6.1.3 | Ensure permissions on /etc/group are configured | L1 | ☐ |
+| 6.1.4 | Ensure permissions on /etc/group- are configured | L1 | ☐ |
+| 6.1.5 | Ensure permissions on /etc/shadow are configured | L1 | ☐ |
+| 6.1.6 | Ensure permissions on /etc/shadow- are configured | L1 | ☐ |
+| 6.1.7 | Ensure permissions on /etc/gshadow are configured | L1 | ☐ |
+| 6.1.8 | Ensure permissions on /etc/gshadow- are configured | L1 | ☐ |
+| 6.1.9 | Ensure permissions on /etc/shells are configured | L1 | ☐ |
+| 6.1.10 | Ensure permissions on /etc/security/opasswd are configured | L1 | ☐ |
+| 6.1.11 | Ensure world writable files and directories are secured | L1 | ☐ |
+| 6.1.12 | Ensure no unowned or ungrouped files or directories exist | L1 | ☐ |
+| 6.1.13 | Ensure SUID and SGID files are reviewed | L1 | ☐ |
+
+#### 6.2 User and Group Settings
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 6.2.1 | Ensure accounts in /etc/passwd use shadowed passwords | L1 | ☐ |
+| 6.2.2 | Ensure /etc/shadow password fields are not empty | L1 | ☐ |
+| 6.2.3 | Ensure all groups in /etc/passwd exist in /etc/group | L1 | ☐ |
+| 6.2.4 | Ensure no duplicate UIDs exist | L1 | ☐ |
+| 6.2.5 | Ensure no duplicate GIDs exist | L1 | ☐ |
+| 6.2.6 | Ensure no duplicate user names exist | L1 | ☐ |
+| 6.2.7 | Ensure no duplicate group names exist | L1 | ☐ |
+| 6.2.8 | Ensure root PATH integrity | L1 | ☐ |
+| 6.2.9 | Ensure root is the only UID 0 account | L1 | ☐ |
+| 6.2.10 | Ensure local interactive user home directories are configured | L1 | ☐ |
+| 6.2.11 | Ensure local interactive user dot files access is configured | L1 | ☐ |
+
+---
+
+## Official Source
+
+> **CIS Benchmark PDF Download**
+> 
+> The complete CIS Red Hat Enterprise Linux 9 Benchmark v2.0.0 with all 255 recommendations, detailed rationale, and full audit/remediation procedures is available for free download (non-commercial use):
+> 
+> → **[CIS WorkBench](https://workbench.cisecurity.org/)** (free registration required)
+> 
+> → **[CIS RHEL Benchmark Page](https://www.cisecurity.org/benchmark/red_hat_linux)**
 
 ---
 

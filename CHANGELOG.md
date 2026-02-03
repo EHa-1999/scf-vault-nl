@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [3.7] - 2026-02-03
+
+### Added
+- **Complete Checklists** - All 4 CIS benchmarks now contain full recommendation checklists
+- **Official Source Section** - Direct links to CIS WorkBench for PDF downloads
+- **Hybrid Documentation Approach** - Key recommendations with details + Complete checklist + Official source
+
+### Changed
+- Renamed detailed sections to "Key Recommendations" with note that content is not exhaustive
+- Added navigation links from overview to Complete Checklist section
+- Updated all CIS benchmarks: PostgreSQL (78), NGINX (52), Kubernetes (124), RHEL (255)
+
+---
+
 ## [3.6] - 2026-01-30
 
 ### Added

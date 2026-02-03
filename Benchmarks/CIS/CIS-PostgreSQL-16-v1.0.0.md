@@ -81,6 +81,16 @@ tags:
 | 8 | Special Configuration | 5 | 3 | 2 |
 | **Totaal** | | **78** | **63** | **15** |
 
+> **Note:** Dit document bevat **key recommendations** met gedetailleerde audit en remediation stappen. Voor de complete lijst van alle 78 recommendations, zie de [[#Complete Recommendations Checklist|Complete Checklist]] sectie hieronder of download de officiële CIS Benchmark PDF.
+
+---
+
+## Key Recommendations
+
+De volgende secties bevatten geselecteerde key recommendations met volledige technische details. Dit is **niet uitputtend** - zie de Complete Checklist voor alle recommendations.
+| 8 | Special Configuration | 5 | 3 | 2 |
+| **Totaal** | | **78** | **63** | **15** |
+
 ---
 
 ## 1. Installation and Patches
@@ -548,19 +558,144 @@ SORT control_id ASC
 
 ---
 
+## Complete Recommendations Checklist
+
+Deze checklist bevat **alle 78 recommendations** uit de CIS PostgreSQL 16 Benchmark v1.0.0. Gebruik dit voor het bijhouden van implementatie voortgang.
+
+### 1. Installation and Patches
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 1.1 | Ensure the latest PostgreSQL minor version is installed | L1 | ☐ |
+| 1.2 | Ensure systemd service file is configured | L1 | ☐ |
+| 1.3 | Ensure data cluster is initialized | L1 | ☐ |
+| 1.4 | Ensure PostgreSQL is not installed on a shared host | L2 | ☐ |
+| 1.5 | Ensure the PostgreSQL configuration file is owned by the database account | L1 | ☐ |
+
+### 2. Directory and File Permissions
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 2.1 | Ensure the file permissions on data cluster are correct | L1 | ☐ |
+| 2.2 | Ensure the file permissions on PostgreSQL configuration files are correct | L1 | ☐ |
+| 2.3 | Ensure the log file destination directory has appropriate permissions | L1 | ☐ |
+| 2.4 | Ensure the Unix socket directory is correct | L1 | ☐ |
+| 2.5 | Ensure the file permissions on Unix socket are correct | L1 | ☐ |
+| 2.6 | Ensure SSL certificates are owned by postgres | L1 | ☐ |
+| 2.7 | Ensure SSL certificate files permissions are correct | L1 | ☐ |
+| 2.8 | Ensure pg_hba.conf file permissions are correct | L1 | ☐ |
+
+### 3. Logging and Auditing
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 3.1 | Ensure logging is enabled | L1 | ☐ |
+| 3.2 | Ensure log destination is properly configured | L1 | ☐ |
+| 3.3 | Ensure log_directory is set correctly | L1 | ☐ |
+| 3.4 | Ensure log_filename is set correctly | L1 | ☐ |
+| 3.5 | Ensure log_file_mode is set correctly | L1 | ☐ |
+| 3.6 | Ensure log_truncate_on_rotation is configured | L1 | ☐ |
+| 3.7 | Ensure log_rotation_age is configured | L1 | ☐ |
+| 3.8 | Ensure log_rotation_size is configured | L1 | ☐ |
+| 3.9 | Ensure syslog_facility is configured | L1 | ☐ |
+| 3.10 | Ensure log_min_messages is set to warning or higher | L1 | ☐ |
+| 3.11 | Ensure log_min_error_statement is set to error or higher | L1 | ☐ |
+| 3.12 | Ensure log_connections is enabled | L1 | ☐ |
+| 3.13 | Ensure log_disconnections is enabled | L1 | ☐ |
+| 3.14 | Ensure log_line_prefix is set correctly | L2 | ☐ |
+| 3.15 | Ensure log_statement is set to 'ddl' or higher | L2 | ☐ |
+
+### 4. User Access and Authorization
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 4.1 | Ensure sudo is configured correctly | L1 | ☐ |
+| 4.2 | Ensure excessive administrative privileges are revoked | L1 | ☐ |
+| 4.3 | Ensure excessive function privileges are revoked | L1 | ☐ |
+| 4.4 | Ensure excessive DML privileges are revoked | L1 | ☐ |
+| 4.5 | Ensure row level security is configured correctly | L2 | ☐ |
+| 4.6 | Ensure the PUBLIC schema has appropriate privileges | L1 | ☐ |
+| 4.7 | Ensure the set_user extension is installed | L2 | ☐ |
+| 4.8 | Ensure PostgreSQL utilizes strong password encryption | L1 | ☐ |
+| 4.9 | Ensure only approved extensions are installed | L1 | ☐ |
+| 4.10 | Ensure the pgcrypto extension is installed | L1 | ☐ |
+| 4.11 | Ensure miscellaneous objects are owned by appropriate users | L1 | ☐ |
+| 4.12 | Ensure role memberships are properly maintained | L1 | ☐ |
+| 4.13 | Ensure default privileges are properly configured | L1 | ☐ |
+| 4.14 | Ensure login accounts have validity dates | L1 | ☐ |
+| 4.15 | Ensure LOGIN privilege is restricted | L1 | ☐ |
+| 4.16 | Ensure SUPERUSER role is restricted | L1 | ☐ |
+| 4.17 | Ensure CREATEDB privilege is restricted | L1 | ☐ |
+| 4.18 | Ensure CREATEROLE privilege is restricted | L2 | ☐ |
+
+### 5. Connection and Login
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 5.1 | Ensure login via local Unix socket is configured correctly | L1 | ☐ |
+| 5.2 | Ensure login via hostssl is configured correctly | L1 | ☐ |
+| 5.3 | Ensure login via host is disabled | L1 | ☐ |
+| 5.4 | Ensure authentication timeout is configured | L1 | ☐ |
+| 5.5 | Ensure SSL is enabled | L1 | ☐ |
+| 5.6 | Ensure only approved ciphers are used | L1 | ☐ |
+| 5.7 | Ensure TLS is enabled | L1 | ☐ |
+| 5.8 | Ensure min_protocol_version is set | L1 | ☐ |
+| 5.9 | Ensure ssl_passphrase_command is configured | L2 | ☐ |
+| 5.10 | Ensure client certificates are verified | L2 | ☐ |
+| 5.11 | Ensure connection limits are configured | L1 | ☐ |
+| 5.12 | Ensure the maximum number of connections is configured | L1 | ☐ |
+
+### 6. PostgreSQL Settings
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 6.1 | Ensure shared_preload_libraries is configured | L1 | ☐ |
+| 6.2 | Ensure the pgaudit extension is enabled | L2 | ☐ |
+| 6.3 | Ensure backend runtime parameters are configured | L1 | ☐ |
+| 6.4 | Ensure FIPS compliant cryptography is enabled | L2 | ☐ |
+| 6.5 | Ensure password_encryption is configured | L1 | ☐ |
+| 6.6 | Ensure pg_stat_statements is enabled | L1 | ☐ |
+| 6.7 | Ensure auto_explain is configured | L1 | ☐ |
+| 6.8 | Ensure server hostname is configured | L1 | ☐ |
+| 6.9 | Ensure the log collector is enabled | L1 | ☐ |
+| 6.10 | Ensure session preload libraries are configured | L1 | ☐ |
+
+### 7. Replication
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 7.1 | Ensure replication user is configured | L1 | ☐ |
+| 7.2 | Ensure base backups are configured correctly | L1 | ☐ |
+| 7.3 | Ensure WAL archiving is configured | L1 | ☐ |
+| 7.4 | Ensure streaming replication is configured | L2 | ☐ |
+| 7.5 | Ensure synchronous replication is configured | L2 | ☐ |
+
+### 8. Special Configuration
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 8.1 | Ensure temporary file limit is configured | L1 | ☐ |
+| 8.2 | Ensure memory parameters are configured | L1 | ☐ |
+| 8.3 | Ensure vacuum parameters are configured | L1 | ☐ |
+| 8.4 | Ensure query planning parameters are configured | L2 | ☐ |
+| 8.5 | Ensure error reporting is configured | L2 | ☐ |
+
+---
+
+## Official Source
+
+> **CIS Benchmark PDF Download**
+> 
+> De complete CIS PostgreSQL 16 Benchmark v1.0.0 met alle 78 recommendations, gedetailleerde rationale, en volledige audit/remediation procedures is gratis beschikbaar (voor niet-commercieel gebruik):
+> 
+> → **[CIS WorkBench](https://workbench.cisecurity.org/)** (gratis registratie vereist)
+> 
+> → **[CIS PostgreSQL Benchmark Page](https://www.cisecurity.org/benchmark/postgresql)**
+
+---
+
 ## Gerelateerde Documenten
 
 - [[Components/PostgreSQL|PostgreSQL Component]]
 - [[Documentatie/CIS Benchmark Handleiding|CIS Benchmark Handleiding]]
 - Originele PDF: [CIS WorkBench](https://workbench.cisecurity.org/)
-
----
-
-## Conversie Notities
-
-> **Geconverteerd door:** Security Team  
-> **Conversie datum:** 2026-01-30  
-> **Bron PDF versie:** CIS PostgreSQL 16 Benchmark v1.0.0
-
-**Geconverteerde secties:** 1-6 (kern recommendations)  
-**Niet geconverteerd:** Sectie 7-8, Appendices (zie originele PDF voor volledige details)

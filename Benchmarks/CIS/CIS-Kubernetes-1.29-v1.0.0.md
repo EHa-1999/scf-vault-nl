@@ -80,6 +80,14 @@ tags:
 | 5 | Policies | 40 | 32 | 8 |
 | **Total** | | **124** | **100** | **24** |
 
+> **Note:** This document contains **key recommendations** with detailed audit and remediation steps. For the complete list of all 124 recommendations, see the [[#Complete Recommendations Checklist|Complete Checklist]] section below or download the official CIS Benchmark PDF.
+
+---
+
+## Key Recommendations
+
+The following sections contain selected key recommendations with full technical details. This is **not exhaustive** - see the Complete Checklist for all recommendations.
+
 ---
 
 ## 1. Control Plane Components
@@ -708,20 +716,209 @@ kubelet-arg:
 
 ---
 
-## Implementation Checklist
+## Complete Recommendations Checklist
+
+This checklist contains **all 124 recommendations** from the CIS Kubernetes 1.29 Benchmark. Use this for tracking implementation progress.
+
+### 1. Control Plane Components
+
+#### 1.1 API Server
 
 | # | Recommendation | Level | Status |
 |---|----------------|-------|--------|
-| 1.1.1 | Disable anonymous auth (API Server) | 1 | ☐ |
-| 1.1.2 | Enable TLS certificates | 1 | ☐ |
-| 1.1.3 | Enable audit logging | 1 | ☐ |
-| 1.1.4 | Enable RBAC | 1 | ☐ |
-| 2.1 | Encrypt etcd at rest | 1 | ☐ |
-| 4.1.1 | Disable kubelet anonymous auth | 1 | ☐ |
-| 4.1.3 | Disable read-only port | 1 | ☐ |
-| 5.1.1 | Don't use default service account | 1 | ☐ |
-| 5.2.1 | Enforce Pod Security Standards | 1 | ☐ |
-| 5.3.1 | Define NetworkPolicies | 1 | ☐ |
+| 1.1.1 | Ensure anonymous-auth is disabled | L1 | ☐ |
+| 1.1.2 | Ensure basic-auth-file is not set | L1 | ☐ |
+| 1.1.3 | Ensure token-auth-file is not set | L1 | ☐ |
+| 1.1.4 | Ensure kubelet-https is enabled | L1 | ☐ |
+| 1.1.5 | Ensure kubelet-client-certificate and key are set | L1 | ☐ |
+| 1.1.6 | Ensure kubelet-certificate-authority is set | L1 | ☐ |
+| 1.1.7 | Ensure authorization-mode is not AlwaysAllow | L1 | ☐ |
+| 1.1.8 | Ensure authorization-mode includes Node | L1 | ☐ |
+| 1.1.9 | Ensure authorization-mode includes RBAC | L1 | ☐ |
+| 1.1.10 | Ensure admission control plugin EventRateLimit is set | L1 | ☐ |
+| 1.1.11 | Ensure admission control plugin AlwaysAdmit is not set | L1 | ☐ |
+| 1.1.12 | Ensure admission control plugin AlwaysPullImages is set | L2 | ☐ |
+| 1.1.13 | Ensure admission control plugin SecurityContextDeny is set | L2 | ☐ |
+| 1.1.14 | Ensure admission control plugin ServiceAccount is set | L1 | ☐ |
+| 1.1.15 | Ensure admission control plugin NamespaceLifecycle is set | L1 | ☐ |
+| 1.1.16 | Ensure admission control plugin NodeRestriction is set | L1 | ☐ |
+| 1.1.17 | Ensure insecure-bind-address is not set | L1 | ☐ |
+| 1.1.18 | Ensure insecure-port is set to 0 | L1 | ☐ |
+| 1.1.19 | Ensure secure-port is not set to 0 | L1 | ☐ |
+| 1.1.20 | Ensure profiling is disabled | L1 | ☐ |
+| 1.1.21 | Ensure audit-log-path is set | L1 | ☐ |
+| 1.1.22 | Ensure audit-log-maxage is set to 30 or greater | L1 | ☐ |
+| 1.1.23 | Ensure audit-log-maxbackup is set to 10 or greater | L1 | ☐ |
+| 1.1.24 | Ensure audit-log-maxsize is set to 100 or greater | L1 | ☐ |
+| 1.1.25 | Ensure request-timeout is set appropriately | L1 | ☐ |
+| 1.1.26 | Ensure service-account-lookup is set to true | L1 | ☐ |
+| 1.1.27 | Ensure service-account-key-file is set | L1 | ☐ |
+| 1.1.28 | Ensure etcd-certfile and etcd-keyfile are set | L1 | ☐ |
+| 1.1.29 | Ensure tls-cert-file and tls-private-key-file are set | L1 | ☐ |
+| 1.1.30 | Ensure client-ca-file is set | L1 | ☐ |
+| 1.1.31 | Ensure etcd-cafile is set | L1 | ☐ |
+| 1.1.32 | Ensure encryption-provider-config is set | L1 | ☐ |
+| 1.1.33 | Ensure encryption providers are appropriately configured | L1 | ☐ |
+| 1.1.34 | Ensure API Server only makes use of strong ciphers | L1 | ☐ |
+| 1.1.35 | Ensure DenyServiceExternalIPs is not disabled | L1 | ☐ |
+
+#### 1.2 Controller Manager
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 1.2.1 | Ensure profiling is disabled | L1 | ☐ |
+| 1.2.2 | Ensure use-service-account-credentials is set to true | L1 | ☐ |
+| 1.2.3 | Ensure service-account-private-key-file is set | L1 | ☐ |
+| 1.2.4 | Ensure root-ca-file is set | L1 | ☐ |
+| 1.2.5 | Ensure RotateKubeletServerCertificate is set to true | L2 | ☐ |
+| 1.2.6 | Ensure bind-address is set to 127.0.0.1 | L1 | ☐ |
+
+#### 1.3 Scheduler
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 1.3.1 | Ensure profiling is disabled | L1 | ☐ |
+| 1.3.2 | Ensure bind-address is set to 127.0.0.1 | L1 | ☐ |
+
+### 2. etcd
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 2.1 | Ensure etcd data directory permissions are set to 700 | L1 | ☐ |
+| 2.2 | Ensure etcd data directory ownership is set to etcd:etcd | L1 | ☐ |
+| 2.3 | Ensure etcd client-cert-auth is set to true | L1 | ☐ |
+| 2.4 | Ensure etcd auto-tls is not set to true | L1 | ☐ |
+| 2.5 | Ensure etcd peer-client-cert-auth is set to true | L1 | ☐ |
+| 2.6 | Ensure etcd peer-auto-tls is not set to true | L1 | ☐ |
+| 2.7 | Ensure etcd is configured with unique CA | L2 | ☐ |
+| 2.8 | Ensure encryption at rest is configured | L1 | ☐ |
+
+### 3. Control Plane Configuration
+
+#### 3.1 Authentication and Authorization
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 3.1.1 | Client certificate authentication should not be used | L1 | ☐ |
+| 3.1.2 | Service account token authentication should not be used | L1 | ☐ |
+| 3.1.3 | Bootstrap token authentication should not be used | L1 | ☐ |
+
+#### 3.2 Logging
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 3.2.1 | Ensure a minimal audit policy is created | L1 | ☐ |
+| 3.2.2 | Ensure audit policy covers key security concerns | L2 | ☐ |
+
+### 4. Worker Nodes
+
+#### 4.1 Kubelet
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 4.1.1 | Ensure anonymous-auth is set to false | L1 | ☐ |
+| 4.1.2 | Ensure authorization-mode is not AlwaysAllow | L1 | ☐ |
+| 4.1.3 | Ensure client-ca-file is set | L1 | ☐ |
+| 4.1.4 | Ensure read-only-port is set to 0 | L1 | ☐ |
+| 4.1.5 | Ensure streaming-connection-idle-timeout is not set to 0 | L1 | ☐ |
+| 4.1.6 | Ensure protect-kernel-defaults is set to true | L1 | ☐ |
+| 4.1.7 | Ensure make-iptables-util-chains is set to true | L1 | ☐ |
+| 4.1.8 | Ensure hostname-override is not set | L1 | ☐ |
+| 4.1.9 | Ensure eventRecordQPS is set appropriately | L2 | ☐ |
+| 4.1.10 | Ensure tls-cert-file and tls-private-key-file are set | L1 | ☐ |
+| 4.1.11 | Ensure rotate-certificates is set to true | L1 | ☐ |
+| 4.1.12 | Ensure RotateKubeletServerCertificate is set to true | L1 | ☐ |
+| 4.1.13 | Ensure Kubelet only makes use of strong ciphers | L1 | ☐ |
+
+#### 4.2 Kubelet Configuration Files
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 4.2.1 | Ensure kubelet service file permissions are set to 600 | L1 | ☐ |
+| 4.2.2 | Ensure kubelet service file ownership is set to root:root | L1 | ☐ |
+| 4.2.3 | Ensure proxy kubeconfig file permissions are set to 600 | L1 | ☐ |
+| 4.2.4 | Ensure proxy kubeconfig file ownership is set to root:root | L1 | ☐ |
+| 4.2.5 | Ensure kubelet.conf file permissions are set to 600 | L1 | ☐ |
+| 4.2.6 | Ensure kubelet.conf file ownership is set to root:root | L1 | ☐ |
+| 4.2.7 | Ensure certificate authorities file permissions are set to 600 | L1 | ☐ |
+| 4.2.8 | Ensure client certificate authorities file ownership is set to root:root | L1 | ☐ |
+| 4.2.9 | Ensure kubelet config.yaml file permissions are set to 600 | L1 | ☐ |
+| 4.2.10 | Ensure kubelet config.yaml file ownership is set to root:root | L1 | ☐ |
+
+### 5. Policies
+
+#### 5.1 RBAC and Service Accounts
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 5.1.1 | Ensure cluster-admin role is only used where required | L1 | ☐ |
+| 5.1.2 | Minimize access to secrets | L1 | ☐ |
+| 5.1.3 | Minimize wildcard use in Roles and ClusterRoles | L1 | ☐ |
+| 5.1.4 | Minimize access to create pods | L1 | ☐ |
+| 5.1.5 | Ensure default service account is not used | L1 | ☐ |
+| 5.1.6 | Ensure service account tokens are only mounted where necessary | L1 | ☐ |
+| 5.1.7 | Avoid use of system:masters group | L1 | ☐ |
+| 5.1.8 | Limit use of BindRoleRequests and EscalateRoleRequests | L1 | ☐ |
+
+#### 5.2 Pod Security
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 5.2.1 | Ensure Pod Security Standards are enforced | L1 | ☐ |
+| 5.2.2 | Minimize privileged containers | L1 | ☐ |
+| 5.2.3 | Minimize containers running as root | L2 | ☐ |
+| 5.2.4 | Minimize containers with allowPrivilegeEscalation | L1 | ☐ |
+| 5.2.5 | Minimize root container capabilities | L1 | ☐ |
+| 5.2.6 | Minimize containers with NET_RAW capability | L1 | ☐ |
+| 5.2.7 | Minimize containers with added capabilities | L1 | ☐ |
+| 5.2.8 | Minimize containers without read-only root filesystem | L2 | ☐ |
+| 5.2.9 | Minimize containers with hostPID | L1 | ☐ |
+| 5.2.10 | Minimize containers with hostIPC | L1 | ☐ |
+| 5.2.11 | Minimize containers with hostNetwork | L1 | ☐ |
+| 5.2.12 | Minimize containers with hostPorts | L1 | ☐ |
+| 5.2.13 | Minimize containers with hostPath volumes | L1 | ☐ |
+
+#### 5.3 Network Policies
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 5.3.1 | Ensure default deny NetworkPolicies exist | L1 | ☐ |
+| 5.3.2 | Ensure ingress NetworkPolicies are defined | L1 | ☐ |
+| 5.3.3 | Ensure egress NetworkPolicies are defined | L2 | ☐ |
+
+#### 5.4 Secrets Management
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 5.4.1 | Prefer using secrets as files over environment variables | L2 | ☐ |
+| 5.4.2 | Consider external secret storage | L2 | ☐ |
+
+#### 5.5 Extensible Admission Control
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 5.5.1 | Configure Image Provenance using ImagePolicyWebhook | L2 | ☐ |
+
+#### 5.7 General Policies
+
+| # | Recommendation | Level | Status |
+|---|----------------|-------|--------|
+| 5.7.1 | Create administrative boundaries using namespaces | L1 | ☐ |
+| 5.7.2 | Ensure seccomp profile is set appropriately | L2 | ☐ |
+| 5.7.3 | Apply Security Context to pods and containers | L1 | ☐ |
+| 5.7.4 | Ensure default namespace is not used | L1 | ☐ |
+
+---
+
+## Official Source
+
+> **CIS Benchmark PDF Download**
+> 
+> The complete CIS Kubernetes 1.29 Benchmark with all 124 recommendations, detailed rationale, and full audit/remediation procedures is available for free download (non-commercial use):
+> 
+> → **[CIS WorkBench](https://workbench.cisecurity.org/)** (free registration required)
+> 
+> → **[CIS Kubernetes Benchmark Page](https://www.cisecurity.org/benchmark/kubernetes)**
 
 ---
 
@@ -736,5 +933,5 @@ kubelet-arg:
 ## Related Documents
 
 - [[Components/K3S|K3S Component]]
-- [[Benchmarks/CIS/CIS-Docker-v1.6.0|CIS Docker Benchmark]] (if applicable)
+- [[Benchmarks/CIS/CIS-RHEL-9-v2.0.0|CIS RHEL 9 Benchmark]] (for K3S nodes)
 - Original PDF: [CIS WorkBench](https://workbench.cisecurity.org/)
