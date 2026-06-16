@@ -294,5 +294,5 @@ Gebruik dit decision framework:
 - [NGINX Security](https://docs.nginx.com/nginx/admin-guide/security-controls/)
 
 ### Gerelateerde SCF Documenten
-- [[Documentatie/Systeem Onboarding Procedure|Systeem Onboarding Procedure]]
+- [[Documentatie/Systeem-intakeprocedure|Systeem-intakeprocedure]]
 - [[Frameworks/LISA/4-LISA-Controls|LISA Controls]]

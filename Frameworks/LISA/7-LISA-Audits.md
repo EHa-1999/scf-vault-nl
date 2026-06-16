@@ -2,10 +2,10 @@
 id: "LISA-7"
 type: framework-documentation
 name: "LISA Audits"
-version: "1.0"
+version: "2.0"
 status: active
 created: 2026-01-28
-modified: 2026-01-28
+modified: 2026-02-05
 tags:
   - lisa
   - framework
@@ -109,6 +109,58 @@ De 18 CIS Control categorieën zijn als volgt verdeeld over de assessment types:
 | 17. Incident Response | Domein | Organisatie-breed |
 | 18. Penetratietesten | Domein + Systeem | Organisatie-breed + per systeem |
 
+## Gelaagd Assessment Model (v3.8)
+
+> [!tip] Nieuw in v3.8
+> Het gelaagde assessment model integreert CIS/EXT benchmark checklists direct in het auditproces.
+
+Vanaf v3.8 ondersteunt LISA een **drielaags assessment model** dat de kloof overbrugt tussen abstracte CIS Controls en concrete benchmark recommendations:
+
+```
+Laag 3: Audit Dossier (verificatie)
+         ↑ verifieert steekproefsgewijs
+Laag 2: Systeem Assessment (aggregatie)
+         ↑ aggregeert scores uit
+Laag 1: Component Assessments (technisch detail)
+         ↑ gebaseerd op
+         CIS/EXT Benchmark Checklists (535 recommendations)
+```
+
+### Component Assessment
+
+Een component assessment is nieuw in v3.8 en beoordeelt één technisch component aan de hand van alle recommendations uit de bijbehorende CIS of EXT benchmark. Dit assessment wordt uitgevoerd door de technisch beheerder van het component.
+
+| Aspect | Beschrijving |
+|--------|--------------|
+| Scope | Alle recommendations uit één benchmark (bijv. 78 voor PostgreSQL) |
+| Verantwoordelijke | Technisch Beheerder (DBA, Linux Admin, Platform Engineer) |
+| Frequentie | Per kwartaal of bij significante wijzigingen |
+| Output | Status per recommendation, score berekening, gap analyse |
+
+Voorbeelden: SA-2026-Q1-XENA-PostgreSQL, SA-2026-Q1-XENA-RHEL, SA-2026-Q1-XENA-Kubernetes
+
+### Voordelen Gelaagd Model
+
+Het gelaagde model biedt significante voordelen ten opzichte van het traditionele systeem-only assessment:
+
+**Technische diepgang** — 535 individuele benchmark recommendations bieden concrete, verifieerbare beoordelingscriteria in plaats van abstracte "is CIS-4.1 geïmplementeerd?" vragen.
+
+**Duidelijk eigenaarschap** — Elk component heeft een dedicated assessor met de juiste technische expertise. De DBA beoordeelt PostgreSQL, de platform engineer beoordeelt Kubernetes.
+
+**Flexibele cadans** — Verschillende componenten kunnen op verschillende frequenties worden beoordeeld. PostgreSQL misschien per kwartaal, RHEL jaarlijks.
+
+**Objectieve scores** — Compliance percentages worden berekend op basis van concrete recommendation-beoordelingen, niet op subjectieve interpretaties.
+
+**Audit-readiness** — De auditor kan steekproefsgewijs recommendations verifiëren met directe referentie naar de officiële CIS benchmark PDF.
+
+### Zie Voorbeelden
+
+Een volledig uitgewerkt voorbeeld van het gelaagde model is beschikbaar in de [[Voorbeelden/_README|Voorbeelden map]], inclusief:
+
+- [[Voorbeelden/IA-2026-001-XENA-Voorbeeld/Self-Assessments/SA-2026-Q1-XENA-PostgreSQL|PostgreSQL Component Assessment]] — Alle 78 recommendations beoordeeld
+- [[Voorbeelden/IA-2026-001-XENA-Voorbeeld/Self-Assessments/SA-2026-Q1-XENA|XENA Systeem Assessment]] — Aggregeert 6 component scores
+- [[Voorbeelden/IA-2026-001-XENA-Voorbeeld/_IA-2026-001-XENA|Audit Dossier]] — Met steekproefsgewijze verificatie
+
 ## Bevindingen Classificatie
 
 Bevindingen worden geclassificeerd naar ernst om prioritering van verbeteracties mogelijk te maken:
@@ -168,7 +220,7 @@ Self-assessments en interne audits dienen als voorbereiding op externe audits zo
 
 ## Folder Structuur
 
-LISA gebruikt een audit-dossier structuur waarbij alle documenten van één audit bij elkaar staan:
+LISA gebruikt een audit-dossier structuur waarbij alle documenten van één audit bij elkaar staan. Met het gelaagde model (v3.8) bevat de Self-Assessments map zowel het systeem-assessment als de component-assessments:
 
 ```
 Audits/
@@ -176,7 +228,13 @@ Audits/
 │   ├── IA-2026-001-XENA/                   ← Audit dossier
 │   │   ├── _IA-2026-001-XENA.md            ← Hoofdrapport
 │   │   ├── Self-Assessments/
-│   │   │   └── SA-2026-Q1-XENA.md
+│   │   │   ├── SA-2026-Q1-XENA.md          ← Systeem assessment (aggregerend)
+│   │   │   ├── SA-2026-Q1-XENA-PostgreSQL.md  ← Component: 78 recs
+│   │   │   ├── SA-2026-Q1-XENA-RHEL.md        ← Component: 255 recs
+│   │   │   ├── SA-2026-Q1-XENA-Kubernetes.md   ← Component: 124 recs
+│   │   │   ├── SA-2026-Q1-XENA-NGINX.md        ← Component: 52 recs
+│   │   │   ├── SA-2026-Q1-XENA-MinIO.md        ← Component: 11 recs
+│   │   │   └── SA-2026-Q1-XENA-KeyCloak.md     ← Component: 15 recs
 │   │   ├── Bevindingen/
 │   │   │   ├── FIND-2026-001.md
 │   │   │   └── FIND-2026-002.md
@@ -196,9 +254,13 @@ Audits/
 
 Het voordeel van deze dossier-structuur is dat alle documenten van één audit fysiek bij elkaar staan, wat archivering en overdracht vergemakkelijkt. De Dataview queries zoeken recursief door alle submappen, waardoor cross-audit rapportages mogelijk blijven.
 
+> [!example] Voorbeeld
+> Zie [[Voorbeelden/_README|Voorbeelden map]] voor een volledig uitgewerkt voorbeeld van deze structuur.
+
 ## Gerelateerde Documenten
 
 - [[Frameworks/LISA/5-LISA-Implementatie|LISA Implementatie]]
 - [[Frameworks/LISA/6-LISA-Risicobeheer|LISA Risicobeheer]]
 - [[Dashboards/Audit Dashboard|Audit Dashboard]]
-- [[Audits/Templates/System-Assessment-Template|Systeem Assessment Template]]
+- [[Templates/Component Assessment Template|Component Assessment Template]]
+- [[Voorbeelden/_README|Voorbeelden - Gelaagd Assessment Model]]

@@ -7,6 +7,96 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [3.10] - 2026-02-11
+
+### Added
+- **Systeem Herstructurering** — XENA en ZGW hernoemd voor duidelijkheid:
+  - `XENA` → `XENA-NZGW` (XENA Niet-Zaakgericht Werken)
+  - `ZGW` → `XENA-ZGW` (XENA Zaakgericht Werken)
+
+- **XENA-ZGW Componenten** — 6 nieuwe componenten toegevoegd:
+  - Tezza (Frontend, Contezza, Angular/Java)
+  - Alfresco (DMS, Content Services 7.x)
+  - OpenZaak (API, VNG ZGW implementatie)
+  - GZAC/Valtimo (BPM, procesautomatisering)
+  - ActiveMQ (Message Broker, JMS)
+  - RabbitMQ (Message Broker, AMQP)
+
+- **5 Nieuwe Technische EXT Benchmarks** — Volledige audit-ready benchmarks:
+  - EXT-BM-RabbitMQ v1.0 (24 recommendations: 18 L1, 6 L2)
+  - EXT-BM-ActiveMQ v1.0 (22 recommendations: 16 L1, 6 L2)
+  - EXT-BM-Alfresco v1.0 (26 recommendations: 20 L1, 6 L2)
+  - EXT-BM-OpenZaak v1.0 (22 recommendations: 17 L1, 5 L2)
+  - EXT-BM-GZAC v1.0 (20 recommendations: 15 L1, 5 L2)
+
+- **Excel Self-Assessment Templates** — Kant-en-klare assessment spreadsheets:
+  - Assessment-RabbitMQ.xlsx (20 recommendations)
+  - Assessment-ActiveMQ.xlsx (20 recommendations)
+  - Assessment-Alfresco.xlsx (21 recommendations)
+  - Assessment-OpenZaak.xlsx (21 recommendations)
+  - Assessment-GZAC.xlsx (19 recommendations)
+  - Elk template bevat: Instructies, Assessment checklist met dropdown, Dashboard met automatische score
+
+### Changed
+- Systems index volledig herzien met XENA platform overzicht
+- EXT Benchmarks index uitgebreid met Document Management en Message Broker secties
+- Component files bevatten nu benchmark status en security overwegingen
+- Nieuwe Assessments folder toegevoegd aan vault structuur
+
+### Technical
+- 114 nieuwe technische EXT recommendations (totaal)
+- Benchmark coverage voor alle XENA-ZGW componenten behalve Tezza (vendor-afhankelijk)
+- PostgreSQL (reeds aanwezig via CIS Benchmark) gedeeld tussen beide systemen
+
+### Benchmark Bronnen
+- RabbitMQ: [rabbitmq.com/docs/security](https://www.rabbitmq.com/docs/security)
+- ActiveMQ: [activemq.apache.org/security](https://activemq.apache.org/security)
+- Alfresco: [docs.alfresco.com/content-services/latest/admin/securing-install/](https://docs.alfresco.com/content-services/latest/admin/securing-install/)
+- OpenZaak: [open-zaak.readthedocs.io](https://open-zaak.readthedocs.io/) + Django Security
+- GZAC: [docs.gzac.nl](https://docs.gzac.nl/) + Camunda Security
+
+---
+
+## [3.9] - 2026-02-10
+
+### Added
+- **Gelaagd Assessment Model** - Drielaags structuur: Component → Systeem → Audit
+- **Component Assessment Template** - Nieuw template voor recommendation-niveau beoordelingen
+- **Voorbeelden map** - Complete voorbeeld-implementatie van gelaagd model
+- **SA-2026-Q1-XENA-PostgreSQL** - Volledig uitgewerkt voorbeeld met alle 78 recommendations beoordeeld
+- **Taxonomie & Glossary** - Nieuwe documentatie met terminologie en framework-structuur
+- **7 Organisatorische Benchmarks** - Complete set EXT Benchmarks voor niet-technische controls:
+  - EXT-BM-Governance (25 maatregelen) — ISO A.5, BIO B1/B2, NIS2 Art.20-21
+  - EXT-BM-HR (22 maatregelen) — ISO A.6, BIO B3, NIS2 Art.21(2)(g)
+  - EXT-BM-Physical (28 maatregelen) — ISO A.7, BIO B7
+  - EXT-BM-Supplier (18 maatregelen) — ISO A.5.19-22, BIO B11, NIS2 Art.21(2)(d)
+  - EXT-BM-BC (16 maatregelen) — ISO A.5.29-30, BIO B12, NIS2 Art.21(2)(c)
+  - EXT-BM-Compliance (14 maatregelen) — ISO A.5.31-36, BIO B13
+  - EXT-BM-Privacy (35 maatregelen) — AVG Art.5-49, NEN 7510
+- **Normenkader kruisverwijzingen** - Mapping naar ISO 27001, BIO2, NIS2, AVG, NEN 7510
+
+### Changed
+- Systeem Assessment herstructuur - Aggregeert nu uit component assessments
+- Audit Dossier verbeterd - Toont gelaagde structuur met steekproefsgewijze verificatie
+- LISA Audits documentatie uitgebreid met Component Assessment sectie
+- EXT Benchmarks index volledig herzien met organisatorische benchmarks
+
+### Technical
+- Nieuwe frontmatter velden voor assessments
+- Nieuwe benchmark_type: `EXT-Organizational` voor niet-technische benchmarks
+- Totaal ~158 auditeerbare maatregelen in organisatorische benchmarks
+- Traceerbaarheid: Benchmark recommendation → Component assessment → Audit dossier
+
+---
+
+## [3.8] - 2026-02-05
+
+### Added
+- **Complete Checklists** - All 4 CIS benchmarks contain full recommendation checklists
+- **Official Source Section** - Direct links to CIS WorkBench for PDF downloads
+
+---
+
 ## [3.7] - 2026-02-03
 
 ### Added
@@ -248,6 +338,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 
 ## Upgrade Notes
+
+### From 3.8 to 3.9
+1. Review het nieuwe gelaagde assessment model in `/Voorbeelden/`
+2. Kopieer `Templates/Component Assessment Template.md` naar je productie vault
+3. Overweeg bestaande systeem-assessments te herstructureren naar component-level
+4. Update Templater scripts voor component assessment creatie
+5. Bekijk de nieuwe [[Documentatie/Taxonomie en Glossary|Taxonomie & Glossary]] voor terminologie
+6. Review [[Benchmarks/EXT/EXT-BM-Governance-v1.0|EXT-BM-Governance]] voor organisatorische audits
+
+### From 3.7 to 3.8
+- Minor update met complete benchmark checklists
 
 ### From 3.x to 3.5
 1. Move any custom benchmarks from `/Documentatie/Benchmarks/` to `/Benchmarks/EXT/`

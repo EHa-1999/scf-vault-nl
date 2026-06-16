@@ -1,19 +1,19 @@
 ---
-id: "PROC-Onboarding"
+id: "PROC-Intake"
 type: procedure
-name: "Systeem Onboarding Procedure"
+name: "Systeem-intakeprocedure"
 version: "1.0"
 status: Active
 owner: CISO
 created: 2026-01-28
-modified: 2026-01-28
+modified: 2026-06-16
 tags:
   - procedure
-  - onboarding
+  - intake
   - scb
 ---
 
-# Systeem Onboarding Procedure
+# Systeem-intakeprocedure
 
 ## Doel
 
@@ -31,7 +31,7 @@ Deze procedure is van toepassing op:
 | Rol | Verantwoordelijkheid |
 |-----|----------------------|
 | **System Owner** | Eigenaar van het systeem, eindverantwoordelijk |
-| **Security Officer** | Begeleidt onboarding, valideert control toewijzing |
+| **Security Officer** | Begeleidt de intake, valideert control-toewijzing |
 | **Architect** | Levert technische input, SCB analyse |
 | **CISO** | Goedkeuring, risico-acceptatie |
 
@@ -41,7 +41,7 @@ Deze procedure is van toepassing op:
 
 ![[Assets/diagrams/LISA-Onboarding-Process.svg]]
 
-Het onboarding proces bestaat uit vier hoofdfasen die samen zorgen voor een complete en gestructureerde opname van systemen in het security framework.
+Het intakeproces bestaat uit zes fasen die samen zorgen voor een complete en gestructureerde opname van systemen in het security framework.
 
 ---
 

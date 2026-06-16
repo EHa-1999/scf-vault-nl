@@ -16,6 +16,9 @@ tags:
 
 Deze folder bevat alle audit-gerelateerde documentatie volgens de LISA audit-dossier structuur. Elke interne audit heeft een eigen map met alle gerelateerde documenten bij elkaar.
 
+> [!tip] Gelaagd Assessment Model (v3.8)
+> Vanaf v3.8 ondersteunt LISA een gelaagd assessment model met component-level assessments. Zie [[Voorbeelden/_README|Voorbeelden map]] voor een volledig uitgewerkt voorbeeld.
+
 ## Folder Structuur
 
 ```
@@ -24,7 +27,9 @@ Audits/
 │   └── IA-2026-001-XENA/             ← Audit dossier
 │       ├── _IA-2026-001-XENA.md      ← Hoofdrapport (prefix _)
 │       ├── Self-Assessments/          ← Self-assessments in scope
-│       │   └── SA-2026-Q1-XENA.md
+│       │   ├── SA-2026-Q1-XENA.md           ← Systeem (aggregerend)
+│       │   ├── SA-2026-Q1-XENA-PostgreSQL.md ← Component (v3.8)
+│       │   └── SA-2026-Q1-XENA-*.md          ← Overige componenten
 │       ├── Bevindingen/               ← Findings uit deze audit
 │       │   └── FIND-2026-001.md
 │       └── Evidence/                  ← Lokale evidence kopieën

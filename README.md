@@ -1,5 +1,7 @@
 # SCF-Vault - Security Control Framework
 
+> **Versie 3.10** — XENA Platform herstructurering + 5 nieuwe technische EXT Benchmarks
+
 Een Obsidian-gebaseerde knowledge base voor het beheren van security controls, compliance frameworks en implementaties volgens het **LISA** (Layered Information Security Architecture) model.
 
 ## Wat is LISA?
@@ -28,13 +30,14 @@ Elke map heeft een **_index.md** pagina met overzicht en navigatie.
 | [[Frameworks/_index\|🏛️ Frameworks]] | Governance kaders (ISO, NIS2, BIO2) | [[Frameworks/LISA/1-LISA-Introductie\|LISA Intro]] |
 | [[Controls/_index\|📋 Controls]] | 231 security controls | [[Controls/CIS/_index\|CIS Controls]] |
 | [[Benchmarks/_index\|📏 Benchmarks]] | Hardening guides per technologie | [[Benchmarks/CIS/_index\|CIS Benchmarks]] |
-| [[Systems/_index\|🖥️ Systems]] | Applicaties onder scope | [[Systems/XENA\|XENA]] |
+| [[Systems/_index\|🖥️ Systems]] | Applicaties onder scope | [[Systems/XENA-ZGW\|XENA-ZGW]] |
 | [[Components/_index\|🔧 Components]] | Technische bouwstenen | [[Components/PostgreSQL\|PostgreSQL]] |
 | [[Implementations/_index\|⚙️ Implementations]] | Control → Component | — |
 | [[Dashboards/_index\|📊 Dashboards]] | Monitoring & KPI's | [[Dashboards/Main Dashboard\|Main Dashboard]] |
 | [[Risks/_index\|⚠️ Risks]] | Risico register | — |
 | [[Audits/_index\|🔍 Audits]] | Assurance & findings | — |
-| [[Documentatie/_index\|📚 Documentatie]] | Handleidingen | [[Documentatie/Systeem Onboarding Procedure\|Onboarding]] |
+| [[Voorbeelden/_README\|📚 Voorbeelden]] | Gelaagd Assessment Model | [[Voorbeelden/_README\|README]] |
+| [[Documentatie/_index\|📖 Documentatie]] | Handleidingen | [[Documentatie/Systeem-intakeprocedure\|Intake]] |
 | [[Templates/_index\|📝 Templates]] | Herbruikbare templates | — |
 | [[Planning/_index\|📅 Planning]] | Roadmaps & kalenders | [[Planning/Implementatieplan 2026\|Plan 2026]] |
 
@@ -80,6 +83,8 @@ SCF-Vault-NL/
 │   ├── {YYYY}/                   # Per jaar
 │   │   └── IA-{ID}/              # Audit dossier
 │   └── Scripts/                  # Templater scripts
+├── Voorbeelden/                   # Voorbeeld assessments (NIEUW v3.8)
+│   └── IA-2026-001-XENA-Voorbeeld/  # Gelaagd model voorbeeld
 ├── Dashboards/                    # Overzichtspagina's
 ├── Planning/                      # Roadmaps en kalenders
 ├── Scripts/                       # Export en automatisering
@@ -111,11 +116,12 @@ SCF-Vault-NL/
 | Technical (EXT-T) | 3 | ISO A.8 resterende gaps |
 | **Totaal Controls** | **231** | **168 baseline** |
 | **CIS Benchmarks** | 4 | PostgreSQL 16, NGINX, Kubernetes 1.29, RHEL 9 |
-| **EXT Benchmarks** | 2 | MinIO, KeyCloak |
+| **EXT Benchmarks (Technisch)** | 2 | MinIO, KeyCloak |
+| **EXT Benchmarks (Organisatorisch)** | 7 | Governance, HR, Physical, Supplier, BC, Compliance, Privacy |
 | Systems | 3 | XENA, ZGW, E-mail Archief |
 | Components | 10 | MinIO, PostgreSQL, KeyCloak, NGINX, K3S, RHEL, etc. |
 | Dashboards | 7 | Main, Executive, Compliance, Impl, Risk, Audit, Baseline |
-| Templates | 8 | Control, Implementation, Risk, System, Component, SCB, CIS Benchmark, EXT Benchmark |
+| Templates | 10 | Control, Implementation, Risk, System, Component, SCB, CIS Benchmark, EXT Benchmark, EXT Org Benchmark, Component Assessment |
 
 ## Baseline Security (Comply or Explain)
 
@@ -139,25 +145,64 @@ Het framework maakt onderscheid tussen **baseline** en **niet-baseline** control
 - [[Dashboards/Executive Summary|Executive Summary]] - Management rapportage
 - [[Dashboards/Compliance Dashboard|Compliance Dashboard]] - Framework compliance
 - [[Benchmarks/_index|Benchmarks]] - Hardening guides per technologie
+- [[Benchmarks/EXT/_index|EXT Benchmarks]] - **Organisatorische benchmarks** (nieuw v3.8)
+- [[Voorbeelden/_README|Voorbeelden]] - **Gelaagd Assessment Model** met voorbeelden
+- [[Documentatie/Taxonomie en Glossary|Taxonomie & Glossary]] - **Terminologie en structuur** (nieuw v3.8)
 - [[CHANGELOG|Release Notes]] - Versiegeschiedenis
 - [[Dashboards/Audit Dashboard|Audit Dashboard]] - Audits en bevindingen
 - [[Planning/Implementatieplan 2026|Implementatieplan 2026]] - Roadmap
-- [[Planning/Compliance Kalender 2026|Compliance Kalender]] - Deadlines
-- [[Documentatie/Systeem Onboarding Procedure|Systeem Onboarding Procedure]] - Nieuwe systemen toevoegen
+- [[Documentatie/Systeem-intakeprocedure|Systeem-intakeprocedure]] - Nieuwe systemen toevoegen
 - [[Documentatie/CIS Benchmark Handleiding|CIS Benchmark Handleiding]] - Benchmarks gebruiken
 - [[Documentatie/Dual Scoring Model|Dual Scoring Model]] - Implementatie vs. Compliance
 - [[Scripts/README|Export Scripts]] - Jira/Redmine export
 
 ## Versie
 
-**SCF-Vault v3.7 NL** - Complete Benchmark Checklists  
-Laatste update: 2026-02-03
+**SCF-Vault v3.9 NL** - Gelaagd Assessment Model + Organisatorische Benchmarks  
+Laatste update: 2026-02-10
 
-### Nieuwe Features v3.7
+### Nieuwe Features v3.9
+
+* **Gelaagd Assessment Model** - Drielaags structuur die benchmark checklists integreert:
+  - **Component Assessment** - Per component, door technisch beheerder, recommendation-voor-recommendation
+  - **Systeem Assessment** - Aggregeert component scores, beoordeelt systeem-brede controls
+  - **Audit Dossier** - Steekproefsgewijze verificatie door auditor
+* **7 Organisatorische Benchmarks** - Complete set EXT Benchmarks (~158 maatregelen):
+  - [[Benchmarks/EXT/EXT-BM-Governance-v1.0|Governance]] (25) — [[Benchmarks/EXT/EXT-BM-HR-v1.0|HR]] (22) — [[Benchmarks/EXT/EXT-BM-Physical-v1.0|Physical]] (28)
+  - [[Benchmarks/EXT/EXT-BM-Supplier-v1.0|Supplier]] (18) — [[Benchmarks/EXT/EXT-BM-BC-v1.0|BC]] (16) — [[Benchmarks/EXT/EXT-BM-Compliance-v1.0|Compliance]] (14)
+  - [[Benchmarks/EXT/EXT-BM-Privacy-v1.0|Privacy]] (35)
+* **Taxonomie & Glossary** - [[Documentatie/Taxonomie en Glossary|Nieuwe documentatie]] met terminologie en kruisverwijzingen
+* **Voorbeelden map** - Volledig uitgewerkt PostgreSQL voorbeeld (alle 78 recs beoordeeld)
+
+> [!tip] Zie [[Voorbeelden/_README|Voorbeelden README]] voor het complete gelaagde model
+
+### Features v3.10
+
+* **XENA Platform Herstructurering**
+  - XENA → XENA-NZGW (Niet-Zaakgericht Werken)
+  - ZGW → XENA-ZGW (Zaakgericht Werken)
+* **6 Nieuwe XENA-ZGW Componenten**: Tezza, Alfresco, OpenZaak, GZAC, ActiveMQ, RabbitMQ
+* **5 Nieuwe Technische EXT Benchmarks** (114 recommendations totaal):
+  - EXT-BM-RabbitMQ v1.0 (24 recs)
+  - EXT-BM-ActiveMQ v1.0 (22 recs)
+  - EXT-BM-Alfresco v1.0 (26 recs)
+  - EXT-BM-OpenZaak v1.0 (22 recs)
+  - EXT-BM-GZAC v1.0 (20 recs)
+
+### Features v3.9
+
+* **7 Organisatorische Benchmarks** (~158 maatregelen totaal)
+* EXT-BM-Governance, HR, Physical, Supplier, BC, Compliance, Privacy
+* Mapping naar ISO 27001, BIO2, NIS2, AVG, NEN 7510
+
+### Features v3.8
 
 * **Complete Checklists** - Alle CIS benchmarks bevatten nu volledige recommendation checklists
-* **Key Recommendations** - Gedetailleerde secties duidelijk gelabeld als "niet uitputtend"
 * **Official Source links** - Directe links naar CIS WorkBench per benchmark
+
+### Features v3.7
+
+* **Key Recommendations** - Gedetailleerde secties duidelijk gelabeld als "niet uitputtend"
 * **Hybrid approach** - Key recommendations + Complete checklist + Official PDF reference
 
 ### Features v3.6

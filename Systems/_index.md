@@ -3,6 +3,7 @@ type: index
 name: "Systems"
 icon: "🖥️"
 created: 2026-01-28
+modified: 2026-02-10
 ---
 
 # 🖥️ Systems
@@ -19,21 +20,38 @@ created: 2026-01-28
 
 ---
 
-## Wat is een System?
+## XENA Platform
 
-Een **System** is een applicatie, platform of dienst die:
-- Bedrijfskritische functies vervult
-- Data verwerkt die beschermd moet worden
-- Onder de scope van het security framework valt
+Het XENA platform bestaat uit twee gerelateerde systemen voor gemeentelijk documentbeheer:
 
-Elk system heeft:
-- Een **BIV-classificatie** (Beschikbaarheid, Integriteit, Vertrouwelijkheid)
-- Een **System Component Breakdown (SCB)** met alle technische componenten
-- **Implementations** die controls koppelen aan componenten
+| Systeem | Volledige Naam | Scope |
+|---------|----------------|-------|
+| **[[Systems/XENA-NZGW\|XENA-NZGW]]** | XENA Niet-Zaakgericht Werken | Documentbeheer voor niet-zaakgerichte processen |
+| **[[Systems/XENA-ZGW\|XENA-ZGW]]** | XENA Zaakgericht Werken | Centrale zaakafhandeling conform VNG API's |
+
+### XENA-ZGW Componenten
+
+| Component | Type | Benchmark Status |
+|-----------|------|------------------|
+| [[Components/Tezza\|Tezza]] | Frontend | 📋 EXT-BM-Tezza (gepland) |
+| [[Components/Alfresco\|Alfresco]] | DMS | 📋 EXT-BM-Alfresco (gepland) |
+| [[Components/PostgreSQL\|PostgreSQL]] | Database | ✅ CIS PostgreSQL 16 |
+| [[Components/OpenZaak\|OpenZaak]] | API | 📋 EXT-BM-OpenZaak (gepland) |
+| [[Components/GZAC\|GZAC]] | Process | 📋 EXT-BM-GZAC (gepland) |
+| [[Components/ActiveMQ\|ActiveMQ]] | Messaging | 📋 EXT-BM-ActiveMQ (gepland) |
+| [[Components/RabbitMQ\|RabbitMQ]] | Messaging | 📋 EXT-BM-RabbitMQ (gepland) |
 
 ---
 
-## Geregistreerde Systems
+## Overige Systemen
+
+| Systeem | Classificatie | Eigenaar | Status |
+|---------|--------------|----------|--------|
+| [[Systems/E-mail-Archief\|E-mail Archief]] | BBN2 | Team Informatiebeheer | Production |
+
+---
+
+## Alle Systems (Dataview)
 
 ```dataview
 TABLE WITHOUT ID
@@ -45,47 +63,6 @@ FROM "Systems"
 WHERE type = "system"
 SORT name ASC
 ```
-
----
-
-## System Details
-
-### XENA
-
-| Veld | Waarde |
-|------|--------|
-| **Type** | Document Management System |
-| **Classificatie** | BBN2 (M-H-H) |
-| **Architectuur** | Common Ground |
-| **SCB** | [[Documentatie/SCB/SCB-XENA\|SCB-XENA]] |
-
-**Componenten:**
-```dataview
-LIST
-FROM "Components"
-WHERE contains(system, "XENA")
-```
-
-→ [[Systems/XENA|Open XENA]]
-
----
-
-### ZGW
-
-| Veld | Waarde |
-|------|--------|
-| **Type** | Zaakgericht Werken Platform |
-| **Classificatie** | BBN2 |
-| **Architectuur** | ZGW API standaard |
-
-**Componenten:**
-```dataview
-LIST
-FROM "Components"
-WHERE contains(system, "ZGW")
-```
-
-→ [[Systems/ZGW|Open ZGW]]
 
 ---
 
@@ -102,4 +79,4 @@ WHERE contains(system, "ZGW")
 
 - [[Components/_index|🔧 Components]] — Technische bouwstenen
 - [[Implementations/_index|⚙️ Implementations]] — Control implementaties
-- [[Documentatie/SCB/SCB-XENA|📋 SCB-XENA]] — Voorbeeld System Component Breakdown
+- [[Benchmarks/_index|📏 Benchmarks]] — Security configuration guides

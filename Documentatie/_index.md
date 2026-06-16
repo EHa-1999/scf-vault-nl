@@ -47,11 +47,11 @@ Het framework gebruikt twee aparte scores voor volledige tracking:
 
 ## Procedures
 
-### Systeem Onboarding
+### Systeem-intake
 
 Hoe neem je een nieuw systeem op in het framework?
 
-→ [[Documentatie/Systeem Onboarding Procedure|Systeem Onboarding Procedure]]
+→ [[Documentatie/Systeem-intakeprocedure|Systeem-intakeprocedure]]
 
 Stappen:
 1. System registratie en classificatie
