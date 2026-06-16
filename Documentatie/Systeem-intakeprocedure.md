@@ -39,7 +39,7 @@ Deze procedure is van toepassing op:
 
 ## Proces Overzicht
 
-![[Assets/diagrams/LISA-Onboarding-Process.svg]]
+![[Assets/diagrams/LISA-Intakeproces.svg]]
 
 Het intakeproces bestaat uit zes fasen die samen zorgen voor een complete en gestructureerde opname van systemen in het security framework.
 

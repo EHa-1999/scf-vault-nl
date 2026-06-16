@@ -270,4 +270,4 @@ Voordat een control van `gereed` naar `gevalideerd` gaat:
 - [[Dashboards/Compliance Dashboard|Compliance Dashboard]]
 - [[Dashboards/Implementation Tracker|Implementation Tracker]]
 - [[Planning/Implementatieplan 2026|Implementatieplan 2026]]
-- [[Documentatie/System Onboarding Guide|System Onboarding Guide]]
+- [[Documentatie/Systeem-intakeprocedure|Systeem-intakeprocedure]]

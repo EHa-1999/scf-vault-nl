@@ -71,7 +71,7 @@ SORT name ASC
 1. Maak een System document via [[Templates/System Template|System Template]]
 2. Voer een SCB analyse uit via [[Templates/SCB Template|SCB Template]]
 3. Registreer componenten via [[Templates/Component Template|Component Template]]
-4. Volg de [[Documentatie/System Onboarding Guide|System Onboarding Guide]]
+4. Volg de [[Documentatie/Systeem-intakeprocedure|Systeem-intakeprocedure]]
 
 ---
 

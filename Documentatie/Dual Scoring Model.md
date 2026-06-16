@@ -293,7 +293,7 @@ Bij `gedeeltelijk` of `niet_compliant`:
 
 ## Gerelateerde Documenten
 
-- [[Documentatie/System Onboarding Guide|System Onboarding Guide]]
+- [[Documentatie/Systeem-intakeprocedure|Systeem-intakeprocedure]]
 - [[Frameworks/LISA/7-LISA-Audits|LISA Audits]]
 - [[Dashboards/_index|Dashboards Overzicht]]
 - [[Templates/Control Template|Control Template]]

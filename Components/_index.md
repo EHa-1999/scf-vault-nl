@@ -137,7 +137,7 @@ WHERE cis_benchmark = false OR !cis_benchmark
 
 ## Nieuw Component Toevoegen
 
-1. Identificeer het component in de [[Documentatie/System Onboarding Guide|System Onboarding]]
+1. Identificeer het component in de [[Documentatie/Systeem-intakeprocedure|Systeem-intake]]
 2. Maak document via [[Templates/Component Template|Component Template]]
 3. Check [[Documentatie/CIS Benchmark Mapping Guide|CIS Benchmark beschikbaarheid]]
 4. Maak Implementation documents voor relevante controls

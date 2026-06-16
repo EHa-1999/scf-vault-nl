@@ -128,4 +128,4 @@ LIMIT 15
 - [[Controls/_index|📋 Controls]] — Welke controls bestaan er
 - [[Components/_index|🔧 Components]] — Waarop controls worden toegepast
 - [[Dashboards/Implementation Tracker|✅ Implementation Tracker]]
-- [[Documentatie/System Onboarding Guide|System Onboarding Guide]]
+- [[Documentatie/Systeem-intakeprocedure|Systeem-intakeprocedure]]

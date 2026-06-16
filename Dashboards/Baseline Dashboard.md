@@ -305,4 +305,4 @@ SORT exception_expiry ASC
 - [[Dashboards/Compliance Dashboard|Compliance Dashboard]]
 - [[Dashboards/Implementation Dashboard|Implementation Dashboard]]
 - [[Planning/Implementatieplan 2026|Implementatieplan]]
-- [[Documentatie/System Onboarding Guide|System Onboarding Guide]]
+- [[Documentatie/Systeem-intakeprocedure|Systeem-intakeprocedure]]

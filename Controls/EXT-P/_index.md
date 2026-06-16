@@ -189,4 +189,4 @@ SORT id ASC
 
 - [[Frameworks/AVG-GDPR|AVG/GDPR Framework]]
 - [[Dashboards/Baseline Dashboard|Baseline Dashboard]]
-- [[Documentatie/System Onboarding Guide|System Onboarding Guide]]
+- [[Documentatie/Systeem-intakeprocedure|Systeem-intakeprocedure]]

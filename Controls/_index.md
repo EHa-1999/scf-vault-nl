@@ -200,7 +200,7 @@ LIMIT 10
 3. **Maak** een Implementation document dat de control koppelt aan een component
 4. **Documenteer** evidence en Definition of Done
 
-→ [[Documentatie/System Onboarding Guide|System Onboarding Guide]]  
+→ [[Documentatie/Systeem-intakeprocedure|Systeem-intakeprocedure]]  
 → [[Documentatie/CIS Benchmark Mapping Guide|CIS Benchmark Mapping]]
 
 ---

@@ -308,4 +308,4 @@ Op basis van BIV classificatie en systeem functie:
 ### B. Gerelateerde SCF Documenten
 
 - [[Systems/{{system}}]]
-- [[Documentatie/System Onboarding Guide]]
+- [[Documentatie/Systeem-intakeprocedure|Systeem-intakeprocedure]]

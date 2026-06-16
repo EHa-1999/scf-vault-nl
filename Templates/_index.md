@@ -80,5 +80,5 @@ Elk template heeft:
 
 ## Gerelateerde Secties
 
-- [[Documentatie/System Onboarding Guide\|System Onboarding Guide]] — Wanneer welk template
+- [[Documentatie/Systeem-intakeprocedure\|Systeem-intakeprocedure]] — Wanneer welk template
 - [[Audits/README\|Audits README]] — Templater setup
