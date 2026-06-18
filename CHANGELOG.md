@@ -7,6 +7,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [3.12-NL] - 2026-06-18
+
+### Toegevoegd
+- **MITRE ATT&CK-dreigingsmapping** in alle RSK-objecten (RSK-001 t/m 005): nieuwe frontmatter-velden `mitre_tactics` en `mitre_techniques`, plus een sectie "Dreigingsmapping (MITRE ATT&CK)".
+- Risk Template uitgebreid met dezelfde velden en sectie, zodat nieuwe risico's de in de intakeprocedure voorgeschreven dreigingsanalyse (STRIDE / MITRE ATT&CK) ook daadwerkelijk vastleggen.
+
+### Opmerkingen
+- RSK-005 (bewaartermijnen) is als compliance-/governancerisico gemarkeerd "n.v.t." voor ATT&CK.
+- Techniek-mappings zijn initieel en te valideren bij de eerstvolgende risicoreview.
+
+## [3.11-NL] - 2026-06-16
+
+### Changed
+- **Vernederlandsing systeemintake** — anglicisme "onboarding" vervangen voor het systeem-opnameproces:
+  - `Systeem Onboarding Procedure.md` → `Systeem-intakeprocedure.md`
+  - Frontmatter: `id: PROC-Onboarding` → `PROC-Intake`, tag `onboarding` → `intake`
+  - Inkomende links bijgewerkt in `README`, `Documentatie/_index`, `Benchmark-Baseline-Systematiek` en `CIS Benchmark Handleiding`
+  - HR-onboarding (medewerkers, in EXT-HR/EXT-O en glossary) bewust ongemoeid gelaten — correcte HR-term
+
+- **Procesdiagram geactualiseerd** — nieuw `Assets/diagrams/LISA-Intakeproces.svg` (zes fasen) vervangt `LISA-Onboarding-Process.svg`; embed in de intakeprocedure aangepast
+
+### Fixed
+- **Fase-aantal gecorrigeerd** — de intakeprocedure sprak van "vier hoofdfasen" maar beschrijft er zes; tekst en diagram nu consistent (6)
+- **Dode links hersteld** — 10 verwijzingen naar de verwijderde `System Onboarding Guide` wijzen nu naar `Systeem-intakeprocedure` (Templates, Implementations, Components, Systems, Dashboards, Controls, Dual Scoring Model)
+- **Encoding** — `Frameworks/LISA/4-LISA-Controls.md` naar geldige UTF-8 geconverteerd (losse `0xA9`-byte hersteld naar "é" in "Eén control")
+
+---
+
 ## [3.10] - 2026-02-11
 
 ### Added

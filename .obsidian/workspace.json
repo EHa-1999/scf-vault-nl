@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Audits/2026/IA-2026-001-XENA/Bevindingen/FIND-2026-001.md",
+                "file": "Controls/CIS/CIS-5.1 - Stel Accountinventaris Op.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FIND-2026-001"
+              "title": "CIS-5.1 - Stel Accountinventaris Op"
             }
           }
         ]
@@ -187,6 +187,7 @@
   },
   "active": "5b932a54b9670743",
   "lastOpenFiles": [
+    "Audits/2026/IA-2026-001-XENA/Bevindingen/FIND-2026-001.md",
     "Documentatie/Benchmark-Baseline-Systematiek.md",
     "Documentatie/Handleiding.md",
     "Documentatie/CIS Benchmark Handleiding.md",
@@ -194,7 +195,6 @@
     "Documentatie/_index.md",
     "Controls/CIS/CIS-1.2 - Address Unauthorized Assets.md",
     "Controls/CIS/CIS-1.1 - Establish and Maintain Detailed Enterprise Asset I.md",
-    "Audits/2026/IA-2026-001-XENA/Bevindingen/FIND-2026-001.md",
     "Dashboards/Main Dashboard.md",
     "README.md",
     "Vault-Navigation.canvas",

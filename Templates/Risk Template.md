@@ -14,6 +14,10 @@ components:
   - "[[{{component}}]]"
 controls:
   - "[[{{control}}]]"
+mitre_tactics:
+  - "{{mitre_tactic}}"
+mitre_techniques:
+  - "{{mitre_technique}}"
 status: "{{status}}"
 owner: "{{owner}}"
 created: {{date}}
@@ -90,6 +94,16 @@ FROM "Implementations"
 WHERE risk_if_missing = this.file.link
 SORT control ASC
 ```
+
+## Dreigingsmapping (MITRE ATT&CK)
+
+Conform de dreigingsanalyse uit de [[Documentatie/Systeem-intakeprocedure|Systeem-intakeprocedure]] (STRIDE, MITRE ATT&CK).
+
+| Techniek | Naam | Tactiek |
+|----------|------|---------|
+| {{mitre_technique}} | | {{mitre_tactic}} |
+
+> Niet elk risico is een adversary-techniek; compliance-/governancerisico's kunnen "n.v.t." zijn.
 
 ## Behandelplan
 
