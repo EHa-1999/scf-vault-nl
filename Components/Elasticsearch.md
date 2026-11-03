@@ -6,8 +6,8 @@ component_type: "Search Engine"
 vendor: "Elastic"
 version: "8.x"
 systems:
-  - "XENA"
-  - "ZGW"
+  - "XENA-NZGW"
+  - "XENA-ZGW"
 classification: "BBN2"
 status: active
 created: 2026-01-27
@@ -35,7 +35,7 @@ Full-text search engine voor document zoekfunctionaliteit.
 
 ## Systemen
 
-Dit component wordt gebruikt in: [[XENA]], [[ZGW]]
+Dit component wordt gebruikt in: [[Systems/XENA-NZGW|XENA-NZGW]], [[Systems/XENA-ZGW|XENA-ZGW]]
 
 ## Technische Details
 

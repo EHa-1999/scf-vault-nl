@@ -18,7 +18,7 @@ tags:
 
 De control laag vormt de tactische kern van LISA. Hier worden de abstracte security requirements vertaald naar concrete, implementeerbare maatregelen. Elke control specificeert wat moet worden gedaan, waarom het belangrijk is en hoe het kan worden geïmplementeerd.
 
-LISA maakt gebruik van de CIS Controls v8 als primaire control set, aangevuld met Extended Privacy Controls voor AVG-specifieke eisen. Samen vormen zij een compleet control framework van 180 controls.
+LISA maakt gebruik van de CIS Controls v8 als primaire control set, aangevuld met eigen controls (EXT) voor privacy, organisatie, personeel, fysieke beveiliging, leveranciers, continuïteit, compliance en techniek. Samen vormen zij een control framework van 231 controls, waarvan 168 baseline.
 
 ## CIS Controls v8
 
@@ -122,7 +122,7 @@ De status op control-niveau is een aggregatie van de status van alle onderliggen
 
 Een control beschrijft wat moet worden gedaan, maar niet hoe dit specifiek moet worden geconfigureerd voor een bepaald systeem of component. De vertaling naar concrete configuraties, procedures en evidence vindt plaats in de implementatielaag.
 
-E�n control kan meerdere implementaties hebben: één per component waarop de control van toepassing is. De control "Encrypt Sensitive Data at Rest" (CIS-3.11) zal apart worden geïmplementeerd voor MinIO, PostgreSQL en andere systemen die gevoelige data opslaan.
+Eén control kan meerdere implementaties hebben: één per component waarop de control van toepassing is. De control "Encrypt Sensitive Data at Rest" (CIS-3.11) zal apart worden geïmplementeerd voor MinIO, PostgreSQL en andere systemen die gevoelige data opslaan.
 
 Deze one-to-many relatie maakt het mogelijk om:
 - Op control-niveau te rapporteren over totale compliance
@@ -131,7 +131,7 @@ Deze one-to-many relatie maakt het mogelijk om:
 
 ## Prioritering voor Implementatie
 
-Met 180 controls is het essentieel om te prioriteren. LISA biedt hiervoor een priority matrix die rekening houdt met:
+Met 231 controls is het essentieel om te prioriteren. LISA biedt hiervoor een priority matrix die rekening houdt met:
 
 **CIS Implementation Group** vormt de basis: IG1 controls gaan voor IG2, die gaan voor IG3.
 

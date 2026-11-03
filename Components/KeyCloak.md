@@ -6,8 +6,8 @@ component_type: "Identity Provider"
 vendor: "Red Hat"
 version: "24.x"
 systems:
-  - "XENA"
-  - "ZGW"
+  - "XENA-NZGW"
+  - "XENA-ZGW"
 classification: "BBN2"
 benchmark: "[[Benchmarks/EXT/EXT-KeyCloak-v1.0]]"
 benchmark_version: "v1.0"
@@ -38,7 +38,7 @@ Identity and Access Management voor authenticatie en autorisatie.
 
 ## Systemen
 
-Dit component wordt gebruikt in: [[XENA]], [[ZGW]]
+Dit component wordt gebruikt in: [[Systems/XENA-NZGW|XENA-NZGW]], [[Systems/XENA-ZGW|XENA-ZGW]]
 
 ## Technische Details
 

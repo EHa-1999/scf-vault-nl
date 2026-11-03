@@ -6,7 +6,7 @@ component_type: "Object Storage"
 vendor: "MinIO Inc."
 version: "2024.x"
 systems:
-  - "XENA"
+  - "XENA-NZGW"
   - "E-mail-Archief"
 classification: "BBN2"
 benchmark: "[[Benchmarks/EXT/EXT-MinIO-v1.0]]"
@@ -38,7 +38,7 @@ S3-compatible object storage voor document opslag.
 
 ## Systemen
 
-Dit component wordt gebruikt in: [[XENA]], [[E-mail-Archief]]
+Dit component wordt gebruikt in: [[Systems/XENA-NZGW|XENA-NZGW]], [[E-mail-Archief]]
 
 ## Technische Details
 

@@ -3,7 +3,7 @@ id: "IMPL-XENA-MinIO-P3.2"
 type: implementation
 control: "[[Controls/EXT-P/EXT-P3.2 - Implementeer Bewaartermijnen en Verwijdering|EXT-P3.2]]"
 component: "[[Components/MinIO]]"
-system: "[[Systems/XENA]]"
+system: "[[Systems/XENA-NZGW]]"
 impl_status: "Planned"
 dod_status: "Not Started"
 risk_if_missing: "[[Risks/RSK-005]]"
@@ -28,7 +28,7 @@ tags:
 |------------|--------|
 | **Control** | [[Controls/EXT-P/EXT-P3.2 - Implementeer Bewaartermijnen en Verwijdering|EXT-P3.2]] |
 | **Component** | [[Components/MinIO]] |
-| **Systeem** | [[Systems/XENA]] |
+| **Systeem** | [[Systems/XENA-NZGW]] |
 | **Status** | Planned |
 | **DoD Status** | Not Started |
 | **Eigenaar** | @storage-team |

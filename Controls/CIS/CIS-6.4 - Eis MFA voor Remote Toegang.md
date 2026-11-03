@@ -9,7 +9,7 @@ priority_label: "Critical"
 baseline: true
 control_type: "Basic"
 iso27001: "A.8.5"
-nis2: "Art.21(2)(k)"
+nis2: "Art.21(2)(j)"
 bio2: "5.35"
 core_requirement: "SR-3: Access Control & IAM"
 security_requirement:
@@ -58,7 +58,7 @@ compliance_evidence: []
 | Framework | Referentie |
 |-----------|------------|
 | [[Frameworks/ISO-27001-2022|ISO 27001:2022]] | A.8.5 |
-| [[Frameworks/NIS2|NIS2]] | Art.21(2)(k) |
+| [[Frameworks/NIS2|NIS2]] | Art.21(2)(j) |
 | [[Frameworks/BIO2|BIO2]] | 5.35 |
 | **Core Requirement** | SR-3: Access Control & IAM |
 

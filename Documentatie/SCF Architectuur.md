@@ -174,8 +174,8 @@ Components zijn de technische bouwstenen waaruit Systems bestaan. Een Component 
 ```yaml
 ---
 systems:
-  - "XENA"
-  - "ZGW"
+  - "XENA-NZGW"
+  - "XENA-ZGW"
 ---
 ```
 
@@ -202,9 +202,9 @@ Voorbeeld: `IMPL-XENA-MinIO-3.6.md`
 ---
 id: "IMPL-XENA-MinIO-3.6"
 type: implementation
-control: "[[Controls/CIS/CIS-3.6 - Encrypt Data on End-User Devices|CIS-3.6]]"
+control: "[[Controls/CIS/CIS-3.6 - Versleutel Gegevens op Apparaten|CIS-3.6]]"
 component: "[[Components/MinIO]]"
-system: "[[Systems/XENA]]"
+system: "[[Systems/XENA-NZGW]]"
 impl_status: "Implemented"
 dod_status: "Verified"
 risk_if_missing: "[[Risks/RSK-001]]"

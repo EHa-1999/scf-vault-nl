@@ -65,7 +65,7 @@ compliance_evidence: []
 
 Dit control valt onder de volgende Security Requirements:
 
-- [[Frameworks/Security-Requirements/SR-12|SR-12]]
+- [[Frameworks/Security-Requirements/SR-12 - Third-Party Management|SR-12]]
 
 ## Beschrijving
 

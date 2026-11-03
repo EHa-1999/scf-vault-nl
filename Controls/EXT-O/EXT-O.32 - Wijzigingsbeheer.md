@@ -65,7 +65,7 @@ compliance_evidence: []
 
 Dit control valt onder de volgende Security Requirements:
 
-- [[Frameworks/Security-Requirements/SR-10|SR-10]]
+- [[Frameworks/Security-Requirements/SR-10 - Continuous Improvement|SR-10]]
 
 ## Beschrijving
 

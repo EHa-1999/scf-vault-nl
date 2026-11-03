@@ -62,7 +62,7 @@ tags:
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3.10 - Encrypt Sensitive Data in Transit\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/CIS-3.10 - Versleutel Gegevens in Transport\|CIS-3]] Data Protection |
 | **NSA-CISA** | §6: Authentication & Authorization |
 
 **Description:**
@@ -88,7 +88,7 @@ kube-apiserver-arg:
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6.8 - Define and Maintain Role-Based Access Control\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/CIS-6.8 - Definieer RBAC\|CIS-6]] Access Control |
 | **NSA-CISA** | §6: RBAC Authorization |
 
 **Description:**
@@ -113,7 +113,7 @@ kube-apiserver-arg:
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8.2 - Collect Audit Logs\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/CIS-8.2 - Verzamel Auditlogs\|CIS-8]] Audit Log Management |
 | **NSA-CISA** | §7: Audit Logging & Threat Detection |
 
 **Description:**
@@ -142,7 +142,7 @@ kube-apiserver-arg:
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3.10 - Encrypt Sensitive Data in Transit\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/CIS-3.10 - Versleutel Gegevens in Transport\|CIS-3]] Data Protection |
 | **NSA-CISA** | §5: Network Hardening (TLS) |
 
 **Description:**
@@ -170,7 +170,7 @@ kube-apiserver-arg:
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3.11 - Encrypt Sensitive Data at Rest\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/CIS-3.11 - Versleutel Gegevens in Rust\|CIS-3]] Data Protection |
 | **NSA-CISA** | §5: etcd Encryption |
 
 **Description:**
@@ -195,7 +195,7 @@ secrets-encryption: true
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3.10 - Encrypt Sensitive Data in Transit\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/CIS-3.10 - Versleutel Gegevens in Transport\|CIS-3]] Data Protection |
 | **NSA-CISA** | §5: etcd mTLS |
 
 **Description:**
@@ -216,7 +216,7 @@ K3S configures this automatically when using embedded etcd. Verify certificates 
 | Property | Value |
 |----------|-------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-6.6 - Establish and Maintain Access Control Lists\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/CIS-6.6 - Stel Toegangscontrolelijsten Op\|CIS-6]] Access Control |
 | **NSA-CISA** | §5: Control Plane Separation |
 
 **Description:**
@@ -243,7 +243,7 @@ chown root:root /var/lib/rancher/k3s/server/db/
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6.5 - Require MFA for Administrative Access\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/CIS-6.5 - Eis MFA voor Beheerderstoegang\|CIS-6]] Access Control |
 | **NSA-CISA** | §5: Kubelet Security |
 
 **Description:**
@@ -268,7 +268,7 @@ kubelet-arg:
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6.8 - Define and Maintain Role-Based Access Control\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/CIS-6.8 - Definieer RBAC\|CIS-6]] Access Control |
 | **NSA-CISA** | §5: Kubelet Webhook Authorization |
 
 **Description:**
@@ -292,7 +292,7 @@ kubelet-arg:
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4.8 - Uninstall or Disable Unnecessary Services\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/CIS-4.8 - Verwijder Onnodige Services\|CIS-4]] Secure Configuration |
 | **NSA-CISA** | §5: Minimize Attack Surface |
 
 **Description:**
@@ -316,7 +316,7 @@ kubelet-arg:
 | Property | Value |
 |----------|-------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-4.1 - Establish and Maintain a Secure Configuration Proc\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4]] Secure Configuration |
 | **NSA-CISA** | §4: Container Runtime Hardening |
 
 **Description:**
@@ -342,7 +342,7 @@ kubelet-arg:
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-13.4 - Perform Traffic Filtering Between Network Segments\|CIS-13]] Network Monitoring |
+| **CIS Control** | [[Controls/CIS/CIS-13.4 - Filter Verkeer Tussen Segmenten\|CIS-13]] Network Monitoring |
 | **NSA-CISA** | §5: Network Separation & Hardening |
 
 **Description:**
@@ -372,7 +372,7 @@ spec:
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-12.2 - Establish and Maintain a Secure Network Architectu\|CIS-12]] Network Infrastructure |
+| **CIS Control** | [[Controls/CIS/CIS-12.2 - Stel Veilige Netwerkarchitectuur Op\|CIS-12]] Network Infrastructure |
 | **NSA-CISA** | §5: Network Hardening |
 
 **Description:**
@@ -395,7 +395,7 @@ flannel-backend: wireguard-native  # Encrypted overlay
 | Property | Value |
 |----------|-------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-3.10 - Encrypt Sensitive Data in Transit\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/CIS-3.10 - Versleutel Gegevens in Transport\|CIS-3]] Data Protection |
 | **NSA-CISA** | §5: Encrypt All Traffic |
 
 **Description:**
@@ -419,7 +419,7 @@ Implement a service mesh such as Linkerd or Istio for automatic mTLS.
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4.1 - Establish and Maintain a Secure Configuration Proc\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4]] Secure Configuration |
 | **NSA-CISA** | §4: Pod Security Enforcement |
 
 **Description:**
@@ -444,7 +444,7 @@ kubectl label namespace production \
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4.1 - Establish and Maintain a Secure Configuration Proc\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4]] Secure Configuration |
 | **NSA-CISA** | §4: Non-root Containers |
 
 **Description:**
@@ -469,7 +469,7 @@ securityContext:
 | Property | Value |
 |----------|-------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-4.1 - Establish and Maintain a Secure Configuration Proc\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4]] Secure Configuration |
 | **NSA-CISA** | §4: Immutable Container Filesystems |
 
 **Description:**
@@ -493,7 +493,7 @@ securityContext:
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4.1 - Establish and Maintain a Secure Configuration Proc\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4]] Secure Configuration |
 | **NSA-CISA** | §4: Non-root Containers, Rootless Engines |
 
 **Description:**
@@ -520,7 +520,7 @@ securityContext:
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-2.1 - Establish and Maintain a Software Inventory\|CIS-2]] Inventory and Control |
+| **CIS Control** | [[Controls/CIS/CIS-2.1 - Stel Software-inventaris Op\|CIS-2]] Inventory and Control |
 | **NSA-CISA** | §3: Trusted Repositories |
 
 **Description:**
@@ -552,7 +552,7 @@ configs:
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-16.4 - Establish and Manage an Inventory of Third-Party S\|CIS-16]] Application Software Security |
+| **CIS Control** | [[Controls/CIS/CIS-16.4 - Stel Third-party Inventaris Op\|CIS-16]] Application Software Security |
 | **NSA-CISA** | §3: Image Vulnerability Scanning |
 
 **Description:**
@@ -573,7 +573,7 @@ Implement Trivy, Clair, or similar image scanner in CI/CD pipeline.
 | Property | Value |
 |----------|-------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-2.2 - Ensure Authorized Software is Currently Supported\|CIS-2]] Inventory and Control |
+| **CIS Control** | [[Controls/CIS/CIS-2.2 - Zorg dat Software Ondersteund Wordt\|CIS-2]] Inventory and Control |
 | **NSA-CISA** | §3: Container Build Cycle |
 
 **Description:**
@@ -601,7 +601,7 @@ spec:
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3.11 - Encrypt Sensitive Data at Rest\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/CIS-3.11 - Versleutel Gegevens in Rust\|CIS-3]] Data Protection |
 | **NSA-CISA** | §5: Encryption at Rest |
 
 **Description:**
@@ -624,7 +624,7 @@ secrets-encryption: true
 | Property | Value |
 |----------|-------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-3.11 - Encrypt Sensitive Data at Rest\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/CIS-3.11 - Versleutel Gegevens in Rust\|CIS-3]] Data Protection |
 | **NSA-CISA** | §5: Secrets Management |
 
 **Description:**
@@ -650,7 +650,7 @@ Implement External Secrets Operator with HashiCorp Vault or OpenBAO backend.
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-2.5 - Allowlist Authorized Software\|CIS-2]] Software Inventory |
+| **CIS Control** | [[Controls/CIS/CIS-2.5 - Beheer Whitelist van Software\|CIS-2]] Software Inventory |
 | **NSA-CISA** | §3: Verify Image Integrity |
 | **Source Gap** | CIS Kubernetes: not addressed; NSA-CISA §3: explicitly required |
 
@@ -707,7 +707,7 @@ EOF
 | Property | Value |
 |----------|-------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-16.4 - Establish and Manage an Inventory of Third-Party S\|CIS-16]] Software Inventory |
+| **CIS Control** | [[Controls/CIS/CIS-16.4 - Stel Third-party Inventaris Op\|CIS-16]] Software Inventory |
 | **NSA-CISA** | §3: Supply Chain Dependency Tracking (Fig. 3) |
 | **Source Gap** | CIS Kubernetes: not addressed; NSA-CISA §3: supply chain dependencies |
 
@@ -737,7 +737,7 @@ cosign attest --predicate sbom.json --type spdxjson registry.internal.local/app:
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4.8 - Uninstall or Disable Unnecessary Services\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/CIS-4.8 - Verwijder Onnodige Services\|CIS-4]] Secure Configuration |
 | **NSA-CISA** | §3: Container Build Cycle Security (Fig. 5) |
 | **Source Gap** | CIS Kubernetes: runtime only; NSA-CISA §3: build pipeline hardening |
 
@@ -772,7 +772,7 @@ ENTRYPOINT ["java", "-jar", "/app.jar"]
 | Property | Value |
 |----------|-------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-16.1 - Establish and Maintain a Secure Application Develo\|CIS-16]] Application Security |
+| **CIS Control** | [[Controls/CIS/CIS-16.1 - Stel Veilig Ontwikkelproces Op\|CIS-16]] Application Security |
 | **NSA-CISA** | §3: Container Build Cycle Security |
 | **Source Gap** | CIS Kubernetes: not addressed; NSA-CISA §3: build infrastructure security |
 
@@ -804,7 +804,7 @@ cosign verify-attestation --type slsaprovenance registry.internal.local/app:v1.0
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-16.14 - Conduct Threat Modeling\|CIS-16]] Application Security |
+| **CIS Control** | [[Controls/CIS/CIS-16.14 - Voer Threat Modeling Uit\|CIS-16]] Application Security |
 | **NSA-CISA** | §2: Three Threat Sources (supply chain, malicious actors, insider threats) |
 | **Source Gap** | CIS Kubernetes: no threat model; NSA-CISA §2: explicit three-source model |
 
@@ -835,7 +835,7 @@ Create a Kubernetes threat model document covering:
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8.2 - Collect Audit Logs\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/CIS-8.2 - Verzamel Auditlogs\|CIS-8]] Audit Log Management |
 | **NSA-CISA** | §7: Multi-Level Logging (host, application, cloud) |
 | **Source Gap** | CIS Kubernetes: checks if logging is enabled; NSA-CISA §7: holistic logging strategy |
 
@@ -885,7 +885,7 @@ data:
 | Property | Value |
 |----------|-------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-13.2 - Deploy a Host-Based Intrusion Detection System\|CIS-13]] Network Monitoring |
+| **CIS Control** | [[Controls/CIS/CIS-13.2 - Implementeer Host-based IDS\|CIS-13]] Network Monitoring |
 | **NSA-CISA** | §7: Runtime Monitoring & Anomaly Detection |
 | **Source Gap** | CIS Kubernetes: limited to network IDS; NSA-CISA §7: container runtime security |
 
@@ -918,7 +918,7 @@ helm install falco falcosecurity/falco -n falco --create-namespace
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-5.4 - Restrict Administrator Privileges\|CIS-5]] Account Management |
+| **CIS Control** | [[Controls/CIS/CIS-5.4 - Beperk Beheerdersrechten\|CIS-5]] Account Management |
 | **NSA-CISA** | §4: Protecting Pod Service Account Tokens |
 | **Source Gap** | CIS Kubernetes: mentions SA in policies section; NSA-CISA §4: dedicated guidance |
 
@@ -961,7 +961,7 @@ spec:
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4.1 - Establish and Maintain a Secure Configuration Proc\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4]] Secure Configuration |
 | **NSA-CISA** | §4-7: Continuous Compliance Validation |
 | **Source Gap** | CIS Kubernetes: manual checks; NSA-CISA: recommends automated tooling |
 
@@ -1010,7 +1010,7 @@ EOF
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6.7 - Review User Privileges\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/CIS-6.7 - Review Gebruikersrechten\|CIS-6]] Access Control |
 | **NSA-CISA** | §2: Insider Threats; §6: Least Privilege RBAC |
 | **Source Gap** | CIS Kubernetes: checks RBAC config; NSA-CISA §2: insider threat as explicit domain |
 
@@ -1044,7 +1044,7 @@ kubectl get rolebindings,clusterrolebindings -A -o wide
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4.1 - Establish and Maintain a Secure Configuration Proc\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4]] Secure Configuration |
 | **NSA-CISA** | §4: Admission Controller Enforcement |
 | **Source Gap** | CIS Kubernetes: checks PSA only; NSA-CISA §4: recommends admission controllers broadly |
 
@@ -1076,7 +1076,7 @@ kubectl apply -f https://raw.githubusercontent.com/kyverno/policies/main/best-pr
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4.1 - Establish and Maintain a Secure Configuration Proc\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4]] Secure Configuration |
 | **NSA-CISA** | §4: Hardening Container Environments |
 | **Source Gap** | CIS Kubernetes: not checked; NSA-CISA §4: resource limits recommended |
 
@@ -1130,7 +1130,7 @@ spec:
 | Property | Value |
 |----------|-------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-13.4 - Perform Traffic Filtering Between Network Segments\|CIS-13]] Network Monitoring |
+| **CIS Control** | [[Controls/CIS/CIS-13.4 - Filter Verkeer Tussen Segmenten\|CIS-13]] Network Monitoring |
 | **NSA-CISA** | §5: Network Separation, Default Deny |
 | **Source Gap** | K3S-4.1 covers ingress deny only; NSA-CISA §5: both directions |
 
@@ -1181,7 +1181,7 @@ spec:
 | Property | Value |
 |----------|-------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-12.2 - Establish and Maintain a Secure Network Architectu\|CIS-12]] Network Architecture |
+| **CIS Control** | [[Controls/CIS/CIS-12.2 - Stel Veilige Netwerkarchitectuur Op\|CIS-12]] Network Architecture |
 | **NSA-CISA** | §4: Blast Radius Limitation; §5: Control Plane Isolation |
 | **Source Gap** | CIS Kubernetes: basic namespace checks; NSA-CISA: architectural isolation |
 

@@ -65,7 +65,7 @@ compliance_evidence: []
 
 Dit control valt onder de volgende Security Requirements:
 
-- [[Frameworks/Security-Requirements/SR-1|SR-1]]
+- [[Frameworks/Security-Requirements/SR-1 - Security Governance Framework|SR-1]]
 
 ## Beschrijving
 

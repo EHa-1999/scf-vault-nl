@@ -6,7 +6,7 @@ component_type: "Secret Management"
 vendor: "OpenBAO Community"
 version: "2.x"
 systems:
-  - "XENA"
+  - "XENA-NZGW"
 classification: "BBN3"
 status: active
 created: 2026-01-27
@@ -34,7 +34,7 @@ Secret management en key vault oplossing.
 
 ## Systemen
 
-Dit component wordt gebruikt in: [[XENA]]
+Dit component wordt gebruikt in: [[Systems/XENA-NZGW|XENA-NZGW]]
 
 ## Technische Details
 

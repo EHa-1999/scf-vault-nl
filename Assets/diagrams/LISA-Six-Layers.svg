@@ -79,13 +79,13 @@
     <rect x="50" y="250" width="8" height="65" rx="4" fill="#c6f6d5"/>
     <text x="75" y="275" font-family="Segoe UI, Arial" font-size="11" font-weight="bold" fill="#c6f6d5">LAAG 3</text>
     <text x="140" y="275" font-family="Segoe UI, Arial" font-size="14" font-weight="bold" fill="white">CONTROLS</text>
-    <text x="75" y="298" font-family="Segoe UI, Arial" font-size="11" fill="#c6f6d5">153 CIS Controls v8 + 27 Extended Privacy Controls</text>
+    <text x="75" y="298" font-family="Segoe UI, Arial" font-size="11" fill="#c6f6d5">153 CIS Controls v8 + 78 Extended Controls</text>
     
     <!-- Control counts -->
     <rect x="520" y="262" width="90" height="20" rx="4" fill="rgba(255,255,255,0.2)"/>
-    <text x="565" y="276" text-anchor="middle" font-family="Segoe UI, Arial" font-size="9" fill="white">93 Baseline</text>
+    <text x="565" y="276" text-anchor="middle" font-family="Segoe UI, Arial" font-size="9" fill="white">168 Baseline</text>
     <rect x="620" y="262" width="90" height="20" rx="4" fill="rgba(255,255,255,0.25)"/>
-    <text x="665" y="276" text-anchor="middle" font-family="Segoe UI, Arial" font-size="9" fill="white">87 Optioneel</text>
+    <text x="665" y="276" text-anchor="middle" font-family="Segoe UI, Arial" font-size="9" fill="white">63 Optioneel</text>
   </g>
   
   <!-- Arrow 3→4 -->

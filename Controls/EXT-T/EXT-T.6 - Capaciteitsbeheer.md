@@ -65,7 +65,7 @@ compliance_evidence: []
 
 Dit control valt onder de volgende Security Requirements:
 
-- [[Frameworks/Security-Requirements/SR-6|SR-6]]
+- [[Frameworks/Security-Requirements/SR-6 - Security Monitoring & Logging|SR-6]]
 
 ## Beschrijving
 

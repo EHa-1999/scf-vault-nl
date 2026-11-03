@@ -1,9 +1,9 @@
 ---
 id: "IMPL-XENA-MinIO-3.6"
 type: implementation
-control: "[[Controls/CIS/CIS-3.6 - Encrypt Data on End-User Devices|CIS-3.6]]"
+control: "[[Controls/CIS/CIS-3.6 - Versleutel Gegevens op Apparaten|CIS-3.6]]"
 component: "[[Components/MinIO]]"
-system: "[[Systems/XENA]]"
+system: "[[Systems/XENA-NZGW]]"
 impl_status: "Implemented"
 dod_status: "Verified"
 risk_if_missing: "[[Risks/RSK-001]]"
@@ -26,9 +26,9 @@ tags:
 
 | Eigenschap | Waarde |
 |------------|--------|
-| **Control** | [[Controls/CIS/CIS-3.6 - Encrypt Data on End-User Devices|CIS-3.6]] |
+| **Control** | [[Controls/CIS/CIS-3.6 - Versleutel Gegevens op Apparaten|CIS-3.6]] |
 | **Component** | [[Components/MinIO]] |
-| **Systeem** | [[Systems/XENA]] |
+| **Systeem** | [[Systems/XENA-NZGW]] |
 | **Status** | Implemented |
 | **DoD Status** | Verified |
 | **Eigenaar** | @storage-team |

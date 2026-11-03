@@ -131,7 +131,7 @@ FROM "Components"
 WHERE cis_benchmark = false OR !cis_benchmark
 ```
 
-→ Zie [[Documentatie/CIS Benchmark Mapping Guide|CIS Benchmark Mapping Guide]] voor Extended Benchmarks
+→ Zie [[Documentatie/CIS Benchmark Handleiding|CIS Benchmark Mapping Guide]] voor Extended Benchmarks
 
 ---
 
@@ -139,7 +139,7 @@ WHERE cis_benchmark = false OR !cis_benchmark
 
 1. Identificeer het component in de [[Documentatie/Systeem-intakeprocedure|Systeem-intake]]
 2. Maak document via [[Templates/Component Template|Component Template]]
-3. Check [[Documentatie/CIS Benchmark Mapping Guide|CIS Benchmark beschikbaarheid]]
+3. Check [[Documentatie/CIS Benchmark Handleiding|CIS Benchmark beschikbaarheid]]
 4. Maak Implementation documents voor relevante controls
 
 ---
@@ -148,5 +148,5 @@ WHERE cis_benchmark = false OR !cis_benchmark
 
 - [[Systems/_index|🖥️ Systems]] — Waar components deel van uitmaken
 - [[Implementations/_index|⚙️ Implementations]] — Hoe controls op components worden toegepast
-- [[Documentatie/CIS Benchmark Mapping Guide|CIS Benchmark Mapping]]
-- [[Documentatie/Benchmarks/EXT-MinIO|Extended Benchmark MinIO]] (voorbeeld)
+- [[Documentatie/CIS Benchmark Handleiding|CIS Benchmark Mapping]]
+- [[Benchmarks/EXT/EXT-MinIO-v1.0|Extended Benchmark MinIO]] (voorbeeld)

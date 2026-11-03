@@ -65,7 +65,7 @@ compliance_evidence: []
 
 Dit control valt onder de volgende Security Requirements:
 
-- [[Frameworks/Security-Requirements/SR-7|SR-7]]
+- [[Frameworks/Security-Requirements/SR-7 - Network Security & Segmentation|SR-7]]
 
 ## Beschrijving
 

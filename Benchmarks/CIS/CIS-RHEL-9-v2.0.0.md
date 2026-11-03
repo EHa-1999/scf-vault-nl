@@ -118,7 +118,7 @@ The following sections contain selected key recommendations with full technical 
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.8\|CIS-4.8]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.8 - Verwijder Onnodige Services\|CIS-4.8]] |
 
 **Description:**
 The cramfs filesystem type is a compressed read-only Linux filesystem. Disabling unused filesystems reduces the attack surface.
@@ -161,7 +161,7 @@ modprobe -r cramfs 2>/dev/null || true
 | Property | Value |
 |----------|-------|
 | **Level** | 2 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.8\|CIS-4.8]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.8 - Verwijder Onnodige Services\|CIS-4.8]] |
 
 **Note:** squashfs is used by snap packages. Only disable if snap is not required.
 
@@ -186,7 +186,7 @@ EOF
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.1\|CIS-4.1]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4.1]] |
 
 **Description:**
 The /tmp directory is a world-writable directory. Making it a separate partition limits the impact of resource exhaustion attacks.
@@ -216,7 +216,7 @@ systemctl enable --now tmp.mount
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.1\|CIS-4.1]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4.1]] |
 
 **Audit:**
 ```bash
@@ -244,7 +244,7 @@ systemctl restart tmp.mount
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-7.4\|CIS-7.4]] |
+| **CIS Control** | [[Controls/CIS/CIS-7.4 - Voer Geautomatiseerd Applicatie Patchbeheer Uit\|CIS-7.4]] |
 
 **Description:**
 GPG keys ensure packages are from trusted sources.
@@ -267,7 +267,7 @@ rpm --import https://www.redhat.com/security/data/fd431d51.txt
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-7.4\|CIS-7.4]] |
+| **CIS Control** | [[Controls/CIS/CIS-7.4 - Voer Geautomatiseerd Applicatie Patchbeheer Uit\|CIS-7.4]] |
 
 **Audit:**
 ```bash
@@ -291,7 +291,7 @@ sed -i 's/^gpgcheck\s*=.*/gpgcheck=1/' /etc/dnf/dnf.conf
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-3.14\|CIS-3.14]] |
+| **CIS Control** | [[Controls/CIS/CIS-3.14 - Log Toegang tot Gevoelige Gegevens\|CIS-3.14]] |
 
 **Description:**
 AIDE (Advanced Intrusion Detection Environment) takes a snapshot of filesystem state and can detect unauthorized changes.
@@ -317,7 +317,7 @@ mv /var/lib/aide/aide.db.new.gz /var/lib/aide/aide.db.gz
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-3.14\|CIS-3.14]] |
+| **CIS Control** | [[Controls/CIS/CIS-3.14 - Log Toegang tot Gevoelige Gegevens\|CIS-3.14]] |
 
 **Audit:**
 ```bash
@@ -363,7 +363,7 @@ systemctl enable --now aidecheck.timer
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.1\|CIS-4.1]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4.1]] |
 
 **Description:**
 Setting a bootloader password prevents unauthorized users from changing boot parameters.
@@ -393,7 +393,7 @@ cat /boot/grub2/user.cfg
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-8.4\|CIS-8.4]] |
+| **CIS Control** | [[Controls/CIS/CIS-8.4 - Standaardiseer Tijdsynchronisatie\|CIS-8.4]] |
 
 **Description:**
 Accurate time is critical for log correlation and security analysis.
@@ -416,7 +416,7 @@ systemctl enable --now chronyd
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-8.4\|CIS-8.4]] |
+| **CIS Control** | [[Controls/CIS/CIS-8.4 - Standaardiseer Tijdsynchronisatie\|CIS-8.4]] |
 
 **Audit:**
 ```bash
@@ -445,7 +445,7 @@ systemctl restart chronyd
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.8\|CIS-4.8]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.8 - Verwijder Onnodige Services\|CIS-4.8]] |
 
 **Audit:**
 ```bash
@@ -464,7 +464,7 @@ dnf remove xorg-x11-server*
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.8\|CIS-4.8]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.8 - Verwijder Onnodige Services\|CIS-4.8]] |
 
 **Audit:**
 ```bash
@@ -485,7 +485,7 @@ dnf remove avahi
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.8\|CIS-4.8]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.8 - Verwijder Onnodige Services\|CIS-4.8]] |
 
 **Note:** Only remove if printing is not required.
 
@@ -505,7 +505,7 @@ dnf remove cups
 | Property | Value |
 |----------|-------|
 | **Level** | 2 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.8\|CIS-4.8]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.8 - Verwijder Onnodige Services\|CIS-4.8]] |
 
 **Audit:**
 ```bash
@@ -532,7 +532,7 @@ sysctl --system
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.4\|CIS-4.4]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.4 - Implementeer Firewall op Servers\|CIS-4.4]] |
 
 **Note:** Do not disable on routers or K8s nodes that need forwarding.
 
@@ -551,7 +551,7 @@ sysctl net.ipv6.conf.all.forwarding
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.4\|CIS-4.4]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.4 - Implementeer Firewall op Servers\|CIS-4.4]] |
 
 **Audit:**
 ```bash
@@ -578,7 +578,7 @@ sysctl --system
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.4\|CIS-4.4]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.4 - Implementeer Firewall op Servers\|CIS-4.4]] |
 
 **Audit:**
 ```bash
@@ -598,7 +598,7 @@ systemctl enable --now firewalld
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.4\|CIS-4.4]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.4 - Implementeer Firewall op Servers\|CIS-4.4]] |
 
 **Audit:**
 ```bash
@@ -613,7 +613,7 @@ systemctl is-active firewalld
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.4\|CIS-4.4]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.4 - Implementeer Firewall op Servers\|CIS-4.4]] |
 
 **Audit:**
 ```bash
@@ -636,7 +636,7 @@ firewall-cmd --set-default-zone=drop
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-5.2\|CIS-5.2]] |
+| **CIS Control** | [[Controls/CIS/CIS-5.2 - Gebruik Unieke Wachtwoorden\|CIS-5.2]] |
 
 **Description:**
 Strong passwords should be enforced via PAM.
@@ -666,7 +666,7 @@ EOF
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.10\|CIS-4.10]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.10 - Handhaaf Automatische Vergrendeling\|CIS-4.10]] |
 
 **Audit:**
 ```bash
@@ -692,7 +692,7 @@ EOF
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-5.4\|CIS-5.4]] |
+| **CIS Control** | [[Controls/CIS/CIS-5.4 - Beperk Beheerdersrechten\|CIS-5.4]] |
 
 **Audit:**
 ```bash
@@ -714,7 +714,7 @@ systemctl reload sshd
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.1\|CIS-4.1]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4.1]] |
 
 **Note:** SSH Protocol 2 is the default in RHEL 9.
 
@@ -730,7 +730,7 @@ sshd -T | grep protocol
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.1\|CIS-4.1]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4.1]] |
 
 **Audit:**
 ```bash
@@ -746,7 +746,7 @@ sshd -T | grep permitemptypasswords
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.3\|CIS-4.3]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.3 - Configureer Automatische Sessievergrendeling\|CIS-4.3]] |
 
 **Audit:**
 ```bash
@@ -769,7 +769,7 @@ systemctl reload sshd
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-4.10\|CIS-4.10]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.10 - Handhaaf Automatische Vergrendeling\|CIS-4.10]] |
 
 **Audit:**
 ```bash
@@ -793,7 +793,7 @@ systemctl reload sshd
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-8.2\|CIS-8.2]] |
+| **CIS Control** | [[Controls/CIS/CIS-8.2 - Verzamel Auditlogs\|CIS-8.2]] |
 
 **Audit:**
 ```bash
@@ -813,7 +813,7 @@ systemctl enable --now rsyslog
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-8.2\|CIS-8.2]] |
+| **CIS Control** | [[Controls/CIS/CIS-8.2 - Verzamel Auditlogs\|CIS-8.2]] |
 
 **Audit:**
 ```bash
@@ -829,7 +829,7 @@ systemctl is-enabled rsyslog
 | Property | Value |
 |----------|-------|
 | **Level** | 2 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-8.2\|CIS-8.2]] |
+| **CIS Control** | [[Controls/CIS/CIS-8.2 - Verzamel Auditlogs\|CIS-8.2]] |
 
 **Audit:**
 ```bash
@@ -848,7 +848,7 @@ systemctl enable --now auditd
 | Property | Value |
 |----------|-------|
 | **Level** | 2 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-8.3\|CIS-8.3]] |
+| **CIS Control** | [[Controls/CIS/CIS-8.3 - Zorg voor Adequate Logopslag\|CIS-8.3]] |
 
 **Audit:**
 ```bash
@@ -867,7 +867,7 @@ sed -i 's/^max_log_file\s*=.*/max_log_file = 256/' /etc/audit/auditd.conf
 | Property | Value |
 |----------|-------|
 | **Level** | 2 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-8.3\|CIS-8.3]] |
+| **CIS Control** | [[Controls/CIS/CIS-8.3 - Zorg voor Adequate Logopslag\|CIS-8.3]] |
 
 **Audit:**
 ```bash
@@ -887,7 +887,7 @@ grep max_log_file_action /etc/audit/auditd.conf
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-3.3\|CIS-3.3]] |
+| **CIS Control** | [[Controls/CIS/CIS-3.3 - Configureer Toegangscontrolelijsten\|CIS-3.3]] |
 
 **Audit:**
 ```bash
@@ -908,7 +908,7 @@ chmod 644 /etc/passwd
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-3.3\|CIS-3.3]] |
+| **CIS Control** | [[Controls/CIS/CIS-3.3 - Configureer Toegangscontrolelijsten\|CIS-3.3]] |
 
 **Audit:**
 ```bash
@@ -931,7 +931,7 @@ chmod 0000 /etc/shadow
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-5.4\|CIS-5.4]] |
+| **CIS Control** | [[Controls/CIS/CIS-5.4 - Beperk Beheerdersrechten\|CIS-5.4]] |
 
 **Audit:**
 ```bash
@@ -946,7 +946,7 @@ awk -F: '($3 == 0) { print $1 }' /etc/passwd
 | Property | Value |
 |----------|-------|
 | **Level** | 1 - Server |
-| **CIS Control** | [[Controls/CIS/CIS-5.1\|CIS-5.1]] |
+| **CIS Control** | [[Controls/CIS/CIS-5.1 - Stel Accountinventaris Op\|CIS-5.1]] |
 
 **Audit:**
 ```bash
@@ -960,20 +960,20 @@ cut -f3 -d":" /etc/passwd | sort | uniq -d
 
 | CIS Control | Recommendations | Level |
 |-------------|-----------------|-------|
-| [[Controls/CIS/CIS-3.3\|CIS-3.3]] | 6.1.1, 6.1.2, 7.x | 1 |
-| [[Controls/CIS/CIS-3.14\|CIS-3.14]] | 1.3.1, 1.3.2 | 1 |
-| [[Controls/CIS/CIS-4.1\|CIS-4.1]] | 1.1.2.x, 1.4.1, 4.2.x | 1 |
-| [[Controls/CIS/CIS-4.3\|CIS-4.3]] | 4.2.4 | 1 |
-| [[Controls/CIS/CIS-4.4\|CIS-4.4]] | 3.2.x, 3.3.x | 1 |
-| [[Controls/CIS/CIS-4.8\|CIS-4.8]] | 1.1.1.x, 2.2.x, 3.1.1 | 1/2 |
-| [[Controls/CIS/CIS-4.10\|CIS-4.10]] | 4.1.2, 4.2.5 | 1 |
-| [[Controls/CIS/CIS-5.1\|CIS-5.1]] | 6.2.2 | 1 |
-| [[Controls/CIS/CIS-5.2\|CIS-5.2]] | 4.1.1 | 1 |
-| [[Controls/CIS/CIS-5.4\|CIS-5.4]] | 4.2.1, 6.2.1 | 1 |
-| [[Controls/CIS/CIS-7.4\|CIS-7.4]] | 1.2.1, 1.2.2 | 1 |
-| [[Controls/CIS/CIS-8.2\|CIS-8.2]] | 5.1.x, 5.2.1 | 1/2 |
-| [[Controls/CIS/CIS-8.3\|CIS-8.3]] | 5.2.2, 5.2.3 | 2 |
-| [[Controls/CIS/CIS-8.4\|CIS-8.4]] | 2.1.1, 2.1.2 | 1 |
+| [[Controls/CIS/CIS-3.3 - Configureer Toegangscontrolelijsten\|CIS-3.3]] | 6.1.1, 6.1.2, 7.x | 1 |
+| [[Controls/CIS/CIS-3.14 - Log Toegang tot Gevoelige Gegevens\|CIS-3.14]] | 1.3.1, 1.3.2 | 1 |
+| [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4.1]] | 1.1.2.x, 1.4.1, 4.2.x | 1 |
+| [[Controls/CIS/CIS-4.3 - Configureer Automatische Sessievergrendeling\|CIS-4.3]] | 4.2.4 | 1 |
+| [[Controls/CIS/CIS-4.4 - Implementeer Firewall op Servers\|CIS-4.4]] | 3.2.x, 3.3.x | 1 |
+| [[Controls/CIS/CIS-4.8 - Verwijder Onnodige Services\|CIS-4.8]] | 1.1.1.x, 2.2.x, 3.1.1 | 1/2 |
+| [[Controls/CIS/CIS-4.10 - Handhaaf Automatische Vergrendeling\|CIS-4.10]] | 4.1.2, 4.2.5 | 1 |
+| [[Controls/CIS/CIS-5.1 - Stel Accountinventaris Op\|CIS-5.1]] | 6.2.2 | 1 |
+| [[Controls/CIS/CIS-5.2 - Gebruik Unieke Wachtwoorden\|CIS-5.2]] | 4.1.1 | 1 |
+| [[Controls/CIS/CIS-5.4 - Beperk Beheerdersrechten\|CIS-5.4]] | 4.2.1, 6.2.1 | 1 |
+| [[Controls/CIS/CIS-7.4 - Voer Geautomatiseerd Applicatie Patchbeheer Uit\|CIS-7.4]] | 1.2.1, 1.2.2 | 1 |
+| [[Controls/CIS/CIS-8.2 - Verzamel Auditlogs\|CIS-8.2]] | 5.1.x, 5.2.1 | 1/2 |
+| [[Controls/CIS/CIS-8.3 - Zorg voor Adequate Logopslag\|CIS-8.3]] | 5.2.2, 5.2.3 | 2 |
+| [[Controls/CIS/CIS-8.4 - Standaardiseer Tijdsynchronisatie\|CIS-8.4]] | 2.1.1, 2.1.2 | 1 |
 
 ---
 

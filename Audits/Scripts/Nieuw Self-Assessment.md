@@ -23,8 +23,8 @@ const assessmentType = await tp.system.suggester(
 let scope, cis_categories;
 if (assessmentType === "system") {
   scope = await tp.system.suggester(
-    ["XENA", "ZGW", "E-mail-Archief", "Anders..."],
-    ["XENA", "ZGW", "E-mail-Archief", "custom"]
+    ["XENA-NZGW", "XENA-ZGW", "E-mail-Archief", "Anders..."],
+    ["XENA-NZGW", "XENA-ZGW", "E-mail-Archief", "custom"]
   );
   if (scope === "custom") {
     scope = await tp.system.prompt("Systeem naam");

@@ -54,7 +54,7 @@ Data vormt de kern van wat we beschermen. Dit domein richt zich op het classific
 
 Het domein begint met weten welke data je hebt en hoe gevoelig deze is. Pas met die kennis kunnen passende beschermingsmaatregelen worden geselecteerd.
 
-→ [[Frameworks/Security-Requirements/SR-4 - Cryptographic Controls & Gegevensbescherming|SR-4 Details]]
+→ [[Frameworks/Security-Requirements/SR-4 - Cryptographic Controls & Data Protection|SR-4 Details]]
 
 ## SR-5: Secure System Development & Maintenance
 

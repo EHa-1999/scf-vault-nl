@@ -59,7 +59,7 @@ Geavanceerde scripts voor geautomatiseerde document creatie:
 
 | Script | Functie |
 |--------|---------|
-| [[Audits/Scripts/Nieuwe Audit\|Nieuwe Audit]] | Compleet audit dossier aanmaken |
+| [[Audits/Scripts/Nieuwe Interne Audit\|Nieuwe Audit]] | Compleet audit dossier aanmaken |
 | [[Audits/Scripts/Nieuw Self-Assessment\|Nieuw Self-Assessment]] | Assessment document genereren |
 | [[Audits/Scripts/Nieuwe Bevinding\|Nieuwe Bevinding]] | Finding registreren |
 

@@ -65,7 +65,7 @@ compliance_evidence: []
 
 Dit control valt onder de volgende Security Requirements:
 
-- [[Frameworks/Security-Requirements/SR-8|SR-8]]
+- [[Frameworks/Security-Requirements/SR-8 - Incident Response & Recovery|SR-8]]
 
 ## Beschrijving
 

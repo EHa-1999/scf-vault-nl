@@ -1,9 +1,9 @@
 ---
 id: "IMPL-XENA-KeyCloak-6.5"
 type: implementation
-control: "[[Controls/CIS/CIS-6.5 - Require MFA for Administrative Access|CIS-6.5]]"
+control: "[[Controls/CIS/CIS-6.5 - Eis MFA voor Beheerderstoegang|CIS-6.5]]"
 component: "[[Components/KeyCloak]]"
-system: "[[Systems/XENA]]"
+system: "[[Systems/XENA-NZGW]]"
 impl_status: "Implemented"
 dod_status: "Verified"
 risk_if_missing: "[[Risks/RSK-002]]"
@@ -26,9 +26,9 @@ tags:
 
 | Eigenschap | Waarde |
 |------------|--------|
-| **Control** | [[Controls/CIS/CIS-6.5 - Require MFA for Administrative Access|CIS-6.5]] |
+| **Control** | [[Controls/CIS/CIS-6.5 - Eis MFA voor Beheerderstoegang|CIS-6.5]] |
 | **Component** | [[Components/KeyCloak]] |
-| **Systeem** | [[Systems/XENA]] |
+| **Systeem** | [[Systems/XENA-NZGW]] |
 | **Status** | Implemented |
 | **DoD Status** | Verified |
 | **Eigenaar** | @identity-team |

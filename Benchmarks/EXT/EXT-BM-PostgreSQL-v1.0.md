@@ -53,7 +53,7 @@ tags:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-5\|CIS-5]] Account Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 5: Accountbeheer\|CIS-5]] Account Management |
 
 **Beschrijving:**
 Gebruik scram-sha-256 als authenticatie methode in plaats van md5 of trust.
@@ -77,7 +77,7 @@ host    all    all    0.0.0.0/0    scram-sha-256
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-5\|CIS-5]] Account Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 5: Accountbeheer\|CIS-5]] Account Management |
 
 **Beschrijving:**
 Trust authentication mag nooit gebruikt worden voor remote connecties.
@@ -97,7 +97,7 @@ Verwijder alle regels met `trust` behalve eventueel local socket voor postgres u
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-5\|CIS-5]] Account Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 5: Accountbeheer\|CIS-5]] Account Management |
 
 **Beschrijving:**
 Wachtwoorden moeten voldoen aan complexiteitseisen.
@@ -122,7 +122,7 @@ SELECT pg_reload_conf();
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Stel connectielimieten in per user om resource exhaustion te voorkomen.
@@ -146,7 +146,7 @@ ALTER ROLE application_user CONNECTION LIMIT 50;
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Gebruikers moeten alleen de minimaal benodigde rechten hebben.
@@ -174,7 +174,7 @@ GRANT SELECT ON specific_table TO read_only_user;
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Applicaties mogen geen superuser accounts gebruiken.
@@ -194,7 +194,7 @@ Maak dedicated applicatie users zonder superuser rechten.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Gebruik Row Level Security voor multi-tenant data isolatie.
@@ -218,7 +218,7 @@ CREATE POLICY tenant_isolation ON sensitive_data
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 De public schema moet geen default CREATE rechten hebben.
@@ -243,7 +243,7 @@ REVOKE ALL ON DATABASE production FROM PUBLIC;
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Alle database connecties moeten via SSL/TLS verlopen.
@@ -272,7 +272,7 @@ hostssl all all 0.0.0.0/0 scram-sha-256
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Minimaal TLS 1.2 moet afgedwongen worden.
@@ -295,7 +295,7 @@ ssl_min_protocol_version = 'TLSv1.2'
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Database files moeten versleuteld zijn op disk niveau.
@@ -317,7 +317,7 @@ Gebruik LUKS encrypted volumes of cloud provider encryption (zoals AWS EBS encry
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Gebruik pgcrypto voor applicatie-niveau encryptie van gevoelige kolommen.
@@ -343,7 +343,7 @@ UPDATE users SET ssn = pgp_sym_encrypt(ssn, 'encryption_key');
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Log alle connecties en disconnecties.
@@ -368,7 +368,7 @@ log_disconnections = on
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Log DDL statements en optioneel DML voor gevoelige tabellen.
@@ -392,7 +392,7 @@ log_min_duration_statement = 1000  # log queries > 1s
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Log bestanden moeten beperkte permissions hebben.
@@ -415,7 +415,7 @@ log_file_mode = 0600
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Gebruik pgAudit voor gedetailleerde audit logging conform compliance eisen.
@@ -442,7 +442,7 @@ pgaudit.log = 'all'
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-12\|CIS-12]] Network Infrastructure |
+| **CIS Control** | [[Controls/CIS/_index#CIS 12: Netwerkinfrastructuur Beheer\|CIS-12]] Network Infrastructure |
 
 **Beschrijving:**
 PostgreSQL moet alleen luisteren op specifieke interfaces.
@@ -465,7 +465,7 @@ listen_addresses = '10.0.0.5'  # specifiek IP, niet '*'
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-13\|CIS-13]] Network Monitoring |
+| **CIS Control** | [[Controls/CIS/_index#CIS 13: Netwerkmonitoring en Verdediging\|CIS-13]] Network Monitoring |
 
 **Beschrijving:**
 Toegang tot port 5432 moet beperkt zijn via firewall.
@@ -489,7 +489,7 @@ iptables -A INPUT -p tcp --dport 5432 -j DROP
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-12\|CIS-12]] Network Infrastructure |
+| **CIS Control** | [[Controls/CIS/_index#CIS 12: Netwerkinfrastructuur Beheer\|CIS-12]] Network Infrastructure |
 
 **Beschrijving:**
 Beperk database toegang tot specifieke source IPs.
@@ -515,7 +515,7 @@ hostssl all admin 10.0.2.5/32 scram-sha-256
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-11\|CIS-11]] Data Recovery |
+| **CIS Control** | [[Controls/CIS/_index#CIS 11: Gegevensherstel\|CIS-11]] Data Recovery |
 
 **Beschrijving:**
 Automatische backups moeten geconfigureerd zijn.
@@ -542,7 +542,7 @@ archive_command = 'cp %p /backup/wal/%f'
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-11\|CIS-11]] Data Recovery |
+| **CIS Control** | [[Controls/CIS/_index#CIS 11: Gegevensherstel\|CIS-11]] Data Recovery |
 
 **Beschrijving:**
 Backups moeten versleuteld worden opgeslagen.
@@ -566,7 +566,7 @@ pg_dump dbname | gpg --symmetric --cipher-algo AES256 > backup.sql.gpg
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-11\|CIS-11]] Data Recovery |
+| **CIS Control** | [[Controls/CIS/_index#CIS 11: Gegevensherstel\|CIS-11]] Data Recovery |
 
 **Beschrijving:**
 Backup restores moeten periodiek getest worden.

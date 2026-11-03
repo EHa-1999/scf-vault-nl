@@ -65,7 +65,7 @@ compliance_evidence: []
 
 Dit control valt onder de volgende Security Requirements:
 
-- [[Frameworks/Security-Requirements/SR-3|SR-3]]
+- [[Frameworks/Security-Requirements/SR-3 - Access Control & Identity Management|SR-3]]
 
 ## Beschrijving
 

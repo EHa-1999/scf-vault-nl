@@ -6,8 +6,8 @@ component_type: "Reverse Proxy"
 vendor: "F5 Networks"
 version: "1.25+"
 systems:
-  - "XENA"
-  - "ZGW"
+  - "XENA-NZGW"
+  - "XENA-ZGW"
 classification: "BBN2"
 benchmark: "[[Benchmarks/CIS/CIS-NGINX-v2.1.0]]"
 benchmark_version: "v2.1.0"
@@ -38,7 +38,7 @@ Reverse proxy en load balancer voor webverkeer.
 
 ## Systemen
 
-Dit component wordt gebruikt in: [[XENA]], [[ZGW]]
+Dit component wordt gebruikt in: [[Systems/XENA-NZGW|XENA-NZGW]], [[Systems/XENA-ZGW|XENA-ZGW]]
 
 ## Technische Details
 

@@ -6,8 +6,8 @@ component_type: "Container Orchestration"
 vendor: "Rancher Labs / SUSE"
 version: "1.29.x"
 systems:
-  - "XENA"
-  - "ZGW"
+  - "XENA-NZGW"
+  - "XENA-ZGW"
 classification: "BBN2"
 benchmark: "[[Benchmarks/CIS/CIS-Kubernetes-1.29-v1.0.0]]"
 benchmark_version: "v1.0.0"
@@ -88,4 +88,4 @@ kubelet-arg:
 - [[Benchmarks/CIS/CIS-Kubernetes-1.29-v1.0.0|CIS Kubernetes Benchmark]]
 - [[Benchmarks/CIS/CIS-RHEL-9-v2.0.0|CIS RHEL 9 Benchmark]]
 - [[Components/RHEL|RHEL Component]]
-- [[Systems/XENA|XENA System]]
+- [[Systems/XENA-NZGW|XENA System]]

@@ -65,7 +65,7 @@ compliance_evidence: []
 
 Dit control valt onder de volgende Security Requirements:
 
-- [[Frameworks/Security-Requirements/SR-11|SR-11]]
+- [[Frameworks/Security-Requirements/SR-11 - Physical & Environmental Security|SR-11]]
 
 ## Beschrijving
 

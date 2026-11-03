@@ -57,7 +57,7 @@ tags:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-5\|CIS-5]] Account Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 5: Accountbeheer\|CIS-5]] Account Management |
 
 **Beschrijving:**
 GZAC is geconfigureerd met KeyCloak als identity provider via OIDC.
@@ -88,7 +88,7 @@ spring:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 JWT tokens worden correct gevalideerd op signature, expiry en issuer.
@@ -106,7 +106,7 @@ curl -H "Authorization: Bearer invalid" https://gzac.example.com/api/
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Access tokens hebben een korte levensduur (aanbevolen: 5-15 minuten).
@@ -121,7 +121,7 @@ In KeyCloak admin console: Realm Settings → Tokens → Access Token Lifespan
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Refresh token rotation is ingeschakeld voor extra beveiliging.
@@ -135,7 +135,7 @@ Refresh token rotation is ingeschakeld voor extra beveiliging.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 RBAC is geconfigureerd met specifieke rollen voor verschillende functies (behandelaar, beheerder, etc.).
@@ -150,7 +150,7 @@ In KeyCloak: check Realm Roles en Client Roles voor GZAC.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Toegang tot zaken is beperkt op basis van zaaktype en rol.
@@ -162,7 +162,7 @@ Toegang tot zaken is beperkt op basis van zaaktype en rol.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Taken kunnen alleen worden geclaimd en afgerond door geautoriseerde gebruikers.
@@ -176,7 +176,7 @@ Taken kunnen alleen worden geclaimd en afgerond door geautoriseerde gebruikers.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Alleen beheerders kunnen processdefinities deployen.
@@ -191,7 +191,7 @@ Check deployment permissions in applicatie configuratie.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Script tasks (Groovy/JavaScript) zijn beperkt of uitgeschakeld, of draaien in sandbox.
@@ -203,7 +203,7 @@ Script tasks (Groovy/JavaScript) zijn beperkt of uitgeschakeld, of draaien in sa
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 External task handlers authenticeren zich bij het claimen van taken.
@@ -217,7 +217,7 @@ External task handlers authenticeren zich bij het claimen van taken.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Alle API endpoints vereisen authenticatie.
@@ -235,7 +235,7 @@ curl -I https://gzac.example.com/api/v1/case
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Alleen HTTPS is toegestaan, HTTP wordt geredirect of geblokkeerd.
@@ -247,7 +247,7 @@ Alleen HTTPS is toegestaan, HTTP wordt geredirect of geblokkeerd.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 CORS is restrictief geconfigureerd voor alleen toegestane origins.
@@ -269,7 +269,7 @@ valtimo:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Communicatie met OpenZaak gebruikt JWT tokens en HTTPS.
@@ -281,7 +281,7 @@ Communicatie met OpenZaak gebruikt JWT tokens en HTTPS.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 API keys en credentials worden opgeslagen in secrets (Kubernetes secrets, vault), niet in config files.
@@ -299,7 +299,7 @@ grep -r "password\|secret\|apiKey" application*.yml
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Custom plugins zijn gereviewd op security risico's voordat ze worden gedeployed.
@@ -313,7 +313,7 @@ Custom plugins zijn gereviewd op security risico's voordat ze worden gedeployed.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Audit logging is ingeschakeld voor alle zaak- en taakacties.
@@ -325,7 +325,7 @@ Audit logging is ingeschakeld voor alle zaak- en taakacties.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Process history wordt bewaard voor audit doeleinden (conform archiefwet).
@@ -337,7 +337,7 @@ Process history wordt bewaard voor audit doeleinden (conform archiefwet).
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Security events (login failures, permission denied) worden gelogd.

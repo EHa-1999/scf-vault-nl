@@ -59,7 +59,7 @@ TABLE WITHOUT ID
   component as "Component",
   impl_status as "Status"
 FROM "Implementations"
-WHERE contains(system, "XENA")
+WHERE contains(string(system), "XENA-NZGW")
 SORT component ASC, control ASC
 ```
 
@@ -72,7 +72,7 @@ TABLE WITHOUT ID
   component as "Component",
   impl_status as "Status"
 FROM "Implementations"
-WHERE contains(system, "ZGW")
+WHERE contains(string(system), "XENA-ZGW")
 SORT component ASC, control ASC
 ```
 

@@ -9,7 +9,7 @@ priority_label: "Critical"
 baseline: true
 control_type: "Organizational"
 iso27001: "A.5.14"
-nis2: "Art.21(2)(k)"
+nis2: "Art.21(2)(j)"
 bio2: "B9.5"
 security_requirement:
   - "SR-4"
@@ -58,14 +58,14 @@ compliance_evidence: []
 | Framework | Referentie |
 |-----------|------------|
 | [[Frameworks/ISO-27001-2022|ISO 27001:2022]] | A.5.14 |
-| [[Frameworks/NIS2|NIS2]] | Art.21(2)(k) |
+| [[Frameworks/NIS2|NIS2]] | Art.21(2)(j) |
 | [[Frameworks/BIO2|BIO2]] | B9.5 |
 
 ## Security Requirements
 
 Dit control valt onder de volgende Security Requirements:
 
-- [[Frameworks/Security-Requirements/SR-4|SR-4]]
+- [[Frameworks/Security-Requirements/SR-4 - Cryptographic Controls & Data Protection|SR-4]]
 
 ## Beschrijving
 

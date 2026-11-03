@@ -1,9 +1,9 @@
 ---
 id: "IMPL-XENA-PostgreSQL-3.11"
 type: implementation
-control: "[[Controls/CIS/CIS-3.11 - Encrypt Sensitive Data at Rest|CIS-3.11]]"
+control: "[[Controls/CIS/CIS-3.11 - Versleutel Gegevens in Rust|CIS-3.11]]"
 component: "[[Components/PostgreSQL]]"
-system: "[[Systems/XENA]]"
+system: "[[Systems/XENA-NZGW]]"
 impl_status: "Implemented"
 dod_status: "Verified"
 risk_if_missing: "[[Risks/RSK-001]]"
@@ -26,9 +26,9 @@ tags:
 
 | Eigenschap | Waarde |
 |------------|--------|
-| **Control** | [[Controls/CIS/CIS-3.11 - Encrypt Sensitive Data at Rest|CIS-3.11]] |
+| **Control** | [[Controls/CIS/CIS-3.11 - Versleutel Gegevens in Rust|CIS-3.11]] |
 | **Component** | [[Components/PostgreSQL]] |
-| **Systeem** | [[Systems/XENA]] |
+| **Systeem** | [[Systems/XENA-NZGW]] |
 | **Status** | Implemented |
 | **DoD Status** | Verified |
 | **Eigenaar** | @database-team |

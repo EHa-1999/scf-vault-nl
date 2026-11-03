@@ -111,7 +111,7 @@
   <g filter="url(#shadow)">
     <rect x="150" y="440" width="400" height="50" rx="8" fill="url(#cisGrad)" stroke="#5B9AA0" stroke-width="2"/>
     <text x="350" y="462" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#1D4E53" text-anchor="middle" font-weight="700">CIS Controls v8 + Extended Privacy Controls</text>
-    <text x="350" y="480" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#2E6B70" text-anchor="middle">180 Tactische Maatregelen</text>
+    <text x="350" y="480" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#2E6B70" text-anchor="middle">231 Tactische Maatregelen</text>
   </g>
   
   <!-- Legend -->

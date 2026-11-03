@@ -3,7 +3,7 @@ id: "IMPL-XENA-Saviynt-P5.2"
 type: implementation
 control: "[[Controls/EXT-P/EXT-P5.2 - Beperk Toegang (Need-to-Know)|EXT-P5.2]]"
 component: "[[Components/Saviynt]]"
-system: "[[Systems/XENA]]"
+system: "[[Systems/XENA-NZGW]]"
 impl_status: "Partial"
 dod_status: "In Progress"
 risk_if_missing: "[[Risks/RSK-004]]"
@@ -28,7 +28,7 @@ tags:
 |------------|--------|
 | **Control** | [[Controls/EXT-P/EXT-P5.2 - Beperk Toegang (Need-to-Know)|EXT-P5.2]] |
 | **Component** | [[Components/Saviynt]] |
-| **Systeem** | [[Systems/XENA]] |
+| **Systeem** | [[Systems/XENA-NZGW]] |
 | **Status** | Partial |
 | **DoD Status** | In Progress |
 | **Eigenaar** | @identity-team |

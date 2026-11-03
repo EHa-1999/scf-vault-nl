@@ -73,6 +73,7 @@ Artikel 21 van de richtlijn specificeert de minimale beveiligingsmaatregelen:
 - **Art.21(2)(g)** - Basispraktijken cyberhygiëne en opleiding
 - **Art.21(2)(h)** - Beleid inzake cryptografie en encryptie
 - **Art.21(2)(i)** - Beveiligingsbeleid inzake personeel en toegangsbeleid
+- **Art.21(2)(j)** - Multifactorauthenticatie en beveiligde communicatie
 
 De richtlijn introduceert ook significante meldplichten (24 uur voor early warning, 72 uur voor volledig rapport) en substantiële boetes bij non-compliance.
 

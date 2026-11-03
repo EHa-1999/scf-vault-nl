@@ -54,7 +54,7 @@ tags:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-5\|CIS-5]] Account Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 5: Accountbeheer\|CIS-5]] Account Management |
 
 **Beschrijving:**
 JAAS (Java Authentication and Authorization Service) is ingeschakeld voor broker authenticatie.
@@ -84,7 +84,7 @@ cat conf/login.config
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-5\|CIS-5]] Account Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 5: Accountbeheer\|CIS-5]] Account Management |
 
 **Beschrijving:**
 Default credentials (admin/admin, user/user) zijn gewijzigd in sterke wachtwoorden.
@@ -110,7 +110,7 @@ admin=<strong_password_hash>
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-5\|CIS-5]], [[Controls/CIS/CIS-6\|CIS-6]] |
+| **CIS Control** | [[Controls/CIS/_index#CIS 5: Accountbeheer\|CIS-5]], [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] |
 
 **Beschrijving:**
 Voor enterprise omgevingen: gebruik LDAP als authenticatie backend.
@@ -141,7 +141,7 @@ activemq {
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Authorization plugin is geconfigureerd om toegang tot destinations te controleren.
@@ -176,7 +176,7 @@ grep -A 20 "authorizationPlugin" conf/activemq.xml
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Gebruikers/groepen hebben alleen de minimaal benodigde rechten (read/write/admin) per queue/topic.
@@ -194,7 +194,7 @@ grep -B 2 -A 2 "authorizationEntry" conf/activemq.xml
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Advisory topics (ActiveMQ.Advisory.*) zijn alleen toegankelijk voor administrators.
@@ -213,7 +213,7 @@ Advisory topics (ActiveMQ.Advisory.*) zijn alleen toegankelijk voor administrato
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 OpenWire transport connector gebruikt SSL/TLS (ssl:// of nio+ssl://).
@@ -247,7 +247,7 @@ grep -i "transportConnector" conf/activemq.xml
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Onversleutelde transport connectors (tcp://, nio://) zijn uitgeschakeld in productie.
@@ -265,7 +265,7 @@ grep -E "tcp://|nio://" conf/activemq.xml | grep -v "#"
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Mutual TLS (mTLS) is geconfigureerd: clients authenticeren met certificaten.
@@ -290,7 +290,7 @@ grep -i "needClientAuth" conf/activemq.xml
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 De web console (poort 8161) is alleen toegankelijk via HTTPS.
@@ -320,7 +320,7 @@ cat conf/jetty-realm.properties
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-5\|CIS-5]] Account Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 5: Accountbeheer\|CIS-5]] Account Management |
 
 **Beschrijving:**
 Default web console credentials zijn gewijzigd.
@@ -343,7 +343,7 @@ admin: <strong_password>, admin
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Overweeg de web console volledig uit te schakelen in productie als deze niet nodig is.
@@ -363,7 +363,7 @@ Overweeg de web console volledig uit te schakelen in productie als deze niet nod
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 JMX remote access vereist authenticatie.
@@ -393,7 +393,7 @@ ACTIVEMQ_SUNJMX_START="-Dcom.sun.management.jmxremote.port=1099 \
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 JMX remote access gebruikt SSL/TLS.
@@ -412,7 +412,7 @@ grep "jmxremote.ssl" bin/env
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 ActiveMQ bindt alleen aan specifieke interfaces, niet aan 0.0.0.0.
@@ -435,7 +435,7 @@ grep -i "transportConnector" conf/activemq.xml
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-13\|CIS-13]] Network Monitoring |
+| **CIS Control** | [[Controls/CIS/_index#CIS 13: Netwerkmonitoring en Verdediging\|CIS-13]] Network Monitoring |
 
 **Beschrijving:**
 Firewall regels beperken toegang tot ActiveMQ poorten.
@@ -456,7 +456,7 @@ Firewall regels beperken toegang tot ActiveMQ poorten.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Audit logging is ingeschakeld voor connections en security events.
@@ -484,7 +484,7 @@ grep -i "loggingBrokerPlugin" conf/activemq.xml
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Logs worden doorgestuurd naar centraal logging systeem.
@@ -498,7 +498,7 @@ Logs worden doorgestuurd naar centraal logging systeem.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Maximum message size is geconfigureerd om DoS te voorkomen.
@@ -520,7 +520,7 @@ grep -i "maxFrameSize" conf/activemq.xml
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Memory en store limits zijn geconfigureerd om resource exhaustion te voorkomen.

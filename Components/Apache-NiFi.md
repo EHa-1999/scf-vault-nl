@@ -6,7 +6,7 @@ component_type: "Integration"
 vendor: "Apache Software Foundation"
 version: "2.x"
 systems:
-  - "XENA"
+  - "XENA-NZGW"
 classification: "BBN2"
 status: active
 created: 2026-01-27
@@ -34,7 +34,7 @@ Data flow orchestration platform voor document processing.
 
 ## Systemen
 
-Dit component wordt gebruikt in: [[XENA]]
+Dit component wordt gebruikt in: [[Systems/XENA-NZGW|XENA-NZGW]]
 
 ## Technische Details
 

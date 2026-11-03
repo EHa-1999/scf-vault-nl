@@ -54,7 +54,7 @@ tags:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Alle Alfresco endpoints (Share, Repository, WebDAV, API) zijn alleen toegankelijk via HTTPS.
@@ -85,7 +85,7 @@ share.port=443
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Een reverse proxy (NGINX, HAProxy) staat voor Alfresco voor SSL termination en security headers.
@@ -113,7 +113,7 @@ X-Content-Type-Options: nosniff
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 AJP connector (poort 8009) is uitgeschakeld tenzij specifiek nodig.
@@ -135,7 +135,7 @@ grep -i "AJP" tomcat/conf/server.xml
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-5\|CIS-5]] Account Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 5: Accountbeheer\|CIS-5]] Account Management |
 
 **Beschrijving:**
 Het standaard admin wachtwoord is gewijzigd naar een sterk wachtwoord.
@@ -153,7 +153,7 @@ curl -u admin:admin https://alfresco.example.com/alfresco/api/-default-/public/a
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-5\|CIS-5]] Account Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 5: Accountbeheer\|CIS-5]] Account Management |
 
 **Beschrijving:**
 Guest user is uitgeschakeld om anonieme toegang te voorkomen.
@@ -175,7 +175,7 @@ alfresco.authentication.allowGuestLogin=false
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-5\|CIS-5]], [[Controls/CIS/CIS-6\|CIS-6]] |
+| **CIS Control** | [[Controls/CIS/_index#CIS 5: Accountbeheer\|CIS-5]], [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] |
 
 **Beschrijving:**
 Authenticatie is gekoppeld aan LDAP of Active Directory voor centraal gebruikersbeheer.
@@ -197,7 +197,7 @@ authentication.chain=alfrescoNtlm1:alfrescoNtlm,ldap1:ldap
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Session timeout is ingesteld (aanbevolen: 30 minuten of minder).
@@ -223,7 +223,7 @@ authentication.ticket.validDuration=PT30M
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 ACL's zijn correct toegepast met minimale privileges. Geen onnodige "Everyone" permissions.
@@ -241,7 +241,7 @@ curl -u admin:password https://alfresco.example.com/alfresco/api/-default-/publi
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Gevoelige content is georganiseerd in private Sites met specifieke membership.
@@ -255,7 +255,7 @@ Gevoelige content is georganiseerd in private Sites met specifieke membership.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Communicatie tussen Alfresco Repository en Solr gebruikt mTLS met custom certificaten.
@@ -280,7 +280,7 @@ solr.secureComms=https
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Default Alfresco-gegenereerde certificaten zijn vervangen door custom certificaten.
@@ -298,7 +298,7 @@ openssl s_client -connect localhost:8983 </dev/null 2>/dev/null | openssl x509 -
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-13\|CIS-13]] Network Monitoring |
+| **CIS Control** | [[Controls/CIS/_index#CIS 13: Netwerkmonitoring en Verdediging\|CIS-13]] Network Monitoring |
 
 **Beschrijving:**
 Solr poort (8983) is alleen toegankelijk vanaf Alfresco server(s).
@@ -318,7 +318,7 @@ iptables -L -n | grep 8983
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Gevoelige properties zijn versleuteld in de database via Alfresco keystore.
@@ -341,7 +341,7 @@ ls -la keystore/
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-10\|CIS-10]] Malware Defenses |
+| **CIS Control** | [[Controls/CIS/_index#CIS 10: Malware Bescherming\|CIS-10]] Malware Defenses |
 
 **Beschrijving:**
 Content wordt gescand op malware bij upload (via AMP of externe scanner).
@@ -361,7 +361,7 @@ ls -la amps/ | grep -i virus
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Alle API endpoints vereisen authenticatie. Geen anonymous access.
@@ -379,7 +379,7 @@ curl -I https://alfresco.example.com/alfresco/api/-default-/public/alfresco/vers
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Directe toegang tot webscripts is beperkt via proxy configuratie.
@@ -402,7 +402,7 @@ location /alfresco/service/ {
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 CSRF filters zijn ingeschakeld in Share.
@@ -419,7 +419,7 @@ grep -i "csrf" share-config-custom.xml
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 X-Frame-Options header is geconfigureerd om clickjacking te voorkomen.
@@ -431,7 +431,7 @@ X-Frame-Options header is geconfigureerd om clickjacking te voorkomen.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Session cookies hebben Secure en HttpOnly flags.
@@ -450,7 +450,7 @@ curl -c - https://alfresco.example.com/share/ | grep -i "JSESSIONID"
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Audit service is ingeschakeld voor het loggen van gebruikersacties.
@@ -473,7 +473,7 @@ audit.alfresco-access.enabled=true
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Logs worden doorgestuurd naar centraal logging systeem.

@@ -65,7 +65,7 @@ compliance_evidence: []
 
 Dit control valt onder de volgende Security Requirements:
 
-- [[Frameworks/Security-Requirements/SR-9|SR-9]]
+- [[Frameworks/Security-Requirements/SR-9 - Compliance & Audit Management|SR-9]]
 
 ## Beschrijving
 

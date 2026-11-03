@@ -53,7 +53,7 @@ TABLE WITHOUT ID
   length(rows) as "Aantal",
   round(length(rows) * 100 / 93, 0) + "%" as "% van Baseline"
 FROM "Implementations"
-WHERE contains(system, "XENA") AND impl_status = "Implemented"
+WHERE contains(string(system), "XENA-NZGW") AND impl_status = "Implemented"
 FLATTEN (this.file.frontmatter.control) as ctrl
 WHERE ctrl.baseline = true
 GROUP BY true
@@ -64,7 +64,7 @@ TABLE WITHOUT ID
   impl_status as "Status",
   length(rows) as "Aantal"
 FROM "Implementations"
-WHERE contains(system, "XENA")
+WHERE contains(string(system), "XENA-NZGW")
 GROUP BY impl_status
 ```
 
@@ -303,6 +303,6 @@ SORT exception_expiry ASC
 ## Gerelateerde Documenten
 
 - [[Dashboards/Compliance Dashboard|Compliance Dashboard]]
-- [[Dashboards/Implementation Dashboard|Implementation Dashboard]]
+- [[Dashboards/Implementatie Dashboard|Implementation Dashboard]]
 - [[Planning/Implementatieplan 2026|Implementatieplan]]
 - [[Documentatie/Systeem-intakeprocedure|Systeem-intakeprocedure]]

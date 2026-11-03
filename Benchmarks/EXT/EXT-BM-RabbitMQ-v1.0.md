@@ -54,7 +54,7 @@ tags:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-5\|CIS-5]] Account Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 5: Accountbeheer\|CIS-5]] Account Management |
 
 **Beschrijving:**
 De standaard `guest` account mag alleen lokaal (localhost) inloggen. Voor productie moet guest volledig worden uitgeschakeld of het wachtwoord gewijzigd.
@@ -87,7 +87,7 @@ rabbitmqctl set_permissions -p / guest "" "" ""
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-5\|CIS-5]] Account Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 5: Accountbeheer\|CIS-5]] Account Management |
 
 **Beschrijving:**
 Alle gebruikersaccounts hebben sterke wachtwoorden (minimaal 16 tekens, complexiteit).
@@ -114,7 +114,7 @@ rabbitmqctl change_password <username> <strong_password>
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-5\|CIS-5]], [[Controls/CIS/CIS-6\|CIS-6]] |
+| **CIS Control** | [[Controls/CIS/_index#CIS 5: Accountbeheer\|CIS-5]], [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] |
 
 **Beschrijving:**
 Voor enterprise omgevingen: gebruik externe authenticatie (LDAP, OAuth 2.0) in plaats van interne database.
@@ -142,7 +142,7 @@ auth_backends.2 = rabbit_auth_backend_internal
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Gebruik aparte virtual hosts per applicatie/omgeving voor isolatie. Gebruik niet alleen de default `/` vhost.
@@ -173,7 +173,7 @@ rabbitmqctl set_permissions -p /xena-zgw app_user ".*" ".*" ".*"
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Gebruikers hebben alleen de minimaal benodigde permissions (configure/write/read) per vhost.
@@ -203,7 +203,7 @@ rabbitmqctl set_permissions -p /xena-zgw consumer "" "" "^queue\."
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Voor topic exchanges: configureer topic-level authorization om berichten te filteren per routing key.
@@ -225,7 +225,7 @@ rabbitmqctl list_topic_permissions
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Alle AMQP connecties gebruiken TLS (poort 5671 in plaats van 5672).
@@ -258,7 +258,7 @@ ssl_options.fail_if_no_peer_cert = true
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Schakel onversleutelde listeners uit (poort 5672) in productie.
@@ -282,7 +282,7 @@ listeners.ssl.default = 5671
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Alleen sterke cipher suites zijn toegestaan (TLS 1.2+, geen RC4, DES, MD5).
@@ -311,7 +311,7 @@ ssl_options.ciphers.2 = TLS_CHACHA20_POLY1305_SHA256
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Bij clustering: Erlang distribution gebruikt TLS voor inter-node communicatie.
@@ -336,7 +336,7 @@ grep -i "ssl_dist" /etc/rabbitmq/advanced.config
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 De management interface (poort 15672) is alleen toegankelijk via HTTPS (15671).
@@ -366,7 +366,7 @@ management.tcp.port = none
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Alleen administrators hebben toegang tot de management interface. Applicatie-accounts hebben geen management tags.
@@ -396,7 +396,7 @@ rabbitmqctl set_user_tags admin_user administrator
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 De management API heeft rate limiting om brute force en DoS te voorkomen.
@@ -415,7 +415,7 @@ management.rates_mode = basic
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 RabbitMQ bindt alleen aan specifieke interfaces, niet aan 0.0.0.0.
@@ -442,7 +442,7 @@ management.ssl.ip = 10.0.0.5
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-13\|CIS-13]] Network Monitoring |
+| **CIS Control** | [[Controls/CIS/_index#CIS 13: Netwerkmonitoring en Verdediging\|CIS-13]] Network Monitoring |
 
 **Beschrijving:**
 Firewall regels beperken toegang tot RabbitMQ poorten tot alleen geautoriseerde clients.
@@ -464,7 +464,7 @@ Firewall regels beperken toegang tot RabbitMQ poorten tot alleen geautoriseerde 
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Logging is ingeschakeld voor connections, channels, en authentication events.
@@ -492,7 +492,7 @@ log.channel.level = warning
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Logs worden doorgestuurd naar een centraal logging systeem (syslog/SIEM).
@@ -511,7 +511,7 @@ log.syslog.port = 514
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Prometheus metrics endpoint is ingeschakeld voor monitoring, maar beveiligd.
@@ -534,7 +534,7 @@ curl -u admin:password http://localhost:15692/metrics
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Queues hebben een message TTL om te voorkomen dat berichten oneindig blijven staan.
@@ -554,7 +554,7 @@ rabbitmqctl list_queues name arguments
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Queues hebben length limits om resource exhaustion te voorkomen.

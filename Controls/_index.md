@@ -7,7 +7,7 @@ created: 2026-01-28
 
 # 📋 Security Controls
 
-> 180 controls die samen de security baseline vormen — van asset management tot pentesting.
+> 231 controls (153 CIS en 78 eigen), waarvan 168 baseline, die samen de security baseline vormen — van asset management tot pentesting.
 
 ---
 
@@ -201,7 +201,7 @@ LIMIT 10
 4. **Documenteer** evidence en Definition of Done
 
 → [[Documentatie/Systeem-intakeprocedure|Systeem-intakeprocedure]]  
-→ [[Documentatie/CIS Benchmark Mapping Guide|CIS Benchmark Mapping]]
+→ [[Documentatie/CIS Benchmark Handleiding|CIS Benchmark Mapping]]
 
 ---
 

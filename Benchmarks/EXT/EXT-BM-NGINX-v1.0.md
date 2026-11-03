@@ -54,7 +54,7 @@ tags:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 NGINX worker processes moeten draaien onder een dedicated non-root user.
@@ -78,7 +78,7 @@ user nginx nginx;
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 De NGINX versie mag niet zichtbaar zijn in HTTP responses.
@@ -101,7 +101,7 @@ server_tokens off;
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Automatische directory listings moeten uitgeschakeld zijn.
@@ -124,7 +124,7 @@ autoindex off;
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Alleen benodigde HTTP methods (GET, POST, HEAD) moeten toegestaan zijn.
@@ -152,7 +152,7 @@ if ($request_method !~ ^(GET|HEAD|POST)$ ) {
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Alleen TLS 1.2 en hoger mogen ondersteund worden.
@@ -176,7 +176,7 @@ ssl_protocols TLSv1.2 TLSv1.3;
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Alleen sterke cipher suites mogen gebruikt worden.
@@ -199,7 +199,7 @@ ssl_prefer_server_ciphers on;
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 HTTP Strict Transport Security moet ingeschakeld zijn.
@@ -221,7 +221,7 @@ add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; prelo
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 OCSP Stapling moet ingeschakeld zijn voor certificate verificatie.
@@ -248,7 +248,7 @@ resolver 8.8.8.8 8.8.4.4 valid=300s;
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-16\|CIS-16]] Application Security |
+| **CIS Control** | [[Controls/CIS/_index#CIS 16: Applicatiebeveiliging\|CIS-16]] Application Security |
 
 **Beschrijving:**
 X-Frame-Options header moet ingesteld zijn om clickjacking te voorkomen.
@@ -270,7 +270,7 @@ add_header X-Frame-Options "SAMEORIGIN" always;
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-16\|CIS-16]] Application Security |
+| **CIS Control** | [[Controls/CIS/_index#CIS 16: Applicatiebeveiliging\|CIS-16]] Application Security |
 
 **Beschrijving:**
 X-Content-Type-Options moet ingesteld zijn om MIME sniffing te voorkomen.
@@ -292,7 +292,7 @@ add_header X-Content-Type-Options "nosniff" always;
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-16\|CIS-16]] Application Security |
+| **CIS Control** | [[Controls/CIS/_index#CIS 16: Applicatiebeveiliging\|CIS-16]] Application Security |
 
 **Beschrijving:**
 Content Security Policy header moet geconfigureerd zijn.
@@ -314,7 +314,7 @@ add_header Content-Security-Policy "default-src 'self'; script-src 'self'; style
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-16\|CIS-16]] Application Security |
+| **CIS Control** | [[Controls/CIS/_index#CIS 16: Applicatiebeveiliging\|CIS-16]] Application Security |
 
 **Beschrijving:**
 Referrer-Policy header moet ingesteld zijn voor privacy.
@@ -338,7 +338,7 @@ add_header Referrer-Policy "strict-origin-when-cross-origin" always;
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-13\|CIS-13]] Network Monitoring |
+| **CIS Control** | [[Controls/CIS/_index#CIS 13: Netwerkmonitoring en Verdediging\|CIS-13]] Network Monitoring |
 
 **Beschrijving:**
 Rate limiting moet geconfigureerd zijn om DoS aanvallen te beperken.
@@ -364,7 +364,7 @@ limit_req zone=api burst=20 nodelay;
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Maximum client request body size moet beperkt zijn.
@@ -386,7 +386,7 @@ client_max_body_size 10M;  # Pas aan naar behoefte
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-12\|CIS-12]] Network Infrastructure |
+| **CIS Control** | [[Controls/CIS/_index#CIS 12: Netwerkinfrastructuur Beheer\|CIS-12]] Network Infrastructure |
 
 **Beschrijving:**
 Beheer endpoints moeten IP-restricted zijn.
@@ -412,7 +412,7 @@ location /admin {
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-13\|CIS-13]] Network Monitoring |
+| **CIS Control** | [[Controls/CIS/_index#CIS 13: Netwerkmonitoring en Verdediging\|CIS-13]] Network Monitoring |
 
 **Beschrijving:**
 Connection limits per IP moeten geconfigureerd zijn.
@@ -440,7 +440,7 @@ limit_conn addr 10;
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Access logging moet ingeschakeld zijn met voldoende detail.
@@ -467,7 +467,7 @@ access_log /var/log/nginx/access.log detailed;
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Error logging moet ingeschakeld zijn met adequate level.
@@ -489,7 +489,7 @@ error_log /var/log/nginx/error.log warn;
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Log rotation moet geconfigureerd zijn.
@@ -525,7 +525,7 @@ cat /etc/logrotate.d/nginx
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Verbindingen naar upstream servers moeten via TLS verlopen.
@@ -551,7 +551,7 @@ location /api {
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-12\|CIS-12]] Network Infrastructure |
+| **CIS Control** | [[Controls/CIS/_index#CIS 12: Netwerkinfrastructuur Beheer\|CIS-12]] Network Infrastructure |
 
 **Beschrijving:**
 Juiste proxy headers moeten doorgegeven worden voor logging en security.
@@ -576,7 +576,7 @@ proxy_set_header X-Forwarded-Proto $scheme;
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Buffer sizes moeten beperkt zijn om overflow attacks te voorkomen.

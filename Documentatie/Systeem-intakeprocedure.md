@@ -39,7 +39,7 @@ Deze procedure is van toepassing op:
 
 ## Proces Overzicht
 
-![[Assets/diagrams/LISA-Onboarding-Process.svg]]
+![[Assets/diagrams/LISA-Intakeproces.svg]]
 
 Het intakeproces bestaat uit zes fasen die samen zorgen voor een complete en gestructureerde opname van systemen in het security framework.
 
@@ -162,10 +162,11 @@ Controleer of er CIS Benchmarks beschikbaar zijn voor de componenten:
 
 | Component Type | CIS Benchmark | Versie |
 |----------------|---------------|--------|
-| PostgreSQL | CIS PostgreSQL Benchmark | 1.0.0 |
-| Kubernetes | CIS Kubernetes Benchmark | 1.8.0 |
+| PostgreSQL | CIS PostgreSQL 16 Benchmark | 1.0.0 |
+| Kubernetes | CIS Kubernetes 1.29 Benchmark | 1.0.0 |
 | Docker | CIS Docker Benchmark | 1.6.0 |
-| NGINX | CIS NGINX Benchmark | 2.0.0 |
+| NGINX | CIS NGINX Benchmark | 2.1.0 |
+| RHEL | CIS Red Hat Enterprise Linux 9 Benchmark | 2.0.0 |
 | Ubuntu | CIS Ubuntu Linux Benchmark | 2.0.0 |
 | Windows Server | CIS Microsoft Windows Server | 2.0.0 |
 
@@ -215,7 +216,7 @@ Ontwikkel een Extended Benchmark:
 
 3. **Documenteer als Extended Benchmark**
    
-   Plaats in: `Documentatie/Benchmarks/EXT-{Component}.md`
+   Plaats in: `Benchmarks/EXT/EXT-BM-{Component}-v1.0.md`
 
 ### 3.3 Gap Analyse
 
@@ -320,8 +321,8 @@ Elke risico moet gekoppeld zijn aan mitigerende controls:
 ```yaml
 # In Risk frontmatter
 controls:
-  - "[[Controls/CIS/CIS-3.11]]"
-  - "[[Controls/CIS/CIS-8.2]]"
+  - "[[Controls/CIS/CIS-3.11 - Versleutel Gegevens in Rust|CIS-3.11]]"
+  - "[[Controls/CIS/CIS-8.2 - Verzamel Auditlogs|CIS-8.2]]"
 components:
   - "[[Components/PostgreSQL]]"
 ```

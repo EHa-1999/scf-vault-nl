@@ -87,7 +87,7 @@ Custom security benchmarks voor technologieën zonder officiële CIS Benchmark:
 
 | Technologie | Document |
 |-------------|----------|
-| MinIO | [[Documentatie/Benchmarks/EXT-MinIO\|EXT-MinIO]] |
+| MinIO | [[Benchmarks/EXT/EXT-MinIO-v1.0\|EXT-MinIO]] |
 | Apache NiFi | 📋 Gepland |
 | KeyCloak | 📋 Gepland |
 | OpenBAO | 📋 Gepland |

@@ -65,7 +65,7 @@ compliance_evidence: []
 
 Dit control valt onder de volgende Security Requirements:
 
-- [[Frameworks/Security-Requirements/SR-5|SR-5]]
+- [[Frameworks/Security-Requirements/SR-5 - Secure System Development & Maintenance|SR-5]]
 
 ## Beschrijving
 

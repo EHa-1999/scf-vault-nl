@@ -154,12 +154,12 @@ impl_system: "KeyCloak"
 # ─────────────────────────────────────────────────────────────────────
 # Compliance Tracking
 # ─────────────────────────────────────────────────────────────────────
-compliance_status: "gedeeltelijk"
+compliance_status: "compliant"
 compliance_score: 94
 compliance_assessed: 2026-01-20
 compliance_assessor: "J. de Vries"
 compliance_evidence:
-  - "[[Audits/2026/SA-2026-Q1]]"
+  - "[[Audits/2026/IA-2026-001-XENA/Self-Assessments/SA-2026-Q1-XENA]]"
 compliance_notes: "3 van 50 admin accounts zonder MFA geactiveerd"
 ---
 ```
@@ -192,7 +192,7 @@ Het Security Team heeft MFA geïmplementeerd in KeyCloak voor alle beheerders.
 | MFA niet geactiveerd | 3 |
 | Compliance percentage | 94% |
 
-**Conclusie:** `compliance_status: "gedeeltelijk"`, `compliance_score: 94`
+**Conclusie:** `compliance_status: "compliant"`, `compliance_score: 94`. Volgens de drempels is 94% compliant. De drie accounts zonder MFA zijn wel een bevinding die moet worden opgevolgd; bij een baseline-control hoort daar een termijn bij.
 
 ### Actie
 

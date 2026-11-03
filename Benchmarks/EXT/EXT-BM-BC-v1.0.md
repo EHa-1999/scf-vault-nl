@@ -178,5 +178,5 @@ tags:
 ## Gerelateerde Documenten
 
 - [[Controls/EXT-BC/_index|EXT-BC Controls]]
-- [[Controls/CIS/CIS-11 - Gegevensherstel|CIS-11 Data Recovery]]
+- [[Controls/CIS/_index#CIS 11: Gegevensherstel|CIS-11 Data Recovery]]
 - [[Frameworks/NIS2|NIS2 Directive]]

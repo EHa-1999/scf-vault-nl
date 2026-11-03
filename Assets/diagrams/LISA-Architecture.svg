@@ -124,7 +124,7 @@
     <text x="485" y="346" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#1D4E53" text-anchor="middle" font-weight="600">27 Extended Privacy Controls</text>
     
     <rect x="600" y="328" width="135" height="28" rx="4" fill="#B8D8DC" stroke="#5B9AA0" stroke-width="1"/>
-    <text x="667" y="346" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#1D4E53" text-anchor="middle">180 Controls Total</text>
+    <text x="667" y="346" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#1D4E53" text-anchor="middle">231 Controls Total</text>
   </g>
   
   <!-- Arrow 3->4 -->

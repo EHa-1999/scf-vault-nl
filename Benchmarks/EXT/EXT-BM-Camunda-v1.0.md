@@ -54,7 +54,7 @@ tags:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-5\|CIS-5]] Account Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 5: Accountbeheer\|CIS-5]] Account Management |
 
 **Beschrijving:**
 Authenticatie moet verplicht zijn voor alle Camunda endpoints.
@@ -85,7 +85,7 @@ grep -r "auth" /path/to/camunda/configuration/
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-5\|CIS-5]] Account Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 5: Accountbeheer\|CIS-5]] Account Management |
 
 **Beschrijving:**
 Het standaard admin wachtwoord moet gewijzigd zijn en de demo user verwijderd.
@@ -110,7 +110,7 @@ identityService.setPassword("admin", "StrongP@ssw0rd!");
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-5\|CIS-5]] Account Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 5: Accountbeheer\|CIS-5]] Account Management |
 
 **Beschrijving:**
 Productie moet LDAP of SSO (SAML/OIDC) gebruiken voor authenticatie.
@@ -140,7 +140,7 @@ grep -r "ldap" /path/to/camunda/configuration/
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Session timeout moet ingesteld zijn op maximaal 30 minuten.
@@ -171,7 +171,7 @@ grep -r "session-timeout\|maxInactiveInterval" /path/to/camunda/configuration/
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Authorization moet ingeschakeld zijn in de process engine configuratie.
@@ -194,7 +194,7 @@ grep -r "authorizationEnabled" /path/to/camunda/configuration/
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Multi-tenant deployments moeten tenant isolation afdwingen.
@@ -216,7 +216,7 @@ grep -r "tenantId\|tenant-check" /path/to/camunda/configuration/
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Default permissions moeten restrictief zijn (deny by default).
@@ -237,7 +237,7 @@ Configureer expliciete permissions per user/group. Vermijd global grants.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 De REST API moet authorization afdwingen.
@@ -270,7 +270,7 @@ curl -X GET http://localhost:8080/engine-rest/process-definition
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Alle Camunda endpoints moeten via HTTPS bereikbaar zijn.
@@ -292,7 +292,7 @@ Configureer TLS in de application server (Tomcat, WildFly) of gebruik reverse pr
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Verbinding naar de database moet via SSL/TLS verlopen.
@@ -317,7 +317,7 @@ grep -r "jdbc\|sslmode" /path/to/camunda/configuration/
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-12\|CIS-12]] Network Infrastructure |
+| **CIS Control** | [[Controls/CIS/_index#CIS 12: Netwerkinfrastructuur Beheer\|CIS-12]] Network Infrastructure |
 
 **Beschrijving:**
 Admin endpoints moeten IP-restricted zijn.
@@ -346,7 +346,7 @@ location /camunda/app/admin {
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 History level moet minimaal AUDIT zijn voor compliance logging.
@@ -368,7 +368,7 @@ grep -r "historyLevel\|history-level" /path/to/camunda/configuration/
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 User operation logging moet ingeschakeld zijn.
@@ -389,7 +389,7 @@ User operation log is standaard ingeschakeld bij history level AUDIT of hoger.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Logs moeten doorgestuurd worden naar centraal SIEM systeem.
@@ -412,7 +412,7 @@ Configureer een Syslog of Kafka appender in logback.xml.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-16\|CIS-16]] Application Security |
+| **CIS Control** | [[Controls/CIS/_index#CIS 16: Applicatiebeveiliging\|CIS-16]] Application Security |
 
 **Beschrijving:**
 Script execution in processes moet beperkt of gecontroleerd zijn.
@@ -442,7 +442,7 @@ grep -r "<scriptTask\|<camunda:script" /path/to/processes/
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Process deployment moet geauthenticeerd en geautoriseerd zijn.
@@ -469,7 +469,7 @@ authorizationService.createNewAuthorization(AUTH_TYPE_GRANT)
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-2\|CIS-2]] Inventory and Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 2: Inventarisatie en Beheer van Software\|CIS-2]] Inventory and Control |
 
 **Beschrijving:**
 Process definitions moeten versiebeheer hebben voor auditability.
@@ -492,7 +492,7 @@ Gebruik standaard Camunda versioning. Verwijder oude versies niet, maar markeer 
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Gevoelige data in process variables moet beschermd worden.
@@ -519,7 +519,7 @@ execution.setVariable("sensitiveData", encrypted);
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 History data moet automatisch opgeschoond worden conform retentiebeleid.

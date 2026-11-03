@@ -99,7 +99,7 @@ The following sections contain selected key recommendations with full technical 
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-4.1\|CIS-4.1]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4.1]] |
 
 **Description:**
 Disable anonymous authentication to the API server.
@@ -137,7 +137,7 @@ sudo systemctl restart k3s
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-3.10\|CIS-3.10]] |
+| **CIS Control** | [[Controls/CIS/CIS-3.10 - Versleutel Gegevens in Transport\|CIS-3.10]] |
 
 **Description:**
 Ensure the API Server is configured with TLS certificates for secure communication.
@@ -165,7 +165,7 @@ kube-apiserver-arg:
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-8.2\|CIS-8.2]] |
+| **CIS Control** | [[Controls/CIS/CIS-8.2 - Verzamel Auditlogs\|CIS-8.2]] |
 
 **Description:**
 Enable audit logging to track all API requests.
@@ -216,7 +216,7 @@ kube-apiserver-arg:
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-6.8\|CIS-6.8]] |
+| **CIS Control** | [[Controls/CIS/CIS-6.8 - Definieer RBAC\|CIS-6.8]] |
 
 **Description:**
 Enable Role-Based Access Control (RBAC) for fine-grained authorization.
@@ -246,7 +246,7 @@ kube-apiserver-arg:
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-4.4\|CIS-4.4]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.4 - Implementeer Firewall op Servers\|CIS-4.4]] |
 
 **Description:**
 Bind the Controller Manager to localhost only.
@@ -266,7 +266,7 @@ ps -ef | grep kube-controller-manager | grep bind-address
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-4.4\|CIS-4.4]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.4 - Implementeer Firewall op Servers\|CIS-4.4]] |
 
 **Audit:**
 ```bash
@@ -283,7 +283,7 @@ ps -ef | grep kube-scheduler | grep bind-address
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-3.11\|CIS-3.11]] |
+| **CIS Control** | [[Controls/CIS/CIS-3.11 - Versleutel Gegevens in Rust\|CIS-3.11]] |
 
 **Description:**
 Encrypt secrets stored in etcd using encryption at rest.
@@ -324,7 +324,7 @@ kube-apiserver-arg:
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-3.10\|CIS-3.10]] |
+| **CIS Control** | [[Controls/CIS/CIS-3.10 - Versleutel Gegevens in Transport\|CIS-3.10]] |
 
 **Audit:**
 ```bash
@@ -343,7 +343,7 @@ ps -ef | grep etcd | grep -E "peer-cert-file|peer-key-file"
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-6.3\|CIS-6.3]] |
+| **CIS Control** | [[Controls/CIS/CIS-6.3 - Eis MFA voor Externe Applicaties\|CIS-6.3]] |
 
 **Description:**
 Use client certificates for user authentication.
@@ -363,7 +363,7 @@ cat ~/.kube/config | grep client-certificate
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-8.2\|CIS-8.2]] |
+| **CIS Control** | [[Controls/CIS/CIS-8.2 - Verzamel Auditlogs\|CIS-8.2]] |
 
 See section 1.1.3 for audit policy configuration.
 
@@ -378,7 +378,7 @@ See section 1.1.3 for audit policy configuration.
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-4.1\|CIS-4.1]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4.1]] |
 
 **Audit:**
 ```bash
@@ -409,7 +409,7 @@ kubelet-arg:
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-6.8\|CIS-6.8]] |
+| **CIS Control** | [[Controls/CIS/CIS-6.8 - Definieer RBAC\|CIS-6.8]] |
 
 **Audit:**
 ```bash
@@ -424,7 +424,7 @@ ps -ef | grep kubelet | grep authorization-mode
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-4.8\|CIS-4.8]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.8 - Verwijder Onnodige Services\|CIS-4.8]] |
 
 **Audit:**
 ```bash
@@ -447,7 +447,7 @@ kubelet-arg:
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-3.3\|CIS-3.3]] |
+| **CIS Control** | [[Controls/CIS/CIS-3.3 - Configureer Toegangscontrolelijsten\|CIS-3.3]] |
 
 **Audit:**
 ```bash
@@ -467,7 +467,7 @@ ls -la /run/containerd/containerd.sock
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-4.7\|CIS-4.7]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.7 - Beheer Standaardaccounts\|CIS-4.7]] |
 
 **Description:**
 Pods should not use the default service account.
@@ -500,7 +500,7 @@ spec:
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-6.8\|CIS-6.8]] |
+| **CIS Control** | [[Controls/CIS/CIS-6.8 - Definieer RBAC\|CIS-6.8]] |
 
 **Audit:**
 ```bash
@@ -517,7 +517,7 @@ kubectl get clusterroles -o json | jq '.items[] | select(.rules[]?.resources[]? 
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-4.6\|CIS-4.6]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.6 - Beheer Assets Veilig\|CIS-4.6]] |
 
 **Description:**
 Enforce Pod Security Standards (PSS) at namespace level.
@@ -549,7 +549,7 @@ metadata:
 | Property | Value |
 |----------|-------|
 | **Level** | 2 |
-| **CIS Control** | [[Controls/CIS/CIS-4.1\|CIS-4.1]] |
+| **CIS Control** | [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4.1]] |
 
 **Description:**
 Containers should run as non-root users.
@@ -583,7 +583,7 @@ spec:
 | Property | Value |
 |----------|-------|
 | **Level** | 1 |
-| **CIS Control** | [[Controls/CIS/CIS-12.2\|CIS-12.2]] |
+| **CIS Control** | [[Controls/CIS/CIS-12.2 - Stel Veilige Netwerkarchitectuur Op\|CIS-12.2]] |
 
 **Description:**
 Define NetworkPolicies to control pod-to-pod communication.
@@ -636,7 +636,7 @@ spec:
 | Property | Value |
 |----------|-------|
 | **Level** | 2 |
-| **CIS Control** | [[Controls/CIS/CIS-3.11\|CIS-3.11]] |
+| **CIS Control** | [[Controls/CIS/CIS-3.11 - Versleutel Gegevens in Rust\|CIS-3.11]] |
 
 **Description:**
 Mount secrets as files rather than environment variables to reduce exposure.
@@ -669,18 +669,18 @@ spec:
 
 | CIS Control | Recommendations | Level |
 |-------------|-----------------|-------|
-| [[Controls/CIS/CIS-3.3\|CIS-3.3]] | 4.2.1 | 1 |
-| [[Controls/CIS/CIS-3.10\|CIS-3.10]] | 1.1.2, 2.2 | 1 |
-| [[Controls/CIS/CIS-3.11\|CIS-3.11]] | 2.1, 5.4.1 | 1/2 |
-| [[Controls/CIS/CIS-4.1\|CIS-4.1]] | 1.1.1, 4.1.1, 5.2.2 | 1/2 |
-| [[Controls/CIS/CIS-4.4\|CIS-4.4]] | 1.2.1, 1.3.1 | 1 |
-| [[Controls/CIS/CIS-4.6\|CIS-4.6]] | 5.2.1 | 1 |
-| [[Controls/CIS/CIS-4.7\|CIS-4.7]] | 5.1.1 | 1 |
-| [[Controls/CIS/CIS-4.8\|CIS-4.8]] | 4.1.3 | 1 |
-| [[Controls/CIS/CIS-6.3\|CIS-6.3]] | 3.1.1 | 1 |
-| [[Controls/CIS/CIS-6.8\|CIS-6.8]] | 1.1.4, 4.1.2, 5.1.2 | 1 |
-| [[Controls/CIS/CIS-8.2\|CIS-8.2]] | 1.1.3, 3.2.1 | 1 |
-| [[Controls/CIS/CIS-12.2\|CIS-12.2]] | 5.3.1 | 1 |
+| [[Controls/CIS/CIS-3.3 - Configureer Toegangscontrolelijsten\|CIS-3.3]] | 4.2.1 | 1 |
+| [[Controls/CIS/CIS-3.10 - Versleutel Gegevens in Transport\|CIS-3.10]] | 1.1.2, 2.2 | 1 |
+| [[Controls/CIS/CIS-3.11 - Versleutel Gegevens in Rust\|CIS-3.11]] | 2.1, 5.4.1 | 1/2 |
+| [[Controls/CIS/CIS-4.1 - Stel Veilig Configuratieproces Op\|CIS-4.1]] | 1.1.1, 4.1.1, 5.2.2 | 1/2 |
+| [[Controls/CIS/CIS-4.4 - Implementeer Firewall op Servers\|CIS-4.4]] | 1.2.1, 1.3.1 | 1 |
+| [[Controls/CIS/CIS-4.6 - Beheer Assets Veilig\|CIS-4.6]] | 5.2.1 | 1 |
+| [[Controls/CIS/CIS-4.7 - Beheer Standaardaccounts\|CIS-4.7]] | 5.1.1 | 1 |
+| [[Controls/CIS/CIS-4.8 - Verwijder Onnodige Services\|CIS-4.8]] | 4.1.3 | 1 |
+| [[Controls/CIS/CIS-6.3 - Eis MFA voor Externe Applicaties\|CIS-6.3]] | 3.1.1 | 1 |
+| [[Controls/CIS/CIS-6.8 - Definieer RBAC\|CIS-6.8]] | 1.1.4, 4.1.2, 5.1.2 | 1 |
+| [[Controls/CIS/CIS-8.2 - Verzamel Auditlogs\|CIS-8.2]] | 1.1.3, 3.2.1 | 1 |
+| [[Controls/CIS/CIS-12.2 - Stel Veilige Netwerkarchitectuur Op\|CIS-12.2]] | 5.3.1 | 1 |
 
 ---
 

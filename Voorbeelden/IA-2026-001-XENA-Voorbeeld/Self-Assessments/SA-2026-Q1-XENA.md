@@ -3,7 +3,7 @@ id: "SA-2026-Q1-XENA"
 type: self-assessment
 assessment_level: system
 name: "Systeem Assessment XENA Q1 2026"
-system: "[[Systems/XENA]]"
+system: "[[Systems/XENA-NZGW]]"
 domain: ""
 assessment_type: system
 cis_categories: [1, 2, 3, 4, 5, 6, 8, 11, 16]
@@ -39,7 +39,7 @@ tags:
 |------|--------|
 | **ID** | SA-2026-Q1-XENA |
 | **Assessment Level** | Systeem (aggregerend) |
-| **Systeem** | [[Systems/XENA]] |
+| **Systeem** | [[Systems/XENA-NZGW]] |
 | **Periode** | Q1 2026 |
 | **Assessor** | System Owner XENA |
 | **Status** | Completed |

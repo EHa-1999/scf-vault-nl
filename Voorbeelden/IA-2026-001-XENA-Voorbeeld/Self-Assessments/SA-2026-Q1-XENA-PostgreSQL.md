@@ -3,7 +3,7 @@ id: "SA-2026-Q1-XENA-PostgreSQL"
 type: self-assessment
 assessment_level: component
 name: "Component Assessment PostgreSQL - Q1 2026"
-system: "[[Systems/XENA]]"
+system: "[[Systems/XENA-NZGW]]"
 component: "[[Components/PostgreSQL]]"
 benchmark: "[[Benchmarks/CIS/CIS-PostgreSQL-16-v1.0.0]]"
 benchmark_version: "v1.0.0"
@@ -41,7 +41,7 @@ tags:
 |------|--------|
 | **ID** | SA-2026-Q1-XENA-PostgreSQL |
 | **Assessment Level** | Component |
-| **Systeem** | [[Systems/XENA]] |
+| **Systeem** | [[Systems/XENA-NZGW]] |
 | **Component** | [[Components/PostgreSQL]] |
 | **Benchmark** | [[Benchmarks/CIS/CIS-PostgreSQL-16-v1.0.0\|CIS PostgreSQL 16 v1.0.0]] |
 | **Profiel** | Level 1 (verplicht) + Level 2 (waar mogelijk) |

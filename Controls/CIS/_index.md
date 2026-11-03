@@ -318,4 +318,4 @@ SORT id ASC
 
 - [[Frameworks/CIS-Controls-v8|CIS Controls v8 Framework]]
 - [[Dashboards/Baseline Dashboard|Baseline Dashboard]]
-- [[Documentatie/CIS Benchmark Mapping Guide|CIS Benchmark Mapping Guide]]
+- [[Documentatie/CIS Benchmark Handleiding|CIS Benchmark Mapping Guide]]

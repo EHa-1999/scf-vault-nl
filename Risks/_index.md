@@ -60,7 +60,7 @@ TABLE WITHOUT ID
   risk_level as "Niveau",
   status as "Status"
 FROM "Risks"
-WHERE contains(system, "XENA")
+WHERE contains(string(systems), "XENA-NZGW")
 SORT risk_level DESC
 ```
 
@@ -73,7 +73,7 @@ TABLE WITHOUT ID
   risk_level as "Niveau",
   status as "Status"
 FROM "Risks"
-WHERE contains(system, "ZGW")
+WHERE contains(string(systems), "XENA-ZGW")
 SORT risk_level DESC
 ```
 

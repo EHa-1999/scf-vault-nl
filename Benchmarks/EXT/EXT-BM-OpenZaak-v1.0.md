@@ -56,7 +56,7 @@ tags:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Django DEBUG mode is uitgeschakeld in productie.
@@ -84,7 +84,7 @@ DEBUG: "False"
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Django SECRET_KEY is een unieke, cryptografisch sterke waarde, niet de default.
@@ -111,7 +111,7 @@ python -c "from django.core.management.utils import get_random_secret_key; print
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 ALLOWED_HOSTS bevat alleen de toegestane hostnames, niet `*`.
@@ -133,7 +133,7 @@ ALLOWED_HOSTS=openzaak.gemeente.nl,api.gemeente.nl
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Django forceert HTTPS en zet security-gerelateerde cookies correct.
@@ -162,7 +162,7 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS=True
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Security headers zijn correct geconfigureerd (X-Frame-Options, X-Content-Type-Options, CSP).
@@ -188,7 +188,7 @@ Strict-Transport-Security: max-age=31536000
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Alle API endpoints vereisen authenticatie via JWT of API token.
@@ -207,7 +207,7 @@ curl -I https://openzaak.example.com/zaken/api/v1/zaken
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 API autorisaties zijn geconfigureerd per applicatie en zaaktype. Geen wildcard permissions.
@@ -222,7 +222,7 @@ Via OpenZaak admin: check Autorisaties per Applicatie.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 JWT tokens worden correct gevalideerd (signature, expiry, issuer).
@@ -240,7 +240,7 @@ curl -H "Authorization: Bearer <expired_token>" https://openzaak.example.com/zak
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Django admin interface is alleen toegankelijk via HTTPS en (optioneel) IP-restricted.
@@ -258,7 +258,7 @@ curl -I https://openzaak.example.com/admin/
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Admin accounts hebben two-factor authentication ingeschakeld.
@@ -272,7 +272,7 @@ Admin accounts hebben two-factor authentication ingeschakeld.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Database credentials worden niet in plaintext opgeslagen maar via environment variables of secrets manager.
@@ -290,7 +290,7 @@ grep -r "PASSWORD" /app/src/ --include="*.py"
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Verbinding met PostgreSQL database gebruikt TLS.
@@ -315,7 +315,7 @@ DATABASE_URL=postgresql://user:pass@host:5432/db?sslmode=require
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 API endpoints hebben rate limiting om abuse te voorkomen.
@@ -333,7 +333,7 @@ for i in {1..100}; do curl -s -o /dev/null -w "%{http_code}" https://openzaak.ex
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 API input wordt gevalideerd conform VNG API specificaties.
@@ -345,7 +345,7 @@ API input wordt gevalideerd conform VNG API specificaties.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 CORS is restrictief geconfigureerd, niet `*`.
@@ -365,7 +365,7 @@ curl -H "Origin: https://evil.com" -I https://openzaak.example.com/api/
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Audit logging is ingeschakeld voor API calls en admin acties.
@@ -390,7 +390,7 @@ LOG_REQUESTS=True
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Logs bevatten geen gevoelige data (BSN, wachtwoorden, tokens).
@@ -402,7 +402,7 @@ Logs bevatten geen gevoelige data (BSN, wachtwoorden, tokens).
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Logs worden naar een centraal logging systeem gestuurd.
@@ -416,7 +416,7 @@ Logs worden naar een centraal logging systeem gestuurd.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Container draait als non-root user.
@@ -434,7 +434,7 @@ docker exec openzaak whoami
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Container heeft een read-only root filesystem (behalve noodzakelijke volumes).
@@ -446,7 +446,7 @@ Container heeft een read-only root filesystem (behalve noodzakelijke volumes).
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Container heeft CPU en memory limits geconfigureerd.

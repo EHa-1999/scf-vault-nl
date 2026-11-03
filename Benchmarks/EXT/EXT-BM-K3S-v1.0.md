@@ -56,7 +56,7 @@ tags:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 De Kubernetes API server moet authenticatie vereisen. Anonymous authentication moet uitgeschakeld zijn.
@@ -82,7 +82,7 @@ kube-apiserver-arg:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Role-Based Access Control (RBAC) moet ingeschakeld zijn voor alle API toegang.
@@ -107,7 +107,7 @@ kube-apiserver-arg:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-8\|CIS-8]] Audit Log Management |
+| **CIS Control** | [[Controls/CIS/_index#CIS 8: Auditlog Beheer\|CIS-8]] Audit Log Management |
 
 **Beschrijving:**
 Kubernetes audit logging moet ingeschakeld zijn om API calls te traceren.
@@ -136,7 +136,7 @@ kube-apiserver-arg:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 De API server moet sterke TLS configuratie gebruiken met minimaal TLS 1.2.
@@ -164,7 +164,7 @@ kube-apiserver-arg:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Etcd data (secrets) moet versleuteld worden opgeslagen.
@@ -189,7 +189,7 @@ secrets-encryption: true
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Communicatie tussen etcd nodes moet via TLS verlopen.
@@ -211,7 +211,7 @@ K3S configureert dit automatisch bij gebruik van embedded etcd. Verify certifica
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Alleen geautoriseerde componenten mogen toegang hebben tot etcd.
@@ -240,7 +240,7 @@ chown root:root /var/lib/rancher/k3s/server/db/
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 De kubelet moet authenticatie vereisen voor API requests.
@@ -266,7 +266,7 @@ kubelet-arg:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-6\|CIS-6]] Access Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 6: Toegangsbeheer\|CIS-6]] Access Control |
 
 **Beschrijving:**
 Kubelet moet Webhook authorization gebruiken voor API requests.
@@ -290,7 +290,7 @@ kubelet-arg:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 De kubelet read-only port (10255) moet uitgeschakeld zijn.
@@ -315,7 +315,7 @@ kubelet-arg:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Kubelet moet kernel defaults beschermen tegen wijzigingen door containers.
@@ -341,7 +341,7 @@ kubelet-arg:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-13\|CIS-13]] Network Monitoring |
+| **CIS Control** | [[Controls/CIS/_index#CIS 13: Netwerkmonitoring en Verdediging\|CIS-13]] Network Monitoring |
 
 **Beschrijving:**
 Network Policies moeten gebruikt worden om pod-to-pod verkeer te beperken.
@@ -372,7 +372,7 @@ spec:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-12\|CIS-12]] Network Infrastructure |
+| **CIS Control** | [[Controls/CIS/_index#CIS 12: Netwerkinfrastructuur Beheer\|CIS-12]] Network Infrastructure |
 
 **Beschrijving:**
 De CNI plugin (Flannel default) moet secure geconfigureerd zijn.
@@ -396,7 +396,7 @@ flannel-backend: wireguard-native  # Encrypted overlay
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Voor gevoelige workloads moet mTLS gebruikt worden tussen pods.
@@ -420,7 +420,7 @@ Implementeer een service mesh zoals Linkerd of Istio voor automatische mTLS.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Pod Security Standards moeten afgedwongen worden op namespace niveau.
@@ -446,7 +446,7 @@ kubectl label namespace production \
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Containers mogen niet in privileged mode draaien tenzij strikt noodzakelijk.
@@ -472,7 +472,7 @@ securityContext:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Container root filesystems moeten read-only zijn waar mogelijk.
@@ -496,7 +496,7 @@ securityContext:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-4\|CIS-4]] Secure Configuration |
+| **CIS Control** | [[Controls/CIS/_index#CIS 4: Veilige Configuratie van Systemen en Software\|CIS-4]] Secure Configuration |
 
 **Beschrijving:**
 Containers moeten als non-root user draaien.
@@ -523,7 +523,7 @@ securityContext:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-2\|CIS-2]] Inventory and Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 2: Inventarisatie en Beheer van Software\|CIS-2]] Inventory and Control |
 
 **Beschrijving:**
 Container images moeten van een private registry komen met authenticatie.
@@ -555,7 +555,7 @@ configs:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-16\|CIS-16]] Application Software Security |
+| **CIS Control** | [[Controls/CIS/_index#CIS 16: Applicatiebeveiliging\|CIS-16]] Application Software Security |
 
 **Beschrijving:**
 Container images moeten gescand worden op vulnerabilities voor deployment.
@@ -576,7 +576,7 @@ Implementeer Trivy, Clair of vergelijkbare image scanner in CI/CD pipeline.
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-2\|CIS-2]] Inventory and Control |
+| **CIS Control** | [[Controls/CIS/_index#CIS 2: Inventarisatie en Beheer van Software\|CIS-2]] Inventory and Control |
 
 **Beschrijving:**
 Images moeten altijd opnieuw gepulled worden voor productie workloads.
@@ -604,7 +604,7 @@ spec:
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L1 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Kubernetes Secrets moeten versleuteld opgeslagen worden in etcd.
@@ -628,7 +628,7 @@ secrets-encryption: true
 | Eigenschap | Waarde |
 |------------|--------|
 | **Level** | L2 |
-| **CIS Control** | [[Controls/CIS/CIS-3\|CIS-3]] Data Protection |
+| **CIS Control** | [[Controls/CIS/_index#CIS 3: Gegevensbescherming\|CIS-3]] Data Protection |
 
 **Beschrijving:**
 Gebruik external secrets management (Vault, OpenBAO) voor gevoelige data.

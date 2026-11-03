@@ -6,8 +6,8 @@ component_type: "Database"
 vendor: "PostgreSQL Global Development Group"
 version: "16.x"
 systems:
-  - "XENA"
-  - "ZGW"
+  - "XENA-NZGW"
+  - "XENA-ZGW"
 classification: "BBN2"
 benchmark: "[[Benchmarks/CIS/CIS-PostgreSQL-16-v1.0.0]]"
 benchmark_version: "v1.0.0"
@@ -38,7 +38,7 @@ Relationele database voor metadata en audit trails.
 
 ## Systemen
 
-Dit component wordt gebruikt in: [[Systems/XENA|XENA]], [[Systems/ZGW|ZGW]]
+Dit component wordt gebruikt in: [[Systems/XENA-NZGW|XENA]], [[Systems/XENA-ZGW|ZGW]]
 
 ## Technische Details
 

@@ -65,7 +65,7 @@ compliance_evidence: []
 
 Dit control valt onder de volgende Security Requirements:
 
-- [[Frameworks/Security-Requirements/SR-4|SR-4]]
+- [[Frameworks/Security-Requirements/SR-4 - Cryptographic Controls & Data Protection|SR-4]]
 
 ## Beschrijving
 

@@ -2,7 +2,7 @@
 id: "SCB-XENA"
 type: scb
 name: "System Component Breakdown - XENA"
-system: "[[Systems/XENA]]"
+system: "[[Systems/XENA-NZGW]]"
 version: "1.0"
 status: Active
 architect: "Enterprise Architect"
@@ -20,7 +20,7 @@ tags:
 
 | Veld | Waarde |
 |------|--------|
-| **Systeem** | [[Systems/XENA]] |
+| **Systeem** | [[Systems/XENA-NZGW]] |
 | **Versie** | 1.0 |
 | **Status** | Active |
 | **Architect** | Enterprise Architect |
@@ -199,7 +199,7 @@ XENA is een Document Management System (DMS) gebouwd op Common Ground principes 
 - [x] Encryptie at-rest vereist
 - [ ] Niet extern bereikbaar
 
-**CIS Benchmark:** Niet beschikbaar - Extended Benchmark vereist (zie [[Documentatie/Benchmarks/EXT-MinIO]])
+**CIS Benchmark:** Niet beschikbaar - Extended Benchmark vereist (zie [[Benchmarks/EXT/EXT-MinIO-v1.0]])
 
 ---
 
@@ -500,7 +500,7 @@ Op basis van de control matrix zijn de volgende implementations nog nodig:
 
 ### 9.2 Gerelateerde SCF Documenten
 
-- [[Systems/XENA|XENA System Document]]
+- [[Systems/XENA-NZGW|XENA System Document]]
 - [[Audits/2026/IA-2026-001-XENA/_IA-2026-001-XENA|Interne Audit XENA]]
 
 ## Wijzigingshistorie

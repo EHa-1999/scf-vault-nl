@@ -1,6 +1,6 @@
 # SCF-Vault - Security Control Framework
 
-> **Versie 3.10** — XENA Platform herstructurering + 5 nieuwe technische EXT Benchmarks
+> **Versie 3.13-NL** — opgeschoond: links, tellingen, systeemnamen en dubbele bestanden
 
 Een Obsidian-gebaseerde knowledge base voor het beheren van security controls, compliance frameworks en implementaties volgens het **LISA** (Layered Information Security Architecture) model.
 
@@ -116,11 +116,11 @@ SCF-Vault-NL/
 | Technical (EXT-T) | 3 | ISO A.8 resterende gaps |
 | **Totaal Controls** | **231** | **168 baseline** |
 | **CIS Benchmarks** | 4 | PostgreSQL 16, NGINX, Kubernetes 1.29, RHEL 9 |
-| **EXT Benchmarks (Technisch)** | 2 | MinIO, KeyCloak |
+| **EXT Benchmarks (Technisch)** | 12 | MinIO, KeyCloak, RabbitMQ, ActiveMQ, Alfresco, OpenZaak, GZAC, Camunda, K3S (v1.0 en v2.0), NGINX, PostgreSQL |
 | **EXT Benchmarks (Organisatorisch)** | 7 | Governance, HR, Physical, Supplier, BC, Compliance, Privacy |
-| Systems | 3 | XENA, ZGW, E-mail Archief |
-| Components | 10 | MinIO, PostgreSQL, KeyCloak, NGINX, K3S, RHEL, etc. |
-| Dashboards | 7 | Main, Executive, Compliance, Impl, Risk, Audit, Baseline |
+| Systems | 3 | XENA-NZGW, XENA-ZGW, E-mail Archief |
+| Components | 16 | MinIO, PostgreSQL, KeyCloak, NGINX, K3S, RHEL, Alfresco, OpenZaak, etc. |
+| Dashboards | 8 | Main, Executive, Compliance, Implementatie, Implementation Tracker, Risk, Audit, Baseline |
 | Templates | 10 | Control, Implementation, Risk, System, Component, SCB, CIS Benchmark, EXT Benchmark, EXT Org Benchmark, Component Assessment |
 
 ## Baseline Security (Comply or Explain)
@@ -158,8 +158,8 @@ Het framework maakt onderscheid tussen **baseline** en **niet-baseline** control
 
 ## Versie
 
-**SCF-Vault v3.9 NL** - Gelaagd Assessment Model + Organisatorische Benchmarks  
-Laatste update: 2026-02-10
+**SCF-Vault v3.13-NL**  
+Laatste update: 2026-11-03. Zie [[CHANGELOG]] voor alle wijzigingen.
 
 ### Nieuwe Features v3.9
 

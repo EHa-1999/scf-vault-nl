@@ -61,7 +61,7 @@ De BIO (Baseline Informatiebeveiliging Overheid) is het normenkader voor informa
 - [[Frameworks/Security-Requirements/SR-1 - Security Governance Framework|SR-1 - Security Governance Framework]]
 - [[Frameworks/Security-Requirements/SR-2 - Risk Assessment & Management|SR-2 - Risk Assessment & Management]]
 - [[Frameworks/Security-Requirements/SR-3 - Access Control & Identity Management|SR-3 - Access Control & Identity Management]]
-- [[Frameworks/Security-Requirements/SR-4 - Cryptographic Controls & Gegevensbescherming|SR-4 - Cryptographic Controls & Gegevensbescherming]]
+- [[Frameworks/Security-Requirements/SR-4 - Cryptographic Controls & Data Protection|SR-4 - Cryptographic Controls & Gegevensbescherming]]
 - [[Frameworks/Security-Requirements/SR-5 - Secure System Development & Maintenance|SR-5 - Secure System Development & Maintenance]]
 - [[Frameworks/Security-Requirements/SR-6 - Security Monitoring & Logging|SR-6 - Security Monitoring & Logging]]
 - *...en 6 meer*

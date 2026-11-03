@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [3.13-NL] - 2026-11-03
+
+### Opgeschoond
+- **Dubbele controls verwijderd** — vijf bestanden met een kapotte tekencodering in de naam (CIS-11.4, CIS-15.7, EXT-BC.2, EXT-BC.3, EXT-HR.5) stonden naast de juiste versie; inhoud was gelijk.
+- **Links hersteld** — verwijzingen naar Engelse control-namen, korte ID's (`CIS-4.1`, `SR-11`) en categorieën (`CIS-3`) wijzen nu naar de bestaande bestanden; categorielinks naar de juiste sectie in `Controls/CIS/_index`. Ook de links naar `Nieuwe Interne Audit`, `Implementatie Dashboard`, `CIS Benchmark Handleiding` en `EXT-MinIO-v1.0`. Wat nog onopgelost is, zijn bewuste plaatshouders in templates en scripts, geplande benchmarks en voorbeeldpaden.
+- **Systeemnamen** — de hernoeming uit 3.10 is afgemaakt: `Systems/XENA.md` en `Systems/ZGW.md` zijn verwijderd; componenten, implementaties, risico's, dashboards, indexen en het Templater-script gebruiken `XENA-NZGW` en `XENA-ZGW`.
+- **NIS2** — vier controls verwezen naar Art.21(2)(k), dat niet bestaat; dat is nu (j). In LISA-2 ontbrak (j) in de lijst.
+- **Tellingen** — 180 → 231 controls (168 baseline) in Controls-index, LISA-4 en vier diagrammen; README-tabel bijgewerkt (componenten, dashboards, technische benchmarks).
+- **Intakeprocedure** — juiste diagram (`LISA-Intakeproces.svg`, de fix uit 3.11 was niet doorgevoerd), actuele benchmarkversies, juiste map voor EXT-benchmarks.
+- **Dual Scoring Model** — het voorbeeld met 94% heette "gedeeltelijk", in strijd met de eigen drempels; nu "compliant", met een toelichting.
+- **Encoding** — `4-LISA-Controls.md` was nog steeds geen geldige UTF-8 ("Eén").
+- **Evidence** — nieuwe `Evidence/_index.md` die uitlegt dat bewijs buiten de vault staat en dat `Evidence/...`-paden voorbeeldpaden zijn.
+
+### Nog te besluiten
+- Eén statusmodel voor implementaties en controls (nu Engels op implementaties, Nederlands op controls).
+- Eén scoreformule (gedeeltelijk telt half, of niet).
+- Uitzonderingen bij de implementatie in plaats van bij de control.
+
 ## [3.12-NL] - 2026-06-18
 
 ### Toegevoegd

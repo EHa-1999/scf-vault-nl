@@ -1,9 +1,9 @@
 ---
 id: "IMPL-XENA-Apache-NiFi-8.2"
 type: implementation
-control: "[[Controls/CIS/CIS-8.2 - Collect Audit Logs|CIS-8.2]]"
+control: "[[Controls/CIS/CIS-8.2 - Verzamel Auditlogs|CIS-8.2]]"
 component: "[[Components/Apache-NiFi]]"
-system: "[[Systems/XENA]]"
+system: "[[Systems/XENA-NZGW]]"
 impl_status: "Implemented"
 dod_status: "Partial"
 risk_if_missing: "[[Risks/RSK-003]]"
@@ -26,9 +26,9 @@ tags:
 
 | Eigenschap | Waarde |
 |------------|--------|
-| **Control** | [[Controls/CIS/CIS-8.2 - Collect Audit Logs|CIS-8.2]] |
+| **Control** | [[Controls/CIS/CIS-8.2 - Verzamel Auditlogs|CIS-8.2]] |
 | **Component** | [[Components/Apache-NiFi]] |
-| **Systeem** | [[Systems/XENA]] |
+| **Systeem** | [[Systems/XENA-NZGW]] |
 | **Status** | Implemented |
 | **DoD Status** | Partial |
 | **Eigenaar** | @platform-team |
