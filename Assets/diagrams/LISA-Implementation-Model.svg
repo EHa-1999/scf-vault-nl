@@ -82,7 +82,7 @@
   <line x1="520" y1="225" x2="560" y2="225" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
   <text x="535" y="218" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#666">N:1</text>
   
-  <!-- Evidence & Risk (bottom) -->
+  <!-- Evidence &amp; Risk (bottom) -->
   <line x1="320" y1="270" x2="250" y2="320" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
   <line x1="420" y1="270" x2="490" y2="320" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
   

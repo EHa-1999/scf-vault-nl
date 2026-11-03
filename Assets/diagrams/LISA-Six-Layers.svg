@@ -111,7 +111,7 @@
   <!-- Arrow 4→5 (NEW - was missing proper spacing) -->
   <path d="M400 405 L400 415 L390 415 L400 425 L410 415 L400 415" fill="#a0aec0"/>
   
-  <!-- Layer 5: Evidence & Risks (y=430, h=55, ends at 485) - MOVED DOWN -->
+  <!-- Layer 5: Evidence &amp; Risks (y=430, h=55, ends at 485) - MOVED DOWN -->
   <g filter="url(#shadow)">
     <rect x="50" y="430" width="340" height="55" rx="8" fill="url(#grad5)"/>
     <rect x="50" y="430" width="8" height="55" rx="4" fill="#fed7d7"/>
@@ -131,7 +131,7 @@
   <!-- Arrow 5→6 -->
   <path d="M400 485 L400 495 L390 495 L400 505 L410 495 L400 495" fill="#a0aec0"/>
   
-  <!-- Layer 6: Audits & Assurance (y=510, h=55, ends at 565) - MOVED DOWN -->
+  <!-- Layer 6: Audits &amp; Assurance (y=510, h=55, ends at 565) - MOVED DOWN -->
   <g filter="url(#shadow)">
     <rect x="50" y="510" width="700" height="55" rx="8" fill="url(#grad6)"/>
     <rect x="50" y="510" width="8" height="55" rx="4" fill="#e9d8fd"/>

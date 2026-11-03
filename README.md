@@ -2,6 +2,10 @@
 
 > **Versie 3.13-NL** — opgeschoond: links, tellingen, systeemnamen en dubbele bestanden
 
+> 🌐 [Nederlands](https://github.com/EHa-1999/scf-vault-nl) · [English](https://github.com/EHa-1999/scf-vault-en) · [Deutsch](https://github.com/EHa-1999/scf-vault-de) · [Français](https://github.com/EHa-1999/scf-vault-fr) · Demo: [LISA](https://github.com/EHa-1999/LISA)
+>
+> Dit is de bronversie. De andere talen zijn vertalingen van versie 3.13-NL.
+
 Een Obsidian-gebaseerde knowledge base voor het beheren van security controls, compliance frameworks en implementaties volgens het **LISA** (Layered Information Security Architecture) model.
 
 ## Wat is LISA?
